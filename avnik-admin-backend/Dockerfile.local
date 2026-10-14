@@ -1,0 +1,8 @@
+# Development image: bind-mount source; entrypoint ensures node_modules in volume.
+FROM node:18-alpine
+WORKDIR /app
+RUN apk add --no-cache libc6-compat
+COPY docker-entrypoint.dev.sh /docker-entrypoint.dev.sh
+RUN chmod +x /docker-entrypoint.dev.sh
+ENTRYPOINT ["/docker-entrypoint.dev.sh"]
+CMD ["npx", "nodemon", "server.js"]

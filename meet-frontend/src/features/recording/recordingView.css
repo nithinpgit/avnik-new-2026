@@ -1,0 +1,62 @@
+.recording-app {
+  position: fixed;
+  inset: 0;
+  background: #0f172a;
+  overflow: hidden;
+}
+
+.recording-capture-root {
+  position: absolute;
+  inset: 0;
+}
+
+.recording-view {
+  pointer-events: none;
+}
+
+.recording-view .meeting-topbar,
+.recording-view .meeting-bottom-toolbar,
+.recording-view .video-sidebar__toolbar,
+.recording-view .meeting-status-banner,
+.recording-view .video-tile__menu-trigger,
+.recording-view .raise-hand-badge,
+.recording-view .document-toolbar {
+  display: none !important;
+}
+
+.recording-view.normal {
+  --meeting-dock-offset: 0px;
+  --meeting-dock-height: 0px;
+  --meeting-topbar-height: 0px;
+  --meeting-stage-bottom: var(--meeting-stage-inset);
+}
+
+.recording-view.normal .video-sidebar,
+.recording-view__sidebar {
+  top: 0;
+  height: 100%;
+}
+
+.recording-view__sidebar {
+  top: 0;
+  bottom: 0;
+}
+
+.recording-view__tiles {
+  padding-top: 8px;
+}
+
+.recording-view__stage {
+  pointer-events: none;
+}
+
+.recording-app__status {
+  position: fixed;
+  left: 8px;
+  bottom: 8px;
+  z-index: 9999;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: ui-monospace, monospace;
+  pointer-events: none;
+}

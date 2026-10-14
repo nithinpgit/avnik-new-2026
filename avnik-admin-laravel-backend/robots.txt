@@ -1,0 +1,38 @@
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedinBot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedinBot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: Whatsapp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /

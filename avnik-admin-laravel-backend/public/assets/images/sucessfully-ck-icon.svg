@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70.018" height="70.018" viewBox="0 0 70.018 70.018">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1.651" x2="0.5" y2="-0.384" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00efd1"/>
+      <stop offset="1" stop-color="#00acea"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1.04" x2="0.5" y2="-0.086" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="sucessfully-ck-icon" transform="translate(-35.2 -95.583)">
+    <path id="Path_288" data-name="Path 288" d="M32.678,43.172a2.615,2.615,0,0,0-3.87,3.518L42.09,61.116a2.629,2.629,0,0,0,1.847.88h.088a2.4,2.4,0,0,0,1.847-.792l33.6-33.513a2.55,2.55,0,0,0,0-3.694,2.628,2.628,0,0,0-3.694,0L44.113,55.574Z" transform="translate(23.721 81.175)" fill="url(#linear-gradient)"/>
+    <path id="Path_289" data-name="Path 289" d="M76.579,45.57a2.592,2.592,0,0,0-2.639,2.639A29.731,29.731,0,1,1,44.209,18.478a2.639,2.639,0,0,0,0-5.278A35.009,35.009,0,1,0,79.218,48.209,2.592,2.592,0,0,0,76.579,45.57Z" transform="translate(26 82.383)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

@@ -1,0 +1,66 @@
+.raise-hand-badge {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 12;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  padding: 0;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #ffc107 0%, #ff9800 100%);
+  color: #ffffff;
+  box-shadow:
+    0 4px 14px rgba(255, 152, 0, 0.45),
+    0 0 0 2px rgba(255, 255, 255, 0.85);
+  pointer-events: auto;
+  animation: raise-hand-badge-pulse 2s ease-in-out infinite;
+}
+
+.raise-hand-badge--dismissible {
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.raise-hand-badge--dismissible:hover {
+  transform: translateX(-50%) scale(1.06);
+  box-shadow:
+    0 6px 18px rgba(255, 152, 0, 0.55),
+    0 0 0 2px rgba(255, 255, 255, 0.95);
+}
+
+.raise-hand-badge--dismissible:active {
+  transform: translateX(-50%) scale(0.98);
+}
+
+.raise-hand-badge__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.15));
+}
+
+.raise-hand-badge__icon .meeting-icon--hand {
+  width: 16px;
+  height: 16px;
+}
+
+@keyframes raise-hand-badge-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 4px 14px rgba(255, 152, 0, 0.4),
+      0 0 0 2px rgba(255, 255, 255, 0.85);
+  }
+  50% {
+    box-shadow:
+      0 6px 20px rgba(255, 152, 0, 0.55),
+      0 0 0 3px rgba(255, 255, 255, 0.95);
+  }
+}

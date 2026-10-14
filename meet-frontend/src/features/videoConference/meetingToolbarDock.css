@@ -1,0 +1,88 @@
+/* Dock / undock whiteboard + meeting toolbars for maximum canvas space */
+.meeting-layout-root[data-toolbars-visible='false'] .whiteboard-module,
+.meeting-layout-root[data-toolbars-visible='false'] .video-conference {
+  --meeting-dock-height: 0px;
+  --meeting-dock-offset: 8px;
+}
+
+.meeting-layout-root[data-toolbars-visible='false'] .meeting-bottom-dock__inner {
+  display: none;
+}
+
+/* Excalidraw 0.18 top bar: FixedSideContainer → App-menu_top (shapes toolbar, etc.) */
+.meeting-layout-root[data-toolbars-visible='false'] .whiteboard-module .excalidraw .FixedSideContainer_side_top,
+.meeting-layout-root[data-toolbars-visible='false'] .whiteboard-module .excalidraw .App-menu_top,
+.meeting-layout-root[data-toolbars-visible='false'] .whiteboard-module .excalidraw .selected-shape-actions-container,
+.meeting-layout-root[data-toolbars-visible='false'] .whiteboard-module .excalidraw .App-menu__left {
+  display: none !important;
+}
+
+/* Excalidraw bottom bar: zoom / undo controls */
+.meeting-layout-root[data-toolbars-visible='false'] .whiteboard-module .excalidraw .layer-ui__wrapper__footer {
+  display: none !important;
+}
+
+.meeting-layout-root[data-toolbars-visible='false'] .whiteboard-module .excalidraw .HintViewer {
+  display: none !important;
+}
+
+.meeting-toolbar-dock-btn {
+  color: #475569;
+}
+
+.meeting-toolbar-dock-btn:hover {
+  color: #145388;
+}
+
+.meeting-toolbar-restore {
+  position: absolute;
+  left: 50%;
+  top: calc(var(--meeting-topbar-height, 52px) + 10px);
+  bottom: auto;
+  transform: translateX(-50%);
+  z-index: 28;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.96);
+  color: #334155;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.1);
+  cursor: pointer;
+  pointer-events: auto;
+  backdrop-filter: blur(6px);
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.meeting-toolbar-restore:hover {
+  color: #145388;
+  border-color: #cbd5e1;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(20, 83, 136, 0.14);
+}
+
+.meeting-toolbar-restore__label {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 991px) {
+  .meeting-toolbar-restore {
+    top: calc(var(--meeting-topbar-height, 48px) + 8px);
+    padding: 5px 10px;
+    gap: 6px;
+  }
+
+  .meeting-toolbar-restore__label {
+    font-size: 11px;
+  }
+}

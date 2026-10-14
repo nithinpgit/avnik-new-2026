@@ -1,0 +1,677 @@
+{
+	"topic": "Deepak Kumar's JioMeet Meeting ",
+	"startTime": "2022-11-24T06:30:59.548Z",
+	"endTime": "2022-11-24T07:00:59.548Z",
+	"participants": [],
+	"advancedOptions": {
+		"hostAudio": false,
+		"participantAudio": true,
+		"hostVideo": false,
+		"participantVideo": true,
+		"joinBeforeHost": true,
+		"waitingRoom": false,
+		"loggedInOnly": false,
+		"colleagueOnly": false,
+		"participantHardAudioMute": false,
+		"isRestrictedMeeting": false,
+		"isClassroomMode": false
+	},
+	"isDynamicRoom": true,
+	"isPinEnabled": true,
+	"calendarOptions": {
+		"calendar": "other"
+	},
+	"repeatOptions": {
+		"repeat": "weekly",
+		"interval": 1,
+		"daysOfWeek": [
+			false,
+			true,
+			true,
+			false,
+			true,
+			false,
+			false
+		],
+		"dateInMonth": 24,
+		"lastDayOfMonth": false,
+		"weeksInMonth": [
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		"endDate": "2023-04-24T18:29:59.999Z"
+	}
+}
+
+{
+	"topic": "Deepak Kumar's JioMeet Meeting ",
+	"startTime": "2022-11-24T06:30:59.548Z",
+	"endTime": "2022-11-24T07:00:59.548Z",
+	"participants": [],
+	"advancedOptions": {
+		"hostAudio": false,
+		"participantAudio": true,
+		"hostVideo": false,
+		"participantVideo": true,
+		"joinBeforeHost": true,
+		"waitingRoom": false,
+		"loggedInOnly": false,
+		"colleagueOnly": false,
+		"participantHardAudioMute": false,
+		"isRestrictedMeeting": false,
+		"isClassroomMode": false
+	},
+	"isDynamicRoom": true,
+	"isPinEnabled": true,
+	"calendarOptions": {
+		"calendar": "other"
+	},
+	"repeatOptions": {
+		"repeat": "daily",
+		"interval": 1,
+		"daysOfWeek": [
+			false,
+			true,
+			true,
+			false,
+			true,
+			false,
+			false
+		],
+		"dateInMonth": 24,
+		"lastDayOfMonth": false,
+		"weeksInMonth": [
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		"endDate": "2023-02-24T18:29:59.999Z"
+	}
+}
+
+{
+    "topic": "Deepak Kumar's JioMeet Meeting ",
+    "startTime": "2022-11-24T06:30:59.548Z",
+    "endTime": "2022-11-24T07:00:59.548Z",
+    "participants": [],
+    "advancedOptions": {
+        "hostAudio": false,
+        "participantAudio": true,
+        "hostVideo": false,
+        "participantVideo": true,
+        "joinBeforeHost": true,
+        "waitingRoom": false,
+        "loggedInOnly": false,
+        "colleagueOnly": false,
+        "participantHardAudioMute": false,
+        "isRestrictedMeeting": false,
+        "isClassroomMode": false
+    },
+    "isDynamicRoom": true,
+    "isPinEnabled": true,
+    "calendarOptions": {
+        "calendar": "other"
+    },
+    "repeatOptions": {
+        "repeat": "monthly",
+        "interval": 1,
+        "daysOfWeek": [
+            false,
+            false,
+            false,
+            false,
+            true,
+            false,
+            false
+        ],
+        "dateInMonth": 24,
+        "lastDayOfMonth": false,
+        "weeksInMonth": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "endDate": "2023-11-24T18:29:59.999Z"
+    }
+}
+
+{
+	"topic": "Deepak Kumar's JioMeet Meeting ",
+	"startTime": "2022-11-24T06:30:59.548Z",
+	"endTime": "2022-11-24T07:00:59.548Z",
+	"participants": [],
+	"advancedOptions": {
+		"hostAudio": false,
+		"participantAudio": true,
+		"hostVideo": false,
+		"participantVideo": true,
+		"joinBeforeHost": true,
+		"waitingRoom": false,
+		"loggedInOnly": false,
+		"colleagueOnly": false,
+		"participantHardAudioMute": false,
+		"isRestrictedMeeting": false,
+		"isClassroomMode": false
+	},
+	"isDynamicRoom": true,
+	"isPinEnabled": true,
+	"calendarOptions": {
+		"calendar": "other"
+	},
+	"repeatOptions": {
+		"repeat": "none",
+		"interval": 1,
+		"daysOfWeek": [
+			false,
+			false,
+			false,
+			false,
+			true,
+			false,
+			false
+		],
+		"dateInMonth": 24,
+		"lastDayOfMonth": false,
+		"weeksInMonth": [
+			0,
+			0,
+			0,
+			0,
+			0
+		],
+		"endDate": "2023-02-24T18:29:59.999Z"
+	}
+}
+
+{
+	"totalCount": 3,
+	"moreAvailable": false,
+	"callHistory": [{
+		"_id": "chis-02a4e894-0f51-4d35-a219-ba60a26495b5",
+		"groupModified": false,
+		"isCurrentlyRecording": false,
+		"isRecordedFlag": false,
+		"title": "ssss",
+		"roomId": "r-2fe830dc-3594-420c-a347-766526fbe5e6",
+		"userId": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+		"groupId": "0",
+		"isActive": false,
+		"startMeeting": "2022-11-22T10:57:04.752Z",
+		"manualIps": [],
+		"jiomeetId": "0693875177",
+		"isOneToOne": true,
+		"meetingId": "sm-2844bedd-0d69-4c17-bb09-40a76035d889",
+		"meetingDetails": {
+			"meetingId": "sm-2844bedd-0d69-4c17-bb09-40a76035d889",
+			"startTime": "2022-11-22T10:58:02.000Z",
+			"endTime": "2022-11-22T11:28:02.000Z",
+			"roomUrl": "api.agora.io",
+			"extension": "0693875177",
+			"isWebinar": false,
+			"isSCIOfficial": false
+		},
+		"endMeeting": "2022-11-22T11:15:15.532Z",
+		"cOn": "2022-11-22T10:57:04.755Z",
+		"mOn": "2022-11-22T11:15:15.533Z",
+		"__v": 0,
+		"isPersonal": false,
+		"forScheduledMeeting": true,
+		"isPinEnabled": true,
+		"roomPIN": "Fj84D",
+		"ownerName": "Deepak Kumar",
+		"ownerPhoneNo": "",
+		"ownerEmailId": "dk9071091@gmail.com",
+		"ownerTenantId": "",
+		"imageMeta": {},
+		"isMissedCall": false,
+		"members": [{
+			"userId": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+			"type": "member",
+			"email": "dk9071091@gmail.com",
+			"phoneNo": null,
+			"name": "Deepak",
+			"lname": "Kumar",
+			"imageMeta": {},
+			"callRole": "callInitiator",
+			"status": "Accepted",
+			"inAnActiveCall": false
+		}],
+		"typeOfCall": "scheduled_meeting"
+	}, {
+		"_id": "chis-ecc417d8-6f18-460c-9e0f-21535af5006d",
+		"groupModified": false,
+		"isCurrentlyRecording": false,
+		"isRecordedFlag": false,
+		"userId": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+		"cOn": "2022-11-21T20:15:38.047Z",
+		"mOn": "2022-11-21T20:15:38.047Z",
+		"isActive": false,
+		"meetingId": "sm-d6ca2445-84e7-4580-bb1a-3541e2efd297",
+		"roomId": "r-38990eed-d54b-497e-a074-e8dac3c21867",
+		"startMeeting": "2022-11-21T19:45:38.000Z",
+		"manualIps": [],
+		"endMeeting": "2022-11-21T20:15:38.000Z",
+		"isNoParticipantsCall": true,
+		"title": "Deepak Kumar's JioMeet Meeting",
+		"meetingDetails": {
+			"meetingId": "sm-d6ca2445-84e7-4580-bb1a-3541e2efd297",
+			"startTime": "2022-11-21T19:45:38.000Z",
+			"endTime": "2022-11-21T20:15:38.000Z",
+			"roomUrl": "api.agora.io",
+			"isSCIOfficial": false,
+			"isWebinar": false
+		},
+		"__v": 0,
+		"isPersonal": false,
+		"forScheduledMeeting": true,
+		"isPinEnabled": true,
+		"roomPIN": "6Nxrn",
+		"ownerName": "Deepak Kumar",
+		"ownerPhoneNo": "",
+		"ownerEmailId": "dk9071091@gmail.com",
+		"ownerTenantId": "",
+		"imageMeta": {},
+		"isMissedCall": false,
+		"members": [{
+			"userId": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+			"type": "member",
+			"email": "dk9071091@gmail.com",
+			"phoneNo": null,
+			"name": "Deepak",
+			"lname": "Kumar",
+			"imageMeta": {},
+			"callRole": "callAbsentee",
+			"status": "notAccepted",
+			"inAnActiveCall": false
+		}],
+		"typeOfCall": "scheduled_meeting"
+	}, {
+		"_id": "chis-333b03af-a29d-4e8f-8706-547e6b5323a7",
+		"groupModified": false,
+		"isCurrentlyRecording": false,
+		"isRecordedFlag": false,
+		"title": "Deepak Kumar's JioMeet Meeting",
+		"roomId": "r-6e4009df-19fb-4b9e-8fd0-ee3e4df24588",
+		"userId": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+		"groupId": "0",
+		"isActive": false,
+		"startMeeting": "2022-10-20T04:55:16.410Z",
+		"manualIps": [],
+		"jiomeetId": "5027657584",
+		"isOneToOne": true,
+		"endMeeting": "2022-10-20T04:55:34.355Z",
+		"cOn": "2022-10-20T04:55:16.412Z",
+		"mOn": "2022-10-20T04:55:34.356Z",
+		"__v": 0,
+		"isPersonal": false,
+		"forScheduledMeeting": false,
+		"isPinEnabled": true,
+		"roomPIN": "gmCr7",
+		"ownerName": "Deepak Kumar",
+		"ownerPhoneNo": "",
+		"ownerEmailId": "dk9071091@gmail.com",
+		"ownerTenantId": "",
+		"imageMeta": {},
+		"isMissedCall": false,
+		"members": [{
+			"userId": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+			"type": "member",
+			"email": "dk9071091@gmail.com",
+			"phoneNo": null,
+			"name": "Deepak",
+			"lname": "Kumar",
+			"imageMeta": {},
+			"callRole": "callInitiator",
+			"status": "Accepted",
+			"inAnActiveCall": false
+		}],
+		"typeOfCall": "dynamic_meeting"
+	}]
+}
+{
+	"dashboardMeetings": [{
+		"_id": "sm-b7b94941-27a3-411b-841e-0b127138def4",
+		"type": "meeting",
+		"status": "active",
+		"topic": "Deepak Kumar's JioMeet Meeting",
+		"startTime": "2022-11-25T10:00:42.000Z",
+		"endTime": "2022-11-25T10:30:42.000Z",
+		"host": {
+			"_id": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+			"name": "Deepak",
+			"lname": "Kumar"
+		},
+		"webinar": {
+			"options": {
+				"ticker": {
+					"enabled": false
+				},
+				"thankYouMsg": {
+					"enabled": false
+				},
+				"views": {
+					"showCount": false
+				},
+				"likes": {
+					"floatingReactions": {
+						"enabled": false
+					},
+					"showCount": false,
+					"reactionType": [],
+					"enabled": false
+				},
+				"quesAns": false,
+				"practiceSession": false,
+				"allowGuests": false,
+				"onDemand": false,
+				"record": false,
+				"comments": false
+			},
+			"registration": {
+				"enabled": false,
+				"inviteOnly": false,
+				"autoApprove": true,
+				"closeBeforeDays": 0
+			},
+			"recording": {
+				"recordingType": "speaker"
+			},
+			"webinarPortal": {
+				"enabled": false
+			},
+			"enabled": false,
+			"attendeeWebsocketEnabled": false,
+			"broadcasting": false,
+			"qnaTimeLimit": 3,
+			"attendeeFeed": "live"
+		},
+		"isActive": false,
+		"repeatOptions": {
+			"repeat": "none",
+			"interval": 1,
+			"daysOfWeek": [0, 0, 0, 0, 0, 0, 0],
+			"dateInMonth": 0,
+			"lastDayOfMonth": false,
+			"weeksInMonth": [0, 0, 0, 0, 0],
+			"repeatUntill": null,
+			"timeZone": null,
+			"endDate": "2022-11-25T09:54:53.774Z"
+		},
+		"isRestrictedMeeting": false,
+		"hostInfo": {
+			"_id": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+			"name": "Deepak",
+			"lname": "Kumar",
+			"phoneNo": null,
+			"email": "dk9071091@gmail.com"
+		},
+		"addToJmtUrl": "https://jiomeetpro.jio.com/addtojiomeet?meetingId=7161649955&pwd=FYsQ3&isWebinar=false",
+		"createdBy": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+		"roomId": "r-220bfa95-82ee-4870-ac47-91fcdda8c82d",
+		"userId": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+		"pin": "FYsQ3",
+		"participants": [{
+			"name": "Deepak",
+			"lname": "Kumar",
+			"phoneNo": null,
+			"email": "dk9071091@gmail.com",
+			"status": "yettoaccept",
+			"statusFor": "none",
+			"userId": "u-f54f7cb7-a19a-4316-b503-8a404d87b568"
+		}],
+		"meetingUrl": "https://jiomeetpro.jio.com/shortener?meetingId=7161649955&pwd=FYsQ3",
+		"jiomeetId": "7161649955",
+		"isPinEnabled": true,
+		"isDynamicRoom": true,
+		"advancedOptions": {
+			"isPinEnabled": true,
+			"hostAudio": false,
+			"participantAudio": true,
+			"hostVideo": false,
+			"participantVideo": true,
+			"joinBeforeHost": true,
+			"waitingRoom": false,
+			"loggedInOnly": false,
+			"colleagueOnly": false,
+			"participantHardAudioMute": false,
+			"participantHardVideoMute": false,
+			"isRestrictedMeeting": false,
+			"isClassroomMode": false,
+			"roomPIN": "FYsQ3"
+		},
+		"isSCIOfficial": false
+	}]
+}
+
+{
+	"dashboardMeetings": [{
+		"_id": "sm-b7b94941-27a3-411b-841e-0b127138def4",
+		"type": "meeting",
+		"status": "active",
+		"topic": "Deepak Kumar's JioMeet Meeting",
+		"startTime": "2022-11-25T10:00:42.000Z",
+		"endTime": "2022-11-25T10:30:42.000Z",
+		"host": {
+			"_id": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+			"name": "Deepak",
+			"lname": "Kumar"
+		},
+		"webinar": {
+			"options": {
+				"ticker": {
+					"enabled": false
+				},
+				"thankYouMsg": {
+					"enabled": false
+				},
+				"views": {
+					"showCount": false
+				},
+				"likes": {
+					"floatingReactions": {
+						"enabled": false
+					},
+					"showCount": false,
+					"reactionType": [],
+					"enabled": false
+				},
+				"quesAns": false,
+				"practiceSession": false,
+				"allowGuests": false,
+				"onDemand": false,
+				"record": false,
+				"comments": false
+			},
+			"registration": {
+				"enabled": false,
+				"inviteOnly": false,
+				"autoApprove": true,
+				"closeBeforeDays": 0
+			},
+			"recording": {
+				"recordingType": "speaker"
+			},
+			"webinarPortal": {
+				"enabled": false
+			},
+			"enabled": false,
+			"attendeeWebsocketEnabled": false,
+			"broadcasting": false,
+			"qnaTimeLimit": 3,
+			"attendeeFeed": "live"
+		},
+		"isActive": false,
+		"repeatOptions": {
+			"repeat": "none",
+			"interval": 1,
+			"daysOfWeek": [0, 0, 0, 0, 0, 0, 0],
+			"dateInMonth": 0,
+			"lastDayOfMonth": false,
+			"weeksInMonth": [0, 0, 0, 0, 0],
+			"repeatUntill": null,
+			"timeZone": null,
+			"endDate": "2022-11-25T09:54:53.774Z"
+		},
+		"isRestrictedMeeting": false,
+		"hostInfo": {
+			"_id": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+			"name": "Deepak",
+			"lname": "Kumar",
+			"phoneNo": null,
+			"email": "dk9071091@gmail.com"
+		},
+		"addToJmtUrl": "https://jiomeetpro.jio.com/addtojiomeet?meetingId=7161649955&pwd=FYsQ3&isWebinar=false",
+		"createdBy": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+		"roomId": "r-220bfa95-82ee-4870-ac47-91fcdda8c82d",
+		"userId": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+		"pin": "FYsQ3",
+		"participants": [{
+			"name": "Deepak",
+			"lname": "Kumar",
+			"phoneNo": null,
+			"email": "dk9071091@gmail.com",
+			"status": "yettoaccept",
+			"statusFor": "none",
+			"userId": "u-f54f7cb7-a19a-4316-b503-8a404d87b568"
+		}],
+		"meetingUrl": "https://jiomeetpro.jio.com/shortener?meetingId=7161649955&pwd=FYsQ3",
+		"jiomeetId": "7161649955",
+		"isPinEnabled": true,
+		"isDynamicRoom": true,
+		"advancedOptions": {
+			"isPinEnabled": true,
+			"hostAudio": false,
+			"participantAudio": true,
+			"hostVideo": false,
+			"participantVideo": true,
+			"joinBeforeHost": true,
+			"waitingRoom": false,
+			"loggedInOnly": false,
+			"colleagueOnly": false,
+			"participantHardAudioMute": false,
+			"participantHardVideoMute": false,
+			"isRestrictedMeeting": false,
+			"isClassroomMode": false,
+			"roomPIN": "FYsQ3"
+		},
+		"isSCIOfficial": false
+	}, {
+		"_id": "sm-e03e1088-4ef0-46ff-b788-9993b112dce4",
+		"type": "meeting",
+		"status": "active",
+		"topic": "Deepak Kumar's JioMeet Meeting",
+		"startTime": "2022-11-25T10:15:30.000Z",
+		"endTime": "2022-11-25T10:45:30.000Z",
+		"host": {
+			"_id": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+			"name": "Deepak",
+			"lname": "Kumar"
+		},
+		"webinar": {
+			"options": {
+				"ticker": {
+					"enabled": false
+				},
+				"thankYouMsg": {
+					"enabled": false
+				},
+				"views": {
+					"showCount": false
+				},
+				"likes": {
+					"floatingReactions": {
+						"enabled": false
+					},
+					"showCount": false,
+					"reactionType": [],
+					"enabled": false
+				},
+				"quesAns": false,
+				"practiceSession": false,
+				"allowGuests": false,
+				"onDemand": false,
+				"record": false,
+				"comments": false
+			},
+			"registration": {
+				"enabled": false,
+				"inviteOnly": false,
+				"autoApprove": true,
+				"closeBeforeDays": 0
+			},
+			"recording": {
+				"recordingType": "speaker"
+			},
+			"webinarPortal": {
+				"enabled": false
+			},
+			"enabled": false,
+			"attendeeWebsocketEnabled": false,
+			"broadcasting": false,
+			"qnaTimeLimit": 3,
+			"attendeeFeed": "live"
+		},
+		"isActive": false,
+		"repeatOptions": {
+			"repeat": "daily",
+			"interval": 1,
+			"daysOfWeek": [0, 0, 0, 0, 0, 0, 0],
+			"dateInMonth": 0,
+			"lastDayOfMonth": false,
+			"weeksInMonth": [0, 0, 0, 0, 0],
+			"repeatUntill": null,
+			"timeZone": null,
+			"endDate": "2023-02-25T23:59:59.999Z"
+		},
+		"isRestrictedMeeting": false,
+		"hostInfo": {
+			"_id": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+			"name": "Deepak",
+			"lname": "Kumar",
+			"phoneNo": null,
+			"email": "dk9071091@gmail.com"
+		},
+		"addToJmtUrl": "https://jiomeetpro.jio.com/addtojiomeet?meetingId=7805224995&pwd=1Dr4N&isWebinar=false",
+		"createdBy": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+		"roomId": "r-5f99cfe8-5c71-4ab7-a264-e61b88b52c62",
+		"userId": "u-f54f7cb7-a19a-4316-b503-8a404d87b568",
+		"pin": "1Dr4N",
+		"participants": [{
+			"name": "Deepak",
+			"lname": "Kumar",
+			"phoneNo": null,
+			"email": "dk9071091@gmail.com",
+			"status": "yettoaccept",
+			"statusFor": "none",
+			"userId": "u-f54f7cb7-a19a-4316-b503-8a404d87b568"
+		}],
+		"meetingUrl": "https://jiomeetpro.jio.com/shortener?meetingId=7805224995&pwd=1Dr4N",
+		"jiomeetId": "7805224995",
+		"isPinEnabled": true,
+		"isDynamicRoom": true,
+		"advancedOptions": {
+			"isPinEnabled": true,
+			"hostAudio": false,
+			"participantAudio": true,
+			"hostVideo": false,
+			"participantVideo": true,
+			"joinBeforeHost": true,
+			"waitingRoom": false,
+			"loggedInOnly": false,
+			"colleagueOnly": false,
+			"participantHardAudioMute": false,
+			"participantHardVideoMute": false,
+			"isRestrictedMeeting": false,
+			"isClassroomMode": false,
+			"roomPIN": "1Dr4N"
+		},
+		"isSCIOfficial": false
+	}]
+}

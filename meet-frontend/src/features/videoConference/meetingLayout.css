@@ -1,0 +1,130 @@
+/* Shared layout vars for whiteboard, presentation, and participant sidebar. */
+.meeting-layout-root {
+  position: absolute;
+  inset: 0;
+  --meeting-topbar-height: 52px;
+  --meeting-sidebar-width: 260px;
+  --meeting-sidebar-transition: 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+  --meeting-sidebar-rail-width: 22px;
+  --meeting-sidebar-rail-height: 56px;
+  /* Matches .video-sidebar top + height (top 52px, height calc(100% - 112px)) */
+  --meeting-sidebar-rail-top: calc(var(--meeting-topbar-height) + (100% - 112px) / 2);
+}
+
+.meeting-layout-root[data-participant-sidebar='closed'] {
+  --meeting-sidebar-width: 0px;
+}
+
+.meeting-layout-root .presentation-layer,
+.meeting-layout-root .presentation-close-btn,
+.meeting-layout-root .video-conference.normal .meeting-content-stage {
+  transition: right var(--meeting-sidebar-transition);
+}
+
+/* Rail handle — aligned to sidebar vertical center and left seam */
+.meeting-layout-root .participant-sidebar-toggle {
+  position: absolute;
+  top: var(--meeting-sidebar-rail-top);
+  z-index: 100;
+  width: var(--meeting-sidebar-rail-width);
+  height: var(--meeting-sidebar-rail-height);
+  padding: 0;
+  margin: 0;
+  border: 1px solid #dce1e6;
+  background: #ffffff;
+  color: #145388;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  transform: translateY(-50%);
+  box-shadow:
+    -1px 0 0 #ffffff,
+    -4px 0 14px rgba(15, 23, 42, 0.08);
+  transition:
+    right var(--meeting-sidebar-transition),
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.meeting-layout-root .participant-sidebar-toggle--open {
+  right: calc(var(--meeting-sidebar-width, 260px) - var(--meeting-sidebar-rail-width) / 2);
+  border-right-color: #ffffff;
+  border-radius: 8px 0 0 8px;
+}
+
+.meeting-layout-root .participant-sidebar-toggle--closed {
+  right: 0;
+  border-left-color: #145388;
+  border-radius: 8px 0 0 8px;
+  background: #145388;
+  color: #ffffff;
+  border-color: #145388;
+  box-shadow: -4px 0 16px rgba(20, 83, 136, 0.28);
+}
+
+.meeting-layout-root .participant-sidebar-toggle--open:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #0f71a3;
+  box-shadow:
+    -1px 0 0 #ffffff,
+    -6px 0 18px rgba(20, 83, 136, 0.12);
+}
+
+.meeting-layout-root .participant-sidebar-toggle--closed:hover {
+  background: #114670;
+  border-color: #114670;
+  color: #ffffff;
+  box-shadow: -4px 0 18px rgba(20, 83, 136, 0.34);
+}
+
+.meeting-layout-root .participant-sidebar-toggle:focus-visible {
+  outline: 2px solid #426de5;
+  outline-offset: 2px;
+}
+
+.meeting-layout-root .participant-sidebar-toggle__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  opacity: 0.92;
+}
+
+.meeting-layout-root .participant-sidebar-toggle--open::after {
+  content: '';
+  position: absolute;
+  right: -1px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: #dce1e6;
+  pointer-events: none;
+}
+
+@media (max-width: 1199px) {
+  .meeting-layout-root[data-participant-sidebar='open'] {
+    --meeting-sidebar-width: 220px;
+  }
+}
+
+@media (max-width: 991px) {
+  .meeting-layout-root[data-participant-sidebar='open'] {
+    --meeting-sidebar-width: 190px;
+  }
+
+  .meeting-layout-root {
+    --meeting-sidebar-rail-height: 52px;
+    --meeting-sidebar-rail-width: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .meeting-layout-root[data-participant-sidebar='open'] {
+    --meeting-sidebar-width: 160px;
+  }
+}

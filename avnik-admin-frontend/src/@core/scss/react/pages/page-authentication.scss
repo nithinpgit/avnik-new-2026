@@ -1,0 +1,50 @@
+@import '../../base/bootstrap-extended/include';
+@import '../../base/components/variables-dark';
+
+.auth-wrapper {
+  display: flex;
+  flex-basis: 100%;
+  min-height: 100vh;
+  width: 100%;
+
+  .auth-inner {
+    width: 100%;
+  }
+
+  &.auth-cover {
+    align-items: center;
+  }
+}
+
+.auth-bg {
+  background-color: $white;
+}
+
+.dark-layout {
+  .auth-bg {
+    background-color: $theme-dark-body-bg;
+  }
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 1.5rem 0 0 1.5rem;
+}
+
+.brand-text {
+  margin-bottom: 0;
+}
+
+.auth-login-form {
+  .form-label {
+    font-size: 0.857rem;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .auth-wrapper.auth-cover .auth-inner {
+    padding: 1rem;
+  }
+}

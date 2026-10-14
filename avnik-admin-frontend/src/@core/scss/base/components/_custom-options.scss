@@ -1,0 +1,7 @@
+// Vuexy custom options component styles (template partial)
+
+.custom-option {
+  &.checked {
+    border-color: $primary;
+  }
+}

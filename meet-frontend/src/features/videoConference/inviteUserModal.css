@@ -1,0 +1,157 @@
+.invite-user-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(227, 227, 227, 0.92);
+  pointer-events: auto;
+}
+
+.invite-user-modal {
+  width: min(640px, 100%);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.12);
+  pointer-events: auto;
+  animation: invite-user-modal-in 0.25s ease;
+}
+
+@keyframes invite-user-modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.invite-user-modal__header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 12px 0;
+}
+
+.invite-user-modal__close {
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.invite-user-modal__close:hover {
+  color: #145388;
+}
+
+.invite-user-modal__body {
+  padding: 0 24px 28px;
+}
+
+.invite-user-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.invite-user-section {
+  width: 100%;
+}
+
+.invite-user-section + .invite-user-section {
+  padding-top: 20px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.invite-user-section h2 {
+  margin: 0 0 10px;
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.invite-user-section__label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: #145388;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.invite-user-section .form-group {
+  position: relative;
+}
+
+.invite-user-content .form-control {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 100px 10px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+  border: 1px solid #e6e6e6;
+  color: #3a3a3a;
+}
+
+.invite-user-section--link .form-control {
+  font-size: 13px;
+  letter-spacing: 0.01em;
+}
+
+.invite-user-content .form-control:focus {
+  outline: none;
+  border-color: #145388;
+}
+
+.invite-user-section .invite-action-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 6px 12px;
+  min-width: 88px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #145388;
+  cursor: pointer;
+}
+
+.invite-user-section .invite-action-btn:hover {
+  background: #0f3f66;
+}
+
+.invite-user-section--email .form-control {
+  padding-right: 72px;
+}
+
+.invite-user-section--email .invite-action-btn {
+  min-width: 64px;
+}
+
+@media (max-width: 640px) {
+  .invite-user-modal__body {
+    padding: 0 16px 20px;
+  }
+
+  .invite-user-content .form-control {
+    padding-right: 92px;
+    font-size: 12px;
+  }
+}

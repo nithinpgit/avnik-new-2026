@@ -1,0 +1,3224 @@
+/*Responsive CSS */
+@media screen and (min-width:1701px){
+    .event-col {width: 16.6%;}
+    .event-img{max-height: 130px}  
+    .user-name.e-icn-bx .user a{max-width: 80px;}
+    .meeting-space .m-s-info .cmn-ul-list li{width: 100%;}
+    .event-calender-bx .fc .fc-view-harness {height: 750px !important;}
+    .time-slot-right #accordion { max-height: 750px;  overflow-y: auto;}
+    .my-profile .meeting-space .m-s-info .cmn-ul-list li{width: 50%;}
+    .event-detail-bx{min-height: 280px;}
+    .modal-header .modal-title {font-size: 20px;}
+    
+    
+    
+    }
+    
+    @media screen and (max-width:1700px) {	
+    .upcoming-events .white-content-bx .message-list.inbox-events-list {height:430px;}
+    .event-calender-bx .fc .fc-view-harness {height: 770px !important; }
+    .file-manager-content-sec .fm-file-name-editable .file-type-title-icon strong{max-width:350px;}
+    .event-img{max-height: 148px} 
+    .meeting-space .m-s-info .cmn-ul-list li{width: 100%;}
+    .my-profile .meeting-space .m-s-info .cmn-ul-list li{width: 50%;}
+    .time-slot-right #accordion { max-height: 750px;  overflow-y: auto;}
+    .event-detail-bx{min-height:300px;}
+    .user-name.e-icn-bx .user a {max-width: 115px;}
+    
+    }
+    @media screen and (max-width:1600px) {	
+    .event-s-info{padding: 12px;}
+    .user-name.e-icn-bx .user a{max-width: 88px;}
+    .upcoming-events .white-content-bx .message-list.inbox-events-list {height:280px;}
+    .event-calender-bx .fc .fc-view-harness {height: 620px !important; }
+    .file-manager-content-sec .fm-file-name-editable .file-type-title-icon strong{max-width:300px;}
+    .event-img{max-height: 130px}
+    .meeting-space .m-s-info .cmn-ul-list li{width:50%;}  
+    .time-slot-right #accordion {max-height: 630px;overflow-y: auto;}
+    .event-detail-bx { min-height: 280px;}
+    .e-icn-bx .date i.av.av-event-time-icon { top: 1px;}
+    
+    
+    
+    }
+        @media screen and (max-width:1440px) {
+        .rating i{font-size:11px;padding-left:2px;}
+        .dt-2 span, .price, .date {font-size:15px;color:#3A3A3A;}
+        .rating i {font-size:10px;padding-left:2px;}
+        .event-s-info {padding: 15px 10px  0px 10px; height: 130px;}
+        .dt-2 span, .price, .date {font-size: 13px;}
+        .user-name a {font-size: 14px;}
+        .event-img {height: 150px;}
+        .ftr-links-bx strong {font-size: 20px;}
+        .ftr-links-bx li a {font-size: 14px;}
+        .copyright-text {font-size: 14px;}
+        .copyright-social {padding-bottom: 10px;}
+        .footer-social-icn li a {width: 30px;height: 30px;line-height: 30px;}
+        .footer-social-icn i {font-size: 14px;}
+        .text-btm {font-size: 14px;}
+        .ftr-links-bx li {padding-left: 18px;}
+        .ftr-links-bx ul li:before {font-size: 15px;top: 6px;}
+        .cmn-heading h1, .cmn-heading h2, .cmn-heading h3, .cmn-heading h4, .cmn-heading h5 {font-size: 17px;padding-bottom: 0px;}
+        .e-c-list {padding-bottom:15px;margin-bottom:15px;}
+        .l-s-item {padding:10px 0;}
+        .sidebar-menu .scroll {padding-top: 65px;}
+        .l-s-item.active:after {height: 66px;width: 7px;}
+        .not-s-message {font-size: 16px;}    
+        .sidebar-menu span {padding-top:0;}
+        .sign-in-up-logo-icon img {width: 102px;}
+        .login-signup-form {padding: 40px;}
+        .form-heading h1 {font-size:30px;}
+        .form-heading p {font-size:18px;padding-top: 0;}
+        .skip-link a {font-size:18px;}
+        .form-label, .input-text-bx span {font-size: 16px;	}
+        .f-sign-in-link a {font-size: 18px;	}
+        .login-signup-form .form-control {padding-left: 34px;	}
+        .form-control {font-size: 14px;padding:7px 10px;	}
+        .password .input-icon::after { top: 11px; left: 10px; font-size: 17px;}
+        .input-icon::after {top:10px;font-size:15px;left:11px;}
+        .custom.checkbox > label, .custom.radio > label {font-size: 14px;}
+        .form-btns-social .footer-social-icn .text-btm {font-size: 16px;}
+        .or-sign-in-up-link p {font-size: 18px;	}
+        figure.sign-in-up-logo-icon {top: -46px;width: calc(100% - 102px);}
+        .wrap-l-s-bx {width: 510px;}
+        .form-btns-social .footer-social-icn li a {width: 36px;  height: 36px; line-height: 36px;}
+        .or-sign-in-up-link {margin-top: 15px;}	
+        .login-signup-form.email-sent-form .form-group figcaption span {font-size: 20px;}
+        .login-signup-form.email-sent-form .form-group figcaption p,
+        .login-signup-form.email-sent-form .form-group figcaption p a {font-size: 16px;}
+        .form-group.chnage-password-btn {margin-top: 30px;}
+        .footer-social-icn li{padding-left:16px;}
+        footer {padding: 50px 0 0 0;}
+        .navbar {padding:10px 15px;}
+        .new-off{position: absolute; top: 10px; left: -10px; }
+        .file-manager-popup .modal-title {color: #000000;font-size: 20px;margin-bottom: 0;}
+        .file-manager-popup .modal-dialog {	width: 768px;}
+        .ah-tab > .ah-tab-item {padding: 6px 0;	font-size: 14px;}
+        .ah-tab-content-wrapper {margin: 15px 0;}
+        .tab-content-heading h2 {font-size: 16px;}
+        .image-video-list :checked + label:before {	font-size: 9px;	}
+        .image-video-list label:before {width: 18px;height: 18px;line-height: 18px;}
+        .image-video-list label {padding: 5px;}
+        .mfb-component__button--main {height: 40px;	width: 40px;line-height: 40px;text-align:center;}
+        .mfb-component__button--main i {left: 13px;	font-size: 14px;}
+        .multisteps-form__progress span, .multisteps-form__progress strong {font-size: 16px;}
+        [data-mfb-label]:after {margin-top: -13px;font-size: 14px;padding: 5px 10px;}
+        .mfb-component__button--child {height: 40px;width: 40px;line-height: 47px;}
+        .mfb-component__child-icon, .mfb-component__child-icon {line-height: 56px;font-size: 16px;}
+        .mfb-component__icon, .mfb-component__main-icon--active,.mfb-component__main-icon--resting, 
+        .mfb-component__child-icon {line-height: 41px;}
+        .mfb-component--br [data-mfb-label]:after, .mfb-component--tr [data-mfb-label]:after, .mfb-component--br .mfb-component__list [data-mfb-label]:after, .mfb-component--tr .mfb-component__list [data-mfb-label]:after {right: 48px;}
+        .mfb-component__list > li {	padding: 5px 0;	margin: -5px 0;	}
+        .mfb-component--bl.mfb-slidein[data-mfb-toggle="hover"]:hover .mfb-component__list li:nth-child(1), .mfb-component--bl.mfb-slidein[data-mfb-state="open"] .mfb-component__list li:nth-child(1),
+        .mfb-component--br.mfb-slidein[data-mfb-toggle="hover"]:hover .mfb-component__list li:nth-child(1),
+        .mfb-component--br.mfb-slidein[data-mfb-state="open"] .mfb-component__list li:nth-child(1) {-webkit-transform: translateY(-48px);transform: translateY(-48px);	}
+        .mfb-component--bl.mfb-slidein[data-mfb-toggle="hover"]:hover .mfb-component__list li:nth-child(2), .mfb-component--bl.mfb-slidein[data-mfb-state="open"] .mfb-component__list li:nth-child(2),
+        .mfb-component--br.mfb-slidein[data-mfb-toggle="hover"]:hover .mfb-component__list li:nth-child(2),
+        .mfb-component--br.mfb-slidein[data-mfb-state="open"] .mfb-component__list li:nth-child(2) {		-webkit-transform: translateY(-96px);transform: translateY(-96px);	}
+        .mfb-component--bl.mfb-slidein[data-mfb-toggle="hover"]:hover .mfb-component__list li:nth-child(3), .mfb-component--bl.mfb-slidein[data-mfb-state="open"] .mfb-component__list li:nth-child(3),.mfb-component--br.mfb-slidein[data-mfb-toggle="hover"]:hover .mfb-component__list li:nth-child(3),.mfb-component--br.mfb-slidein[data-mfb-state="open"] .mfb-component__list li:nth-child(3) {		-webkit-transform: translateY(-144px);transform: translateY(-144px);}
+        .mfb-component--bl.mfb-slidein[data-mfb-toggle="hover"]:hover .mfb-component__list li:nth-child(4), .mfb-component--bl.mfb-slidein[data-mfb-state="open"] .mfb-component__list li:nth-child(4),	.mfb-component--br.mfb-slidein[data-mfb-toggle="hover"]:hover .mfb-component__list li:nth-child(4),	.mfb-component--br.mfb-slidein[data-mfb-state="open"] .mfb-component__list li:nth-child(4) {
+                        -webkit-transform: translateY(-190px);	transform: translateY(-190px);	}
+        .mfb-component--bl.mfb-slidein[data-mfb-toggle="hover"]:hover .mfb-component__list li:nth-child(5),
+        .mfb-component--bl.mfb-slidein[data-mfb-state="open"] .mfb-component__list li:nth-child(5),
+        .mfb-component--br.mfb-slidein[data-mfb-toggle="hover"]:hover .mfb-component__list li:nth-child(5),
+        .mfb-component--br.mfb-slidein[data-mfb-state="open"] .mfb-component__list li:nth-child(5) {-webkit-transform: translateY(-240px);transform: translateY(-240px);}
+        .e-d-heding h1 {font-size: 20px;}
+        .h-evnt-d strong {font-size: 18px;}
+        .e-des-tags-edit a {font-size: 16px;}
+        .tags-list .tag-bx span {font-size: 14px;}
+        .m-s-info i {font-size: 22px;width: 34px;}
+        .meeting-space h3 {	line-height: 28px;	font-size: 18px;	margin-bottom: 15px;}
+        .h-i-profile span {	font-size: 18px;}
+        .tab-heading h2 {font-size: 18px;}
+        .ts-option button.btn.dropdown-toggle {	color: #145388;	padding: 10px 2px;	font-size: 16px;position: relative; top: 2px;}
+        .ts-time span {	font-size: 14px;}
+        .event-details .ah-tab > .ah-tab-item {	font-size: 14px;padding: 5px 0;	}
+        .review-bx .rit-m-bx strong span i {color: #FFBE04;font-size: 16px;padding-right: 5px;position: relative;top: -1px;}
+        .all-reviews-status strong {font-size: 16px;}
+        .review-bx .rit-m-bx strong span {margin-left: 10px;font-size: 16px;}
+        .review-bx .rit-m-bx p, .review-bx .rit-m-bx p .link-btn {font-size: 14px;}
+        .ts-btn .default-btn {font-size: 13px;min-width: initial;}
+        .report-event-popup .form-label {font-size: 20px;}
+        .report-event-popup .custom.checkbox > label, .report-event-popup .custom.radio > label {font-size: 16px;}
+        .t-s-bx.download-event-search .ts-option {font-size: 16px;}
+        .ts-time .form-control {font-size: 14px;padding: 8px 10px;padding-right: 30px;}
+        .download-add-btn .default-btn {padding: 5px 8px;font-size: 14px;min-width: 60px;}
+        .create-event-content-popup .modal-dialog {	width: 700px;}
+        .create-event-rit-content .modal-title {font-size: 18px;padding-bottom: 15px;}
+        .create-event-content-popup .modal-body {padding: 25px;	}
+        .dot-ul-list li {position: relative;min-height: 26px;padding-left: 17px;color: #3A3A3A;	font-size: 14px;line-height: 20px;padding-bottom: 10px;	}
+        .dot-ul-list li:before {left: 0;top: 7px;height: 5px;width: 5px;}
+        .inbox-group-box .tabs-list .nav-link span {font-size: 16px;padding-top: 2px;}
+        .inbox-group-box .tabs-list .nav-link i {font-size: 18px;}
+        .inbox-group-box .tabs-list .nav-link.active:after {border-bottom: 2px solid #145388; }
+        .inbox-group-box .tabs-list .nav-link {color:#8F8F8F;padding-top: 15px;padding-bottom: 6px;}
+        .tabs-list, .cmn-rit-top-heading-sec {height:7px;}
+        .message-top-bx {padding: 10px 15px;}
+        .inbox-message-number {	font-size: 16px;}
+        .in-rit-user-bx p a {font-size: 16px;}
+        .in-m-text-bx p {font-size: 12px;}
+        .in-rit-user-bx p {	line-height: normal;}
+        .in-m-text-bx {line-height: 20px;}
+        .inbox-groups-list ul li a {font-size: 16px;padding: 12px 0;}
+        .cmn-search-bx .btn.link-btn {top:3px;right:6px;font-size: 16px;}
+        .e-d-download .cmn-search-bx .btn.link-btn {top: 7px; right: 7px;}   
+        .inbox-users-list .inbox-msg-filter .form-control {font-size: 14px;padding: 11px;}
+        .in-m-text-bx a {color: #145388;font-size: 15px;padding-left: 8px;padding-right: 8px;}
+        .inbox-meg-usr-bx ul li {padding-bottom: 12px;margin-bottom: 12px;}
+        .name-date-text {padding-top: 4px;}
+        .chat .msg li.date {margin: 18px auto 0px auto;}
+        .main-user-msg strong {font-size: 18px;}
+        .new-toggle-dropdown .dropdown-item { font-size: 14px;  padding: 0px 10px;}
+        .new-toggle-dropdown .dropdown-item i {	font-size: 16px;}
+        .usr-top-right .new-toggle-dropdown {margin: 0;	margin-top:2px;}
+        .usr-top-right .new-toggle-dropdown {padding-bottom: 5px;}
+        .chat .input input {font-size: 15px;height: 50px;}
+        .chat .input {height: 50px;	}
+        .cmn-new-toggle.move-group-dd .new-toggle-dropdown {margin-top:5px;	}
+        .cmn-new-toggle.move-group-dd .new-toggle-dropdown .dropdown-item {font-size: 14px;	padding: 4px 6px;}
+        .cmn-new-toggle.move-group-dd .new-toggle-dropdown {min-width: 215px;}
+        .cmn-new-toggle.move-group-dd .new-toggle-dropdown strong {font-size: 15px;	padding-bottom: 4px;}
+        .group-message-list .u-p-files-list .cell .message-short-text, .group-message-list .c-table-row .message-time a {font-size: 12px;}
+        .modal-header .modal-title {font-size: 18px;}
+        .modal-header {	padding: 15px;}
+        .close {font-size: 14px;}
+        .create-group-popup .modal-dialog {	width: 400px;}
+        .modal-body {padding: 0 15px;}
+        .modal-header, .modal-footer, .modal-body {	padding: 15px;border: 0;}
+        .create-group-input-bx{margin-top:0;}
+        .apply-btn .default-btn {min-width: 100px;font-size: 16px;padding: 6px;}
+        .chat .msg li.date span {font-size: 11px;}
+        .ck-group-message .custom input[type="checkbox"]:after, .ck-group-message  .custom input[type="radio"]:after {width: 16px;height: 16px;top: 0px;left: -3px;}
+        .ck-group-message .m-user-editable {width: 38%;}
+        .ck-group-message .custom input[type="checkbox"]:before {width: 10px;height: 4.5px;top: 4px;left: 0px;}	
+        .r-m-t-bx .dropdown-toggle, .r-m-t-bx.home-menu a {font-size: 18px;}	
+        .not-s-message {font-size:14px;}
+        .logo img {width:120px;}	
+        .h-lft-bx select {width: 42px;height: 37px;line-height: 37px;font-size: 14px;}
+        .ftr-links-bx li {padding-bottom: 5px;}
+        .ftr-links-bx strong {font-size: 16px;}
+        .mid-content-sec {margin-top: 70px;}
+        .in-rit-user-bx span {padding-right: 5px;}
+        .in-page-content-sec {margin-bottom: 0;}
+        .footer-social-icn li a {width: 26px;height: 26px;line-height: 26px;	}
+        .footer-social-icn i {font-size: 13px;}
+        .copyright-social {	padding-top:15px;}
+        .inbox-users-list .inbox-msg-filter .form-control {	font-size: 14px;padding:10px;}	
+        .tabs-list, .cmn-rit-top-heading-sec {height: 65px;}
+        .inbox-group-box .tabs-list .nav-link {	padding-top: 13px;}	
+        .setting-toggle-bx .av-switch, .c-table-text, .selected-ck-status, .u-p-files-list .cell {font-size: 14px;}
+        .inbox-message-number {font-size:16px;}	
+        .av-tt-bx .av-tt-text {font-size: 13px;padding: 3px 6px;bottom: -47px;}	
+        .notificaton-list-bx .inbox-message-number {font-size: 16px;}	
+        .message-list.inbox-events-list .c-table-row.table-header .cell, .complite-cancel-status {font-size: 14px;}
+        .upload-files-popup .upload-event-image {width: 400px;}
+        .choose-images-video-icons figcaption {font-size: 16px;	}
+        .upload-files-popup .modal-dialog {width: 550px;}
+        .upload-files-list {max-height: 180px;}
+        .upload-files-list .u-p-files-list.uploading-file-bx .cell.title-editable {	width: 46%;}
+        .payments-content-sec .message-list.payment-history-list .cell, .payments-content-sec .message-list.payment-history-list .c-table-text, .payments-content-sec .message-list.payment-history-list .complite-cancel-status, .payments-content-sec .message-list.payment-history-list .cell a, .c-table-text, .message-list.review-events-list .u-p-files-list .cell{font-size: 14px;}
+        .message-list.review-events-list .u-p-files-list .c-table-text {font-size: 13px;}	
+        .default-btn { padding: 6px 7px; font-size: 14px;  min-width: 70px; }
+        .or-sign-in-with{font-size:18px;margin-top:10px;}
+        .or-text{font-size: 16px;}
+        .forgot-link a{font-size: 16px;}
+        .custom input[type="checkbox"]:after, .custom input[type="checkbox"]:after, .custom input[type="radio"]:after {width: 18px; height: 18px; top: -1px;left: -4px;}
+        .form-heading { padding-top: 40px; padding-bottom: 25px;}
+        .footer-social-icn { padding-top: 1px;}
+        .rating i{ font-size:11px; padding-left: 2px;}
+        .event-s-info { padding: 10px 10px;}
+        .event-title a{font-size: 15px;}
+        .fc.fc-toolbar-title{font-size: 18px;}
+        .new-label {padding: 3px 7px;font-size: 11px;}
+        .ah-tab > .ah-tab-item{margin-right: 18px !important; padding: 5px 0 !important; font-size: 16px !important; }
+        .new-off li { margin-bottom: 5px;}	
+        .event-s-info .user-name.e-icn-bx .rating {padding-top: 0;}
+        .user-name.e-icn-bx .user a {max-width: 82px;}
+        .t-s-bx .ts-btn .default-btn {padding:3px 6px; font-size:14px;}
+        .tab-heading{padding-bottom: 15px;}    
+        .notificaton-setting-list .cmn-ul-list li { padding-bottom: 10px; padding-top: 10px;}
+        .t-s-bx {min-height: 42px;}
+        .flex-container .flex-select-bx select.form-control.custom-select-bx {border-radius: 5px 0px 0px 5px;height: 38px !important; padding:7px 30px 7px 10px;}
+        .upcoming-events .white-content-bx .message-list.inbox-events-list {height: 160px;}
+        .event-calender-bx .fc .fc-view-harness {height: 410px !important;}
+        .cmn-heading{padding-bottom: 15px;}
+        .chat {height: 330px;}
+        .meeting-space .m-s-info .cmn-ul-list li{width:50%;}
+.r-m-t-bx .btn-group .dropdown-item {
+    font-size: 14px;
+    vertical-align: middle;
+/*    display: flex;*/
+    align-items: center;
+}
+        .time-slot-right #accordion {max-height: 420px;overflow-y: auto;}
+        i.meet-icon-img img {position: relative;top: -2px;}
+        .custom input[type="radio"]:before{top:3px;}
+        .meeting-room-link .form-label{padding-bottom: 5px;}
+        .meeting-room-link .form-group button.btn.cmn-btn{padding: 6px 10px;}
+        .add-time-input {padding-bottom: 0;}
+        .share-profile-popup .add-time-input button.btn.default-btn {
+            right: 4px;
+            top: 3px !important;
+            font-size: 15px;
+            line-height: 26px;
+        }
+        .event-detail-bx {
+            min-height: 260px;
+        }
+        .cmn-search-bx .form-control {
+            padding-top: 9px;
+            padding-bottom: 8px;
+        }
+        .inbox-users-list .cmn-search-bx .btn.link-btn {
+            top: 7px;
+            right: 10px;
+        }
+        .modal.default-popup.create-group-popup .form-ck-forgot-p-link .checkbox.custom {
+            padding-top: 10px;
+        }
+        .group-message-list .c-table-row .message-user-bx span, .group-message-list .c-table-row .message-short-text, .group-message-list .c-table-row .message-time a {
+            font-size: 14px;
+        }
+        .message-list.group-message-list.events-group-table .cell.event-more-editable {top:6px;}
+        .custom input[type="checkbox"]:before{top:4px;}
+        .e-icn-bx {padding-left:22px;}
+        .user-name.e-icn-bx .user a {
+            max-width: 74px;
+        }
+        p.rated-usr-no {
+            padding-left: 5px;
+            font-size: 12px;
+            position: relative;
+            top: -2px;
+        }
+        .e-icn-bx .date i.av.av-event-time-icon {
+            top: 2px;
+            font-size: 14px;
+        }
+        .price i.av.pos-iocn {
+            font-size: 14px;
+        }
+        .r-m-t-bx.home-menu.tr-h-icon {
+            top: 2px;
+        }
+        .message-list.review-events-list .u-p-files-list .cell.review-details-editable {padding-top:5px;}
+        .events-content-sec .cell.event-hosted-by-editable .c-table-text{top:3px;}
+        .slider-content-left .cmn-heading h1, .section-heading h2{font-size: 46px;}
+        .slider-content-left p{font-size: 18px;}
+        .section-heading p{font-size: 18px;}
+        .blog-title a{font-size: 22px;}
+        .wb_info .dot_img {height: 1550px;}    
+        .repeat-box .radio.custom {
+            top: 12px;
+        }
+        .repeat-box.repeat-for-bx .radio.custom {       
+            top: 7px;
+        }
+        .modal.default-popup.repeat-event-popup .modal-dialog {
+            width: 432px;
+        }
+        .event-details-bx .my-profile-left .h-evnt-d {
+            height: 305px;
+        }
+        .make-default-status-btn button.btn.default-btn{font-size: 13px;}
+        .card-bank-tabs .saved-card-list span.btn.status-btn.awaiting-status{font-size: 12px;padding-top: 3px;}
+       .payment-card-add .blue-bdr-btn {
+            min-width: inherit;
+            padding: 6px 15px;
+            font-size: 14px;
+        }
+        .b-c-box .default-status-btn, .make-default-status-btn {
+            top: -2px;
+        }
+
+
+            
+    }        
+        
+    @media screen and (max-width:1290px) {
+        .timer-box {padding-left: 15px;}
+        .top-nav.sticky .h-rit-bx {margin-left: -8px;margin-right: -8px;}
+        .top-nav.sticky .r-m-t-bx {padding-left: 7px;padding-right: 7px;}
+        .navbar .logo img{height:40px;}
+        .r-m-t-bx.others-menu .dropdown-menu {padding-left: 15px;padding-right: 15px;}
+        .left-side-nav {width: 140px;}
+        .sidebar-menu .scroll {	padding-top: 76px;}
+        .l-s-item.active:after {height: 62px;width: 5px;top: 9px;}
+        .l-s-item {padding: 10px 0;}
+        .sidebar-menu {	width: 140px;}
+        .fiter-tag span {font-size: 14px;}
+        .filter-popup .modal-dialog {width: 94%;}
+        .reset-btn .default-btn {min-width: 90px;font-size: 15px;}
+        .fiter-tag {padding: 8px 30px 8px 9px;}
+        .mid-content-sec {margin-left: 145px;margin-top:85px;}
+        .fillter-btn {padding-left: 10px;}
+        .search-box {width: 300px;}
+        .fillter-btn .btn {	font-size: 19px;}
+        .fiter-tag .close-f-tag { padding: 3px 5px; font-size: 10px; top: 3px;}
+            .cmn-heading h1, .cmn-heading h2, .cmn-heading h3, .cmn-heading h4,	.cmn-heading h5 {font-size: 18px;}
+            .lft-search-filter {padding-right:75px;}
+            .event-col {width: 25%;}
+            .event-title a {font-size: 16px;}
+            .event-s-info {height:130px;}
+            .event-col {width: 25%;}
+            .new-label {padding: 5px 8px;}
+            .wishlist-icon {right: 9px;	top: 14px;}
+            .filter-tags-list {	padding-left:5px;	}
+            .h-evnt-d, .meeting-short-info {padding: 15px;}
+            .e-d-heding h1 {font-size: 20px;}
+            .event-countdown strong {font-size: 16px;padding-right: 5px;}
+            .meeting-short-info .cmn-ul-list li {padding-left: 5px;padding-right: 5px;}
+            .meeting-short-info .cmn-ul-list {margin-left: -5px;margin-right: -5px;}
+            .meeting-short-info {padding: 15px 15px;}
+            .event-details .ah-tab > .ah-tab-item {	font-size: 14px;padding: 5px 0;	}
+            .event-details .ah-tab > .ah-tab-item {	margin-right: 20px;	}
+            .tag-bx {padding: 3px 6px 3px 6px;}
+            .tags-list .tag-bx span {font-size: 13px;}
+            .h-evnt-d strong {font-size: 16px;}
+            .event-countdown strong {font-size: 16px;padding-right: 5px;display:inline-block;}
+            .meeting-space h3 {line-height: 22px;font-size: 16px;margin-bottom: 10px;}
+            .join-event-bx {margin-top: 5px;}	
+            .e-d-gallery .h-i-profile {padding: 12px;}
+            .h-i-profile p {font-size: 14px;}
+            .h-i-profile span {font-size: 16px;	}
+            .m-s-info i {font-size: 18px;width: 30px;}
+            .table-row.table-header .table-cell {font-size: 15px;}
+            .table-cell {font-size: 14px;}
+            .r-e-left strong {font-size: 16px;}
+            .dot-li-list li {font-size: 14px;}
+            .r-e-right h2 {	font-size: 16px;line-height: 22px;padding-bottom: 18px;	}
+            .reschedule-event-popup .modal-dialog {	width: 660px;}
+            .message-m-box strong {	font-size:18px;	}
+            .confirm-message-popup .modal-dialog {width: 400px;	}
+            .no-yes-btns .cmn-ul-list {	margin-left: -5px;margin-right: -5px;}
+            .no-yes-btns .cmn-ul-list li {padding-left: 5px;padding-right: 5px;	}   
+            .cmn-search-bx .btn.link-btn {top: 4px;	}
+            .report-event-popup .modal-footer {padding-top: 0;}
+            .ah-tab > .ah-tab-item {margin-right: 25px;	}
+            .cmn-sidebar-left {width: 230px;}
+            .timer-box {padding-left:0;}
+            .not-s-message {font-size: 11px;line-height: 13px;}
+            .h-lft-bx select {height: 36px;	font-size: 14px;}
+            .h-lft-bx {display: flex;align-items: center;width: 200px;}
+            .cmn-sidebar-outer {display: inline-block;width: 100%;}
+            .cmn-sidebar-left {	width: 28%;	float: left;}
+            .cmn-sidebar-content {float: right;	width: 72%;	flex: inherit;}
+            .message-user-bx span {font-size: 12px;	}
+            .u-p-files-list .cell {	padding:  10px;	padding-left:0px;}
+            .m-user-editable {width: 30%;}
+            .message-user-bx span, .group-message-list .c-table-row .message-user-bx span {font-size: 13px;	}
+            .message-short-text {width: 250px;}
+            .r-m-t-bx.my-account-menu .dropdown-menu.dropdown-menu-lg-right .dropdown-item i{width: 20px;top: 3px;}
+            .my-group-message .m-d-editable {width: 10%;}
+            .message-list.group-message-list .btn.link-btn {padding-right: 5px;	}
+            .rit-m-bx p {font-size: 13px;}
+            .inbox-message-number {	font-size: 15px;}
+            .in-user-bx .cmn-profile-pic {width: 40px;height: 40px;	}
+            .in-user-bx {padding-left: 48px;}
+            .in-rit-user-bx p a {font-size: 14px;}
+            .in-m-text-bx p {font-size: 13px;}
+            .inbox-group-box .tabs-list .nav-link span {font-size: 15px;padding-top: 6px;}
+            .cell.event-details-editable {padding-left: 15px;}
+            .u-p-files-list .c-table-row .cell .cmn-cc-icon i {font-size: 6px;}
+            .cmn-cc-icon {height: 16px;	width: 16px;line-height: 11px;}
+            .message-short-text {font-size: 12px;}
+            .forum-discussion-panel .quiz-q-ans-bx .el-p-bx {padding-left: 10px;}
+            .cell.event-message-editable .message-delete-btn {text-align: center;}
+            .upload-files-popup .upload-event-image .choose-images-video-icons figure img{width:200px;}
+            .selected-events-ck .cmn-ul-list {margin-left: -5px;margin-right: -5px;	}
+            .selected-events-ck .cmn-ul-list li {padding-left: 5px;padding-right: 5px;}
+            .fm-file-name-editable .file-type-title-icon strong {font-size: 14px;}
+            .u-p-files-list .cell {padding-left: 10px;}
+            .pay-s-rit-text strong {font-size: 28px;}
+            .pay-s-rit-text span {font-size: 15px;}
+            .pay-status-bx {min-height: 80px; padding-top: 10px; padding-bottom: 10px;}
+            .payment-status-sec {padding-bottom: 15px;}
+            .cell.noti-message-editable .message-short-text {font-size: 14px;}
+            .inbox-message-number {font-size: 14px;}
+            .not-found-content-sec .notfound {top: 70%;} 
+            .lft-pro-pic figure.avatar-pic {width: 200px;height: 200px;	}
+            .profile-progress-bx span, .my-profile-left .e-des-tags-edit strong {font-size: 16px;}
+            .right-pro-text .all-reviews-status  strong {font-size: 13px;}
+            .right-pro-text .all-reviews-status ul {margin-left: -2px;margin-right: -2px;}
+            .right-pro-text .all-reviews-status ul li {	padding-left: 2px;padding-right: 2px;}
+            .right-pro-text .m-s-info .cmn-ul-list li.my-profile-language{padding-bottom: 15px;}
+            .right-pro-text .m-s-info span {font-size: 14px;}
+            .right-pro-text .m-s-info .cmn-ul-list li i {position: relative;top:2px;}
+            .my-profile-left .pro-status-bx .footer-social-icn li a {height: 36px;width: 36px;line-height: 39px;}
+            .ts-time span {font-size: 14px;}
+            .tab-heading h2 {font-size: 16px;}
+            .ts-option button.btn.dropdown-toggle {color:#145388;padding:5px;font-size:14px;}
+            .my-profile-bx .ts-btn .default-btn {font-size:12px;min-width:initial;line-height:14px;}
+            .time-slot-list ul li {margin-bottom:10px;}
+            .event-right-content .h-evnt-d .des-content p {margin-top:0;}
+             header .h-lft-bx {width:auto;}	
+             header .event-countdown strong {width:auto;padding:5px 0;padding-right:10px;}
+             header .event-countdown {display:flex;align-items:center;margin-top:0;}
+            .event-countdown strong {font-size:14px;}
+            .attached-files-list-in .event-img {height:100px;width:120px;border-radius:15px;}
+            .add-more-attach-btn button.btn.default-btn {min-height:100px;width:60px;font-size:18px;}
+            .attached-files-list-in .wishlist-icon {top:10px;}
+            .attached-files-list-in .wishlist-icon .btn.link-btn {height:20px;width:20px;font-size:12px;}
+            .default-btn {padding:5px 10px;font-size:15px;min-width:90px;}
+            .fiter-tag {padding: 5px 22px 5px 8px;}
+            a.btn.cmn-bdr-btn.create-event-btn.quick-start-btn{padding: 3px 6px;}	
+            .create-event-btn { font-size: 12px;  padding: 4px 8px;}       
+            .user-name.e-icn-bx .user a{max-width: 77px;}
+            .user-name.e-icn-bx{padding-bottom: 2px;}
+            .sidebar-menu span{font-size: 15px;}
+            .fc .fc-toolbar-title {font-size: 18px; margin: 0;}
+            .ts-option { margin-right: 5px;}
+            .fc table{font-size: 13px;}
+            .tab-heading {padding-bottom:10px;}
+            .t-s-bx .ts-btn .default-btn{padding: 4px 8px;}		
+            .event-details-bx .my-profile-left .h-evnt-d{height: 355px;}
+            .my-profile .event-details-bx .my-profile-left .h-evnt-d{height:290px;}
+            .payment-status-sec{padding: 15px 20px;}
+            .pay-s-rit-text strong {font-size: 18px;}
+            .pay-s-rit-text span { font-size: 13px;}
+            figure.pay-s-lft-img, a.pay-s-lft-img{height: 40px; width: 40px; line-height: 40px;}
+            .pay-status-bx .pay-s-lft-img a.pay-s-lft-img { height: 36px; width: 36px;}
+            .u-p-files-list .c-table-row .cell .cmn-cc-icon.gray-bg-icon i {top: 2px;}
+            .ah-tab-content-wrapper{margin-top: 15px;}
+            .inbox-message-number {font-size: 14px; max-width: 160px;}
+            .cmn-search-bx .btn.link-btn{right: 5px;}
+            .flex-container .flex-select-bx select.form-control.custom-select-bx{padding:7px 30px 7px 10px;}
+            .cell.fm-ck-editable { width: auto;}
+            .notification-content-sec .inbox-message-number {max-width: inherit !important; }
+            .events-content-sec .cell.event-hosted-by-editable { width: 11%;}
+            .events-content-sec .cell.event-details-editable .message-user-bx span {max-width: 123px;}
+            .events-content-sec .cell.event-type-editable {width: 10%;}
+            .events-content-sec .cell.event-duration-editable {width: 10%;}
+            .events-content-sec .cell.event-date-time-editable {width: 12%;}
+            .events-content-sec .cell.event-details-editable { width: 21%;}
+            .message-list.group-message-list.events-group-table .cell.event-more-editable {left: 19%;}
+            .message-user-bx span{max-width: 100%;}
+            .inbox-users-list {padding: 15px 10px;}
+            .inbox-meg-usr-bx {max-height: 430px;}
+            .main-user-msg strong {font-size: 16px;}
+            .chat .msg{padding: 0px 15px 15px 15px;}
+            .in-rit-user-bx span {padding-right: 0;}
+            .ah-tab-content-wrapper {margin:15px 0;}
+            .landing-page .navbar {padding:10px 15px;}
+            .new-toggle-dropdown .dropdown-item i{font-size: 14px;}
+            .event-title a {font-size: 15px;}
+            .btn.status-btn{font-size: 13px;}
+            .dropdown-menu.new-toggle-dropdown.event-more-toggle.dropdown-menu-lg-right ul li:last-child i {top:1px;}
+    .message-list.review-events-list .u-p-files-list .cell.review-details-editable {padding-top: 6px;}
+    .payments-content-sec .message-list.payment-history-list .cell a{font-size: 13px;}
+    .payment-center-history-bx.card-bank-tabs .noti-setting-heading .inbox-message-number {width:100%;display: inline-block;}
+
+
+
+     }
+            
+    @media screen and (max-width:1190px) {
+            .upcoming-events .white-content-bx .message-list.inbox-events-list.cell { padding-left: 0;} 	
+            .message-list.group-message-list.events-group-table .cell.event-more-editable {left: 19.50%;}
+            .events-content-sec .cell.event-details-editable {width: 24%;}
+            .message-list.group-message-list.events-group-table .cell.event-more-editable {left: 21.5%;}
+    
+            .message-list.group-message-list.events-group-table .c-table-row.table-header .cell.event-type-editable {
+                position: relative; top: 0;}
+            .message-list.group-message-list.events-group-table .c-table-row .cell.event-type-editable {
+               position: relative;
+                top: 2px;
+            }
+            .message-list.group-message-list.events-group-table .c-table-row .cell.event-type-editable {
+                top: 0px;
+            }
+            .modal.fade.default-popup .modal-content {
+                box-shadow: 0 0px 30px rgba(0,0,0,0.3);
+            }
+    
+    
+            
+        }
+            
+        @media screen and (max-width:1100px) {
+        .cell.fav-event-details-editable {width:43%; vertical-align: top;}	
+        .event-details-bx .my-profile-left .h-evnt-d { height: 366px;}
+        .right-pro-text .m-s-info span {font-size: 13px;}
+        .why-should-sec {padding-top: 50px;}
+        .slider-content-left .cmn-heading h1, .section-heading h2 {font-size: 36px;}
+        .process-sec .wb_info .wb_process_item.p-item-1 .wb_process_content {padding-left:50px;}
+        .wb_process_item .wb_process_content h3{margin: 20px 0 20px;}
+        .w-s-box{padding-left:100px;}
+        .w-s-box .w-s-img {left: 15px;}
+        .wb_process_item .wb_process_content p {font-size: 14px; line-height: 22px;}
+        .w-s-box .w-s-img img {height: 50px;}
+        .w-s-box{padding-left:77px;min-height:80px;margin-top:10px;} 
+        .wb_process_content > img {height: 48px;}
+        .wb_info .dot_img {height: 1300px; width: 53%;}
+        .wb_process_content.pr_70.pl_70 {padding-right: 0;}
+        .events-type {padding: 0 0 50px 0;}
+        .blog-title a {
+        font-size: 18px;
+    }.blog-title {
+        padding-bottom: 5px;
+    }
+    .blog-detail-bx p{font-size: 14px;line-height: normal;}
+    .blog-info {
+        padding: 15px 16px;
+    }
+    .blog-info .dt-2 span, .blog-info .price, .blog-info .date {
+        font-size: 14px;
+    }
+    .blog-detail-bx p {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        line-height: normal;
+        font-size: 14px;
+    }
+    .dt-3.e-icn-bx {
+        padding-bottom: 0;
+        min-height: 20px;
+    }
+    .company-rewards-sec {padding:50px 0;margin-top:50px;}
+    .c-r-box{padding:20px 15px;}
+    .c-r-box strong{padding:15px 0 0 0;}
+    .our-testimonils-sec {
+        padding: 50px 0;
+    }
+    .slider-content-left .cmn-heading h1, .section-heading h2 {
+        font-size: 26px;
+    }
+    .section-heading p {
+        font-size: 16px;
+        line-height: normal;
+        padding-top: 15px;
+    }
+    .testi-img{width: 240px;}
+    .testi-info p {font-size: 16px;}
+    .testi-info{padding: 15px 30px; padding-left: 19%;}
+    .testi-info strong{font-size: 18px;}
+    .testi-outer-bx {
+        padding: 15px 0;
+        padding-top: 188px;
+    }
+    .events-content-sec .cell.event-details-editable {padding-left: 0;}
+    .events-content-sec .cell.event-type-editable .c-table-text{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100px;
+            display: inline-block;
+        }
+        .file-manager-content-sec .fm-file-name-editable .file-type-title-icon strong {
+            max-width: 250px;
+        }
+        .user-name.e-icn-bx .user a {
+            max-width: 60px;
+        }
+        .dropdown-menu.new-toggle-dropdown.event-more-toggle.dropdown-menu-lg-right ul li:last-child i {
+             top: 1px;
+            font-size: 13px;
+        }
+        .e-icn-bx{min-height: 20px;}
+        .event-detail-bx {
+            min-height: 253px;
+        }
+        .message-list.group-message-list.events-group-table .c-table-row.table-header .cell.event-message-editable.text-right {
+            width: 8%;
+        }
+    .message-list.group-message-list.events-group-table .c-table-row .cell.event-type-editable {top: 3px;}
+    .favorites-content-sec .u-p-files-list .c-table-row .cell.event-details-editable .message-user-bx span,
+    .favorites-content-sec .u-p-files-list .c-table-row .cell.fav-date-time-editable .c-table-text{top: 4px;}
+    .download-files-download .file-type-title-icon strong{max-width:222px;}
+    .card-bank-tabs .inbox-group-box .tabs-list .nav-link span {font-size: 16px;}
+    .b-c-box strong{font-size: 14px;}
+    .card-bank-tabs .saved-card-list span{font-size: 14px;}
+    .form-label, .input-text-bx span {font-size: 14px;}
+    .noti-setting-heading .inbox-message-number {
+        font-size: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        max-width: 150px;
+    }
+
+
+            
+ }
+            
+        @media screen and (max-width:991px) {
+        .forgot-link a, .form-btns-social .footer-social-icn .text-btm {font-size: 15px;}
+        .form-control {font-size: 14px;}
+        .default-btn, .blue-bdr-btn {border-radius: 5px;padding: 8px 15px;min-width: 90px;font-size: 15px;}
+        .form-heading h1 {font-size: 22px;}
+        .password .input-icon::after {top: 14px;left: 20px;font-size: 18px;	}
+        .login-signup-form .form-control {padding-left: 50px;}
+        .form-control, .chosen-container-multi .chosen-choices {font-size: 14px;padding: 8px 10px;	}
+        .input-icon::after {top: 11px;font-size: 14px;left: 11px;}
+        .password .input-icon::after {	top:9px;left:14px;font-size:18px;}
+        .login-signup-form .form-control {padding-left: 40px;}
+        .custom input[type="checkbox"]:after, .custom input[type="radio"]:after {top:0;	left:0;width:14px;height:14px;}
+        .custom input[type="checkbox"]:before {	width: 11px;}
+        .sign-in-up-logo-icon img {	width: 90px;}
+        .form-heading {padding-top: 20px;padding-bottom: 20px;}
+        .form-heading p {font-size: 15px;padding-top: 0;}
+        .login-signup-form {padding: 30px;}
+        figure.sign-in-up-logo-icon {top: -45px;width: calc(100% - 45px);}
+        .login-signup-form.email-sent-form .form-group figcaption span {font-size: 18px;}
+        .login-signup-form.email-sent-form .form-group figcaption p, .login-signup-form.email-sent-form .form-group figcaption p a {font-size: 14px;}
+        .login-signup-form.email-sent-form .form-group figure {	margin-top:15px;}
+        .login-signup-form.email-sent-form .form-group figure img {	width: 50px;}
+        .login-signup-form.email-sent-form .form-group figcaption {	margin-top: 15px;}
+        .top-nav.sticky .r-m-t-bx .dropdown-menu.dropdown-menu-lg-right {right: 0;left: inherit;}
+        .timer-box {padding-left: 15px;	width: 260px;}
+        .event-col {width: 33.33%}
+        .event-s-info {	height: 130px;}
+        .mid-content-sec {margin-left: 146px;}
+        .fiter-tag span {font-size: 13px;  }
+        .fiter-tag {padding: 7px 30px 7px 7px;}
+        .search-box:before {left: 10px;	top: 10px;	width: 1px;	}
+        .not-s-message {font-size: 14px;line-height: normal;}
+        .new-off {left: -10px;}
+        .mid-content-sec {margin-top: 95px;}
+        .more-show-btn {font-size: 14px;}
+        .sidebar-menu span {font-size: 14px;}
+        .rit-m-bx strong {font-size: 15px;}
+        .rit-m-bx p {font-size: 13px;}
+        .rit-m-bx span {font-size: 11px;}
+        .white-content-bx {	padding: 15px;}
+        .multisteps-form__progress span, .multisteps-form__progress strong {font-size: 14px;}
+        .multisteps-form__progress-btn::before{	width: 15px;height: 15px;}
+        .multisteps-form__progress-btn i{margin-left: -5px;	font-size: 7px;	top: 36px;}
+        .multisteps-form__progress strong{bottom: -60px;}
+        .multisteps-form__progress .multisteps-form__progress-btn a {height: 76px;}
+        .multisteps-form__progress-btn:before {	top: 32px;}
+        .multisteps-form__progress-btn::after {	top: 39px;}
+        .multisteps-form__progress {margin-bottom: 5px;}
+        .upload-event-image .choose-images-video-icons figure img {	height: 50px;}
+        .upload-event-image {width: 100%;padding: 20px;margin-bottom: 5px;}
+        .choose-images-video-icons {font-size: 16px;}
+        .discount-option {margin-top: 5px;margin-bottom: 5px;}
+        .button-row.d-flex.mt-4 {margin-top: 0 !important;}
+        .input-text-bx span {font-size: 14px;}
+            .upload-paid-files .card-subtitle {	font-size: 16px;}
+            .upload-paid-files .file-upload {padding: 15px;margin-top: 10px;}
+            .upload-paid-files .file-upload {padding: 15px;margin-top: 10px;}
+            .upload-paid-files {margin-bottom: 15px;}
+            .u-p-files-list .cell {padding: 8px 10px;}
+            .form-label {padding-bottom: 5px;}
+            .input-text-bx {padding-top: 4px;}
+            .input-text-bx span {font-size: 13px;}
+            .upload-event-image .choose-images-video-icons {margin-bottom: 15px;}
+            .custom input[type="radio"] {top: 0px;}
+            .choose-images-video-icons figcaption {padding-top: 15px;}
+            .chosen-container-multi .chosen-choices li.search-choice {font-size: 13px;}
+            .custom input[type="checkbox"], .custom input[type="radio"] {margin-right: 5px;}
+            .upload-paid-files .file-upload img {height: 50px;}
+            .u-p-files-list.uploading-file-bx .text-editor p {font-size: 14px;}
+            .u-p-files-list .c-table-row .cell i {margin-right: 8px;}
+            .u-p-files-list.uploading-file-bx .cell.title-editable {width: 30%;}
+            .u-p-files-list.uploading-file-bx .cell.description-editable {width: 30%;}
+            .u-p-files-list.uploading-file-bx .cell.cost-editable {	width: 10%;	}
+            .u-p-files-list.uploading-file-bx .cell.action-editable {width:30%;}
+            .text-editor p {color:#3A3A3A;font-size:13px;line-height:normal;}
+            .c-table-row.header .cell {	font-size: 14px;}	
+            .cell.cost-editable {width: 15%;}
+            .cell.size-editable {width: 20%;}	
+            .u-p-files-list .c-table-row .cell.action-editable i {margin-right: 0;}
+            .u-p-files-list .c-table-row .cell i {margin-right: 5px;font-size: 12px;}
+            .r-m-t-bx.table-dd .btn.dots-btn{height:20px;width: 20px;}
+            .u-p-files-list.uploading-file-bx .btn.cricle-icon-btn i {font-size: 8px;}
+            .u-p-files-list.uploading-file-bx .btn.cricle-icon-btn {width: 20px;height: 20px;font-size: 11px;line-height: 16px;}
+            footer {padding-top: 35px;}
+            .ftr-links-bx strong {font-size: 16px;padding-bottom: 10px;	}
+            .ftr-links-bx li {font-size: 14px;padding-bottom: 10px;	}
+            .ftr-links-bx ul li::before {font-size: 14px;top: 2px;}
+            .ftr-links-bx li a {font-size: 13px;}
+            .copyright-text {font-size: 13px;}
+            .in-page-content-sec {margin-bottom: 10px;}
+            .copyright-social {	padding-top: 10px;}
+            .event-countdown {display:flex;align-items:center;margin-top:0;}
+            .event-countdown strong {font-size: 16px;padding-right:15px;width:auto;padding-bottom: 0;display: inline-block;}
+            .meeting-space h3 {line-height: 22px;font-size: 18px;margin-bottom: 15px;}
+            .meeting-space .m-s-info .cmn-ul-list li {width: 50%;}
+            .m-s-info i {font-size: 20px;width: 35px;}
+            .e-d-heding h1 {font-size: 18px;margin-right: 15px;}
+            .meeting-short-info .cmn-ul-list {margin-left: -10px;margin-right: -10px;}
+            .meeting-short-info .cmn-ul-list li {padding-left: 10px;padding-right: 10px;}
+            .left-e-cal {margin-bottom:30px;}
+            .download-add-btn .default-btn {min-width: inherit;	font-size: 13px;padding: 5px 10px;}
+            .download-add-btn .btn.link-btn {margin-right: 8px;	}
+            .ts-btn .default-btn {font-size: 13px;	min-width: initial;}
+            .ts-time span {	font-size: 14px;}
+            .ts-option button.btn.dropdown-toggle {	color: #145388;	padding: 8px;	font-size: 16px;}
+            .time-slot-list .ts-btn .default-btn {font-size: 12px;min-width: initial;padding: 5px 10px;	}
+            .review-bx .rit-m-bx p {font-size: 14px;}
+            .reply-textarea textarea.form-control {	font-size: 14px;	}
+            .all-reviews-status strong {font-size: 16px;}
+            .all-reviews-status ul {margin-left: -2px;	margin-right: -2px;	}
+            .all-reviews-status ul li {	padding-left: 2px;	padding-right: 2px;	font-size: 13px;}
+            .t-s-bx.download-event-search .default-btn {padding: 5px 10px; font-size: 14px;}
+            .table-row.table-header .table-cell {font-size: 14px;}
+            .report-event-popup .form-label {font-size: 18px;}
+            .report-event-popup .custom.checkbox > label, .report-event-popup .custom.radio > label {font-size: 14px;}
+            .report-event-popup .modal-dialog {	width: 400px;}
+            .custom input[type="radio"]:before {top: 3px;width: 8px;height: 8px;left: 1px;}
+            .custom input[type="radio"] {top: 2px;}       
+            .report-event-popup .modal-footer, .report-event-popup .modal-body {padding: 15px;border: 0;}
+            .confirm-message-popup .modal-body {padding-top:0;}
+            .t-s-bx.download-event-search {	padding: 10px 15px;	}
+            .create-event-content-popup .modal-dialog {	width: 94%;	}
+            .create-event-rit-content .modal-title {font-size: 18px;padding-bottom: 15px;}
+            .create-event-content-popup .modal-body {padding: 25px;	}
+            .dot-ul-list li {position: relative;min-height: 26px;padding-left: 17px;color: #3A3A3A;font-size: 14px;line-height: 20px;padding-bottom: 10px;}
+            .dot-ul-list li:before {left: 0;top: 7px;height: 5px;width: 5px;}
+            .left-side-nav {width: 110px;}
+            .timer-box {padding-left: 10px;width: 260px;}
+            .sidebar-menu {width: 110px;}
+            .mid-content-sec {margin-top: 75px;margin-left: 115px;}
+            .ah-tab > .ah-tab-item {margin-right: 18px;font-size: 12px;}
+            .inbox-groups-list ul li a {font-size: 14px;padding: 10px 0;}
+        .inbox-users-list .inbox-msg-filter .form-control {font-size: 13px;}		
+        .inbox-group-box .tabs-list .nav-link span {font-size: 14px;padding-top:0;}
+        .inbox-group-box .tabs-list .nav-link i {font-size:13px;}
+                    .inbox-message-number {
+                        font-size: 13px;
+                    }
+                    .tabs-list, .cmn-rit-top-heading-sec {
+                        height: 57px;
+                    }
+                    .inbox-users-list {
+                        padding: 15px 10px;
+                    }
+                    .u-p-files-list .cell {
+                        padding-left:0;
+                    }
+                    .message-short-text {
+                        width: 150px;
+                    }
+                    .message-short-text, .message-time {
+                        font-size: 13px;
+                    }
+                    .main-user-msg strong {font-size: 15px;	}
+                    .main-user-msg span {font-size: 12px;}
+                    .cmn-profile-pic {width: 40px;height: 40px;}
+                    .usr-top-left {padding-left: 50px;}
+                    .inbox-group-box .tabs-list .nav-link {padding: 7px 0;}
+                    .chat .msg {padding:10px 5px;}
+                    .chat .input input, .chat .input button {font-size: 14px;height: 40px;}
+                    .chat .input .btnAttach label {font-size: 18px;}
+                    .chat .input {height: 41px;}
+                    .chat .input .btnAttach {line-height: 40px;right: 100px;}
+                    .u-p-files-list .cell {vertical-align: middle;  }
+                    .complite-cancel-status {
+                        text-align: center;
+                    }
+                    .message-short-text, .message-time {
+                        font-size: 12px;
+                    }
+                    .setting-toggle-bx .av-switch, .c-table-text, .selected-ck-status, .inbox-message-number, .u-p-files-list .cell {
+                        font-size: 13px;
+                    }
+                    .cell.event-date-time-editable{font-size: 12px;}
+                    .message-user-bx span, .group-message-list .c-table-row .message-user-bx span {	font-size: 12px;}
+                    .message-list.inbox-events-list .u-p-files-list .cell {padding-left: 15px;}
+        .message-list.inbox-events-list .c-table-row.table-header .cell {font-size: 12.5px; }
+        .complite-cancel-status {font-size: 13px;}
+        .u-p-files-list .c-table-row.table-header .cell.fm-ck-editable {padding-left: 5px;}
+        .notificaton-list-bx .inbox-message-number {font-size:14px;}
+        .payments-content-sec .message-list.payment-history-list .cell, .payments-content-sec .message-list.payment-history-list .c-table-text, .payments-content-sec .message-list.payment-history-list .complite-cancel-status, .payments-content-sec .message-list.payment-history-list .cell a, .c-table-text, .message-list.review-events-list .u-p-files-list .cell, .message-list.review-events-list .u-p-files-list .c-table-text {
+        font-size: 12px;}			
+        .reply-textarea textarea.form-control {	font-size: 13px;	padding-right: 70px;height: 52px;			}
+        .review-bx .rit-m-bx strong {font-size: 14px;}
+        .write-review-content-bx .review-bx {padding: 18px 18px 18px 90px;margin-left: 22px;}
+        .review-bx .rit-m-bx p {font-size: 12px;line-height: normal;margin-top: 2px;padding-bottom:0;}
+        .review-edit-delete-btns .cmn-ul-list li .btn.link-btn {font-size: 18px;}
+        .review-edit-delete-btns .cmn-ul-list {margin-left: -5px;	margin-right: -5px;	}
+        .review-edit-delete-btns .cmn-ul-list li {padding-left: 5px;padding-right: 5px;	}
+        .write-review-content-bx .review-bx {padding: 0 0 0 70px;}
+        .write-review-content-bx .review-parent-bx {margin-bottom: 0;}
+        .write-review-content-bx .review-bx figure.n-m-pic {left: 10px;width: 45px;height: 45px;}	
+        .message-list.review-events-list .u-p-files-list .cell {padding-left: 10px;}
+        .pay-s-rit-text strong {font-size: 20px;}
+        .footer-social-icn li {padding-left: 10px;}
+        .notfound h1 {font-size: 50px;}
+        .notfound h2 {font-size: 18px;}
+        .notfound a.btn.default-btn {padding: 7px 12px;	min-width: inherit;	font-size: 13px;}
+        .notfound .notfound-404:before {width: 100px;height: 100px;	left: 30px;	top: 36px;}
+        .regin-deactivate-account .form-label {font-size: 16px;	padding-bottom: 10px;}
+        .e-d-calender .left-e-cal {	border-bottom: 1px solid #EBEBEB;padding-bottom: 15px;margin-bottom: 15px;}
+        .social-input-connect .checkbox.custom {padding: 5px 7px;width: 60px;}
+        .social-input-connect .form-control {padding-left: 68px;}
+        .deactivate-account-popup .modal-dialog {width: 355px;}
+        .e-d-heding .ed-top-btns a {font-size: 14px;}
+        .favorite-number span {font-size: 12px;	top: -2px;}
+        .all-reviews-status {padding: 10px 0;}
+        .right-pro-text .all-reviews-status strong {font-size: 13px;}
+        .my-ac-heading strong {font-size: 16px;	}
+        header .event-countdown strong {display: none;}
+        .event-countdown .cmn-ul-list {	margin-left: -3px;	margin-right: -3px;	}
+        .event-countdown .cmn-ul-list li {padding-left: 3px;padding-right: 3px;	}
+        .add-more-attach-btn button.btn.default-btn {width: 44px;font-size: 16px;}
+        .chat .input .btnAttach {right: 70px;}
+        .chat .msg li.chat-date span {font-size: 11px;}
+        .c-d-fix {font-size:13px;}	
+        .logo {left:44%;}
+        .fiter-tag .close-f-tag {padding: 2px 5px;font-size: 8px;line-height: 15px;}
+        .lft-search-filter {padding-right: 68px;}
+        .top-nav.sticky .h-rit-bx{margin-left: -5px; margin-right: -5px;}
+        .top-nav.sticky .r-m-t-bx{padding-left: 5px;padding-right: 5px;}
+        .fiter-tag .close-f-tag {  top: 8px;}	
+        .navbar .logo img { height: 34px;}
+        .logo {left:40%;}
+        .fiter-tag { padding: 7px 24px 7px 7px;}
+        .e-f-c-in{padding-bottom: 5px;}
+        .event-countdown .c-d-bx{min-width: 36px;}
+        .mid-content-sec { margin-top: 80px; margin-left: 105px;}
+        .lft-search-filter { padding-right: 30px;}
+        .e-d-heding h1 { font-size: 18px; margin-right: 15px;  line-height: normal;}
+        figure.event-lft-img img { max-height: 400px;}
+        .event-right-content { padding-top:5px;}
+        .ts-option button.btn.dropdown-toggle {padding: 8px 0;font-size: 14px;}
+        .e-d-review .all-reviews-status {padding: 10px;}
+        .download-add-btn .btn.link-btn { margin-right: 8px;}
+        .download-files-download .custom-table{margin-top:10px;}
+        .time-slot-list {min-height:initial !important;  max-height: 300px!important; overflow-y: auto!important;}
+        .r-m-t-bx.my-account-menu .ts-option button.btn.dropdown-toggle i{ position: relative; top: 3px;}
+        .t-s-bx .ts-btn button.btn.default-btn{margin: 5px 0;}
+        .t-s-bx .ts-btn { padding-right: 10px;}
+        .upcoming-events .white-content-bx .message-list.inbox-events-list { height: auto;}
+        .message-list.inbox-events-list .u-p-files-list .cell.fav-event-details-editable {  width: auto; vertical-align: top;}
+        .main-calender-event-view { margin-bottom: 20px;}
+        .month-wise-calendar .react-calendar__tile { padding: 15px 5px!important;}
+        .avatar-upload{margin: 0 auto 15px auto;margin-bottom: 15px;}
+        .h-evnt-d.h-event-tags.event-tags-list { margin-bottom: 0;}
+        .h-event-tags .ul-row-col li {margin-bottom: 0;}
+        .form-group-social .custom input[type="radio"]:before{left: 1px;}
+        .insert-file-slider.e-d-gallery .owl-carousel .owl-item .event-lft-img img { min-height: inherit;  max-height: 400px;}
+        .insert-file-slider.e-d-gallery {padding: 0; height: auto;}
+        .event-right-content .h-evnt-d .des-content, .event-right-content .e-d-tags .tags-list {max-height:inherit; }
+        .event-details-bx .my-profile-left .h-evnt-d {height: auto;}
+        .event-details-bx .my-profile-left .pro-status-bx .col-sm-12.col-md-12.col-lg-12 { width: 100%;  max-width: 100%; flex: 0 0 100%; position: inherit;  bottom: 0;}
+        .pro-status-bx .footer-social-icn{position: inherit;}
+        .logo {left:41%;}
+        .navbar .logo img {height:34px;}
+        .ah-tab-content-wrapper {margin: 15px 0 !important;}
+        .av-switch input + label::after{top: 4px;}
+        .favorites-content-sec .cmn-search-bx .form-control, .reviews-content-sec .cmn-search-bx .form-control{padding-top:8px; padding-bottom: 9px;}
+        .favorites-content-sec .message-user-bx span, 
+        .favorites-content-sec .message-list.review-events-list .u-p-files-list .c-table-text {font-size: 14px;}
+        .cell.review-write-editable.text-right.t-r-c-bx .c-table-text.text-right a{font-size: 11px;}
+        .reviews-content-sec .message-list.review-events-list .cell.review-amount-editable {width: 11%;}
+        .reviews-content-sec .message-list.review-events-list .cell.review-details-editable {width: 26%;}
+        .message-list.review-events-list .cell.review-duration-editable {width: 12%;}
+        .reviews-content-sec .message-list.review-events-list .cell.review-details-editable { width: 26%;}
+        .reviews-content-sec .cell.review-details-editable .message-user-bx span{max-width: 110px;}
+        .write-review-content-bx .review-bx .review-child-bx .review-bx {padding: 18px 18px 18px 55px;
+            margin-left: 0; padding-top: 15px;padding-bottom: 0; }
+        .write-review-content-bx .review-bx .review-child-bx .review-bx figure.n-m-pic {left: 0;}
+        .pay-status-bx{padding:6px;}
+        figure.pay-s-lft-img, a.pay-s-lft-img{left: 0;top:5px;position: initial;line-height: 31px;margin-top: 3px;}
+        .pay-s-lft-img img {
+            height: 22px;
+        }
+        .pay-s-rit-text strong {
+            font-size: 18px;
+        }
+        .payments-content-sec .cmn-rit-top-heading-sec.message-top-bx .cmn-search-bx .form-control {
+            padding-right: 25px;
+            background-color: #F8F8F8;
+            padding-top: 8px;
+            padding-bottom: 9px;
+        }
+        .payments-content-sec .btn.status-btn{font-size:8px; padding:3px 4px;}
+        .ah-tab > .ah-tab-item{font-size: 14px !important;}
+        .pay-status-bx .pay-s-lft-img a.pay-s-lft-img {height: 30px; width: 30px;}
+        .pay-status-bx .pay-s-lft-img a.pay-s-lft-img i{font-size: 12px;}
+        .pay-status-bx {min-height: 110px;}
+        .file-manager-content-sec .u-p-files-list .cell {padding-left: 5px;}
+        .file-manager-content-sec .cmn-search-bx .form-control{padding-top: 9px;padding-bottom: 8px;}
+        .inbox-message-number{max-width: 120px;}
+        .file-manager-content-sec .selected-events-ck .cmn-ul-list {margin-left: -3px;margin-right: -3px;}
+        .file-manager-content-sec  .selected-events-ck button.btn.link-btn{padding: 4px 4px;font-size: 13px;}
+        .av-tt-bx .av-tt-text{min-width: 70px}
+        .file-manager-content-sec .cmn-search-bx .form-control{max-width: 150px;}
+        .file-manager-content-sec .message-top-bx {
+            padding: 10px 10px;
+        }
+        .file-manager-content-sec .selected-events-ck .cmn-ul-list {
+            margin-left: -4px;
+            margin-right: -4px;
+        }
+        .file-manager-content-sec .selected-events-ck .cmn-ul-list li {
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+        .file-manager-content-sec .cmn-rit-top-heading-sec.message-top-bx .selected-ck-status {
+            width: 54px;
+            font-size: 12px;
+        }
+        .file-manager-content-sec .fm-file-name-editable .file-type-title-icon strong{max-width:250px;font-size: 13px;}
+        .events-content-sec .cmn-search-bx .form-control {padding-top: 9px;padding-bottom: 8px;}
+        .events-content-sec .btn.status-btn{padding: 3px 4px;font-size: 12px;}
+        .events-content-sec .cell.event-message-editable {
+            width: 9%; 
+        }
+        .events-content-sec .cell.event-date-time-editable .message-short-text {
+            width: auto;
+            white-space: inherit;
+            font-size: 12px !important;
+        }
+        .events-content-sec .cell.event-details-editable .message-user-bx span {
+            max-width: 84px;
+            top: 2px;
+        }
+        .events-content-sec .cell.event-amount-editable {
+            width: 6%;
+        }
+        .message-list.group-message-list.events-group-table .cell.event-more-editable {
+            left: 22%;
+        }
+        .quick-start-bx {
+            padding-top: 15px;
+        }
+        .cmn-sidebar-left {
+            width: 36%;
+        }
+        .message-content-sec .cmn-search-bx .form-control{padding-top: 9px;    padding-bottom: 8px;}
+        .in-rit-user-bx .name-date-text span {font-size: 11px;padding-right: 0;}
+        .in-m-text-bx p { font-size: 12px;}
+        .inbox-meg-usr-bx ul li {
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+         .message-content-sec .cmn-sidebar-left .tabs-list,  .message-content-sec .cmn-sidebar-content .cmn-rit-top-heading-sec {
+            height: 52px;  
+        }
+        .cmn-sidebar-content {
+            width: 64%;
+        }
+        .group-message-list .c-table-row .message-time a {
+            font-size: 10px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 50px;
+            display: inherit;
+        }
+        .chat {
+            height: 500px;
+        }
+        .my-profile .event-details-bx .my-profile-left .h-evnt-d {
+            height: auto;
+        }
+        .time-slot-right .card{margin-bottom:10px;}
+        .fc .fc-toolbar.fc-header-toolbar {
+            margin-bottom: 10px !important;
+        }
+        .time-slot-list {
+            min-height: inherit !important;
+        }  
+        .time-slot-right .ts-btn .link {
+            font-size: 18px;
+        }
+        .left-e-cal {
+            border-right: 0;
+            padding-right: 0;
+            margin-right: 0;
+        }   
+        .ah-tab > .ah-tab-item {
+            margin-right: 8px !important;
+            padding: 5px 0 !important;
+            font-size: 13px !important;
+        }
+        .inbox-groups-list {
+            padding: 0 15px;
+        }
+        .events-content-sec .cell.event-hosted-by-editable .c-table-text a {
+            max-width: 65px;
+        }    
+        .u-p-files-list .cell {
+            font-size: 12px;
+        }
+        .events-content-sec .cell.event-type-editable .c-table-text{
+            max-width:50px;
+        }
+        .event-more-btn {position:relative;top:3px;}
+        .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-ck-editable {
+            width: 55px;
+        }
+        .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-source-editable {
+            width: 75px;
+        }
+        .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-type-editable {
+            width: 50px;
+        }
+        .new-toggle-dropdown .dropdown-item {
+            padding: 4px 10px;
+        }
+        .event-s-info {
+            height: 125px;
+        }
+        .event-title a {
+            font-size: 14px;
+        }
+        .message-list.review-events-list .u-p-files-list .cell.review-details-editable {
+            padding-top: 4px;
+        }
+        .message-list.group-message-list.events-group-table .c-table-row .cell.event-type-editable {
+            top: 2px;
+        }
+        .events-content-sec .cell.event-hosted-by-editable .c-table-text {
+            top: 2px;
+        }
+        .landing-page .navbar { padding: 5px 15px;}
+    .slider-content-left p {font-size: 15px;line-height: 22px;margin-bottom: 20px;}
+    .why-should-sec {padding-top:50px;}
+    .wb_process_item {margin-top:50px;}
+    .process-sec .wb_info .wb_process_item.p-item-1 .wb_process_content {
+        padding-left: 35px;
+    }
+    .wb_process_item .wb_process_content h3 {
+        margin: 20px 0 0px;
+    }
+    .wb_info .dot_img {
+        height: 1355px;
+        width: 53%;
+    }
+    .wb_info {
+        padding-bottom: 130px;
+    }
+    .blog-img{max-height: 270px;}
+    .c-r-icon-img img {
+        height: 56px;
+    }
+    .c-r-box strong{font-size: 22px;padding-top:8px;}
+    .testi-img {
+        width:190px;
+    }
+    .testi-info strong {
+        font-size: 16px;
+    }
+    .testi-info span.rating {
+        padding: 7px 0;
+        padding-bottom: 5px;
+    }
+    .testi-outer-bx {
+        padding-top: 107px;
+    }
+    .testi-detail-bx {margin-left: 12%;}
+    .testi-info {padding-left: 20%;}
+    .e-t-content strong {font-size: 20px;padding: 0px 0 10px 0;}
+    .landing-page .navbar-toggler .navbar-toggler-icon{width: auto; height:auto;}
+    .landing-page .navbar-collapse.justify-content-end {background-color: #F8F8F8;}
+    .landing-page li.nav-item {border-bottom: 1px solid #efefef;}
+    .favorites-content-sec .u-p-files-list .c-table-row .cell.favorite-icon-editable .favorite-icon-btn {top:1px;}
+    .favorites-content-sec .u-p-files-list .c-table-row .cell.fav-date-time-editable .c-table-text{top:1px;}
+    .setting-toggle-bx strong{font-size: 15px;}
+    .pay-status-bx { min-height: 90px;}
+    .pay-s-rit-text strong {
+        font-size: 16px;
+    }
+    .pay-s-rit-text span {
+        font-size: 12px;
+    }
+    figure.pay-s-lft-img, a.pay-s-lft-img {
+        height: 33px;
+        width: 33px;
+        line-height:36px;
+    }
+    .pay-s-lft-img img {
+        height: 19px;
+    }
+    .favorites-content-sec .u-p-files-list .c-table-row .cell.event-details-editable .message-user-bx span{top: 0px;}
+    .download-files-download .file-type-title-icon strong {
+        max-width: 125px;
+    }
+    .e-d-download .download-files-download .c-table-row .cell.download-action-editable {
+        width: 18%;
+    }
+    .e-d-download .download-files-download .c-table-row .cell.download-title-name-editable {
+        width: 37%;
+    }
+    .download-add-btn .btn.link-btn{font-size:16px;}
+    .card-bank-tabs .saved-card-list p {width:40%;}
+    .b-c-box strong {font-size: 13px; }
+    
+    
+    }		
+                
+        @media screen and (max-width:767px) {
+        .mid-content-sec { margin-top: 0; margin-left: 0;}	
+        .scrollContent { display: flex;  width: 100%; justify-content: space-evenly; padding-bottom:0;}	
+        .sidebar-menu .scroll { padding-top: 63px;}
+        .left-side-nav {width: 100%;}
+        .left-side-nav {background: #ffffff; display: inline-block;white-space: nowrap; width: 100%; height: inherit; box-shadow: none;  width: 100%;}
+        .l-s-item {padding: 5px 0;border-bottom: 0;}
+        .sidebar-menu {top: 0;  position: inherit; min-height: inherit; background-color: #ffffff; width:100%; left: 0;}
+        .mid-content-sec {margin-top: 12px; margin-left: 0;}
+        .sidebar-menu span {padding-top: 0;}
+        .side-nav-bx .review-parent-bx {margin-bottom: 0;}
+        .rit-m-bx span {font-size: 12px;}
+        .scroll {
+            width: 100%;
+            height: inherit;
+            position: relative;
+            overflow-y: inherit;
+            overflow-x: auto;
+        }
+        
+        .timer-box {
+            padding-left: 0;
+            width: auto;
+        }
+        header .navbar .h-lft-bx .timer-box{display:none;}
+        .logo {
+            left: 60px;
+        }
+        .side-nav-bx .event-countdown ul.cmn-ul-list li{padding-bottom:0;width: auto;}
+        .l-s-item.active:after {
+            height: 5px;
+            width: 100%;
+            top: inherit;
+            background-image: none;
+            border-bottom: 5px solid #145388;
+            bottom: 0;
+            border-radius: 30px;
+        }
+        .r-m-t-bx.create-event-menu .create-event-btn span{display:none;}
+        .r-m-t-bx.others-menu , .r-m-t-bx.my-account-menu, .r-m-t-bx.home-menu, .r-m-t-bx.noti-message-menu.favorite-menu{display: none;}
+        .h-rit-bx .r-m-t-bx.home-menu:first-child{display:block;}
+        .h-rit-bx .r-m-t-bx.create-event-menu a.btn.cmn-bdr-btn i {
+            font-size: 18px;
+            margin-right: 0;
+            position: relative;
+            top: 3px;
+        }
+        .d-logo{display:none;}
+        .m-logo{display:block;}
+        .navbar .logo img {
+            height: 30px;
+            width: auto;
+        }
+        a.sidebar-mm.menu-tigger {
+            font-size: 16px;
+                color: #000000;
+        }    
+        a.sidebar-mm.menu-tigger:hover {
+            color:#145388;
+        }
+        .mobile-menu-toggle {
+            padding-top: 7px;
+        }
+        .create-event-btn {
+            font-size: 12px;
+            padding:0;
+            background-color: transparent;
+            border: 0;
+        }
+        a.btn.cmn-bdr-btn.create-event-btn.quick-start-btn {
+            padding:0;background-color: transparent;
+            border: 0;color: #000000;
+        }
+        .top-nav.sticky .h-rit-bx {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        .top-nav.sticky .r-m-t-bx {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .create-event-btn i {
+            font-size: 18px;
+            top: 3px;
+        }
+        .mobile-menu-toggle {
+            display: block;
+        }
+        .navbar {
+            padding: 5px 15px;
+        }
+        a.sm-profile-link {
+            display: inline-block;
+            width: 100%;
+        }
+        .side-nav-bx .review-bx.side-menu-img-bx {
+            min-height: 42px;
+        }
+        .side-nav-bx .event-countdown ul.cmn-ul-list li {
+            width: auto;
+        }
+        .side-nav-bx .event-countdown {
+            margin-top: 0;
+        }
+        .side-nav-bx .review-bx .rit-m-bx strong {
+            font-size: 15px;
+            font-family: 'NunitoSans-Bold';
+        }
+        .side-nav-bx {
+            padding: 15px 0;
+        } 
+        .right.default-popup .modal-header, .right.default-popup .modal-footer, .right.default-popup .modal-body {
+            padding: 10px 15px;
+        }
+        .form-label, .input-text-bx span {
+            font-size: 14px;
+        }
+        .ed-top-btns .bdr-btn {
+            margin-bottom: 0;
+        }
+        .event-details .ed-top-btns {
+            padding-top: 5px;
+        }
+        .t-s-bx .r-m-t-bx.my-account-menu{display:block;}
+        .sidebar-menu.remove-sidebar-menu {display: none;}
+        .in-page-content-sec {margin-left:0;margin-top:35px;padding-top:15px;}	
+        .r-m-t-bx.my-account-menu .dropdown-item i {top:1px;width:20px;}
+        .dropdown-menu{min-width:140px;}
+        .ts-option button.btn.dropdown-toggle i { position: relative; top: 2px;}
+        .upcoming-events .message-list.inbox-events-list .u-p-files-list .cell {padding-left: 0;}
+        .h-rit-bx .r-m-t-bx .cmn-bdr-btn:hover { background-color: transparent;border: 1px solid transparent;color: #145388;}
+        .file-type-title-icon strong {white-space: nowrap;overflow: hidden;text-overflow:ellipsis;display: inherit; max-width: 190px;}
+        .ts-option button.btn.dropdown-toggle{top: 0;}
+        .notificaton-setting-list .cmn-ul-list li {flex: 0 100%;padding-bottom: 12px;padding-top: 12px;}
+        .notificaton-setting-list .cmn-ul-list li:nth-child(odd) {border-right: 0;}
+        .reviews-content-sec .message-list.review-events-list .cell.review-duration-editable {width: 12%;}
+        .reviews-content-sec .message-list.review-events-list .cell.review-details-editable {width: 27%;}
+        .reply-textarea .default-btn { padding: 4px 10px; font-size: 14px;  min-width: 52px;}
+        .reviews-content-sec .cell.review-details-editable .message-user-bx span{max-width: 100px;}
+        .inbox-message-number {max-width: 110px; font-size: 12px;}
+        .av-tt-bx .av-tt-text {
+            min-width: 55px;
+            font-size: 12px;
+        }
+        .file-manager-content-sec .cmn-rit-top-heading-sec.message-top-bx .selected-ck-status {
+            width: auto;
+            font-size: 12px;
+        }
+        .file-manager-content-sec .r-m-t-bx.my-account-menu {
+            display: block; 
+        }
+        .file-manager-content-sec .u-p-files-list .c-table-row.table-header .cell.fm-ck-editable {
+            width: 60px;
+        }
+        .file-manager-content-sec .fm-file-name-editable .file-type-title-icon strong {
+            max-width: 160px; 
+            font-size: 13px;
+        }
+        .events-content-sec .r-m-t-bx.my-account-menu.table-dd{
+            display: block;
+        }
+        .modal.fade.default-popup.confirm-message-popup.quick-start-meet-popup:before{content: none;}
+        a.btn.cmn-bdr-btn.create-event-btn.quick-start-btn:hover {
+            background-color: #ffffff;
+            color: #145388;
+            border-color: #ffffff;
+        }
+        .modal.fade.default-popup.confirm-message-popup.quick-start-meet-popup .modal-footer{display:none;}
+        .modal.fade.default-popup.confirm-message-popup.quick-start-meet-popup .modal-dialog{margin-top:50px;}
+        .fc .fc-col-header-cell-cushion {padding:4px;font-size:13px;}
+        .ah-tab > .ah-tab-item {
+            font-size: 12px !important;
+        }
+    
+        .modal.default-popup.create-group-popup .form-ck-forgot-p-link .custom input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .modal-header .modal-title {
+            font-size: 16px;
+        }
+        .custom input[type="checkbox"]:before {
+            width: 6px;
+            left: 4px;
+            height: 4px;
+        }
+        .u-p-files-list .cell {
+            padding: 5px 6px;
+        }
+        .cmn-new-toggle.move-group-dd .new-toggle-dropdown {
+            padding: 10px;
+        }
+        .message-list.group-message-list.events-group-table .u-p-files-list .cell {
+            font-size: 11px;
+        }
+        .event-more-btn {
+            top: 2px;
+        }
+        .event-details-editable .message-user-bx {
+            position: relative;
+            min-height: 25px;
+            padding-left: 40px;
+        }
+        .message-list{padding:0 10px 15px 10px;}
+        .message-user-bx .cmn-profile-pic.event-img, .message-list.group-message-list.events-group-table .u-p-files-list .message-user-bx .cmn-profile-pic {
+            width: 36px;
+            height: 20px;
+        }
+        .events-content-sec .cell.event-details-editable {
+            width: 25%;
+        }
+        .message-list.group-message-list.events-group-table .cell.event-more-editable {
+            top: 6px;
+            left: 21.6%;
+        }
+        .file-manager-content-sec .fm-file-name-editable .file-type-title-icon strong {
+            max-width: 160px;
+            font-size: 12px;
+        }
+        .sidebar-menu .scroll {
+            padding-top: 58px;
+        }
+        .e-f-c-in {
+            padding-bottom: 15px;
+        }
+        .message-list.review-events-list .u-p-files-list .cell.review-details-editable {
+            padding-top: 1px;
+        }
+    
+        .events-content-sec .cell.event-date-time-editable .message-short-text {
+                font-size: 10px !important;
+        }
+        .events-content-sec .btn.status-btn {
+            padding: 3px 4px;
+            font-size: 8px;
+        }
+        .wb_info .dot_img {
+            height: 1290px;
+            width: 53%;
+        }
+        .wb_process_item .wb_process_content h3 {
+            margin: 15px 0 10px;
+            font-size: 24px;
+        }
+        .w-s-content strong{font-size: 16px;}
+            .wb_process_item .wb_process_content p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .e-t-icon {
+            font-size: 36px;
+        }
+        .e-t-content p {
+            line-height: 20px;
+        }
+        .events-type {
+            padding:0;
+            padding-bottom:15px;
+        }
+        .c-r-box {
+            padding: 15px 10px;
+        }
+        .testi-img {
+            width: 170px;
+        }
+        .testi-info strong {
+            font-size: 16px;
+        }
+        .testi-info p {
+            font-size: 14px;
+        }
+        .testi-outer-bx {
+            padding-top: 100px;
+        }
+        .section-heading p{width: 71%;}
+        .wb_info .dot_img, .wb_process_img{display:none;}
+        .process-sec .wb_info .wb_process_item.p-item-1 .wb_process_content {
+            padding-left: 0;
+        }
+        .wb_process_item .wb_process_content h3 {
+            font-size: 22px;
+        }
+        .wb_process_item .wb_process_content p {
+            font-size: 14px;
+            padding-bottom: 15px;
+        }
+        .wb_process_item .wb_process_content .w-s-content p {
+            font-size: 14px;
+            padding-bottom: 0;
+        }
+        .owl-carousel.next-pre-sec .owl-nav button.owl-next, .owl-carousel.next-pre-sec .owl-nav button.owl-prev, .owl-carousel.next-pre-sec button.owl-dot {
+            font-size: 14px;
+            color: #333;
+            height: 40px;
+            width: 40px;
+            line-height: 45px;
+        }
+        .e-t-box{padding: 20px;}
+        .section-heading p {
+            width: 80%;
+            font-size: 16px;
+        }
+        .blog-info .dt-2 span, .blog-info .price, .blog-info .date {
+            font-size: 13px;
+        }
+        .blog-title a {
+            font-size: 16px;
+        }
+        .c-r-box {
+            margin-bottom: 30px;
+        }
+        .chat-with-avnik {
+            line-height: 45px;
+            font-size: 16px;
+        }
+        .c-r-box strong {
+            font-size: 22px;
+            padding-top: 8px;
+            font-weight: 600;
+        }
+        .testi-info {
+            padding-left: 24%;
+        }
+        .review-write-editable .default-btn {
+            padding: 4px 8px;
+            font-size: 10px;
+            min-width: inherit;
+        }
+        .favorites-content-sec .cell.event-details-editable .message-user-bx {
+            padding-left: 42px;
+        }
+        .favorites-content-sec .u-p-files-list .custom-table .c-table-row .cell {padding: 10px 6px;}
+        .favorites-content-sec .u-p-files-list .c-table-row .cell.event-details-editable .message-user-bx span{top:0;}
+        .notificaton-setting-list .cmn-ul-list li {padding-bottom: 7px; padding-top: 7px; }
+        .message-right-bx.groups-right-bx .c-table-row.my-group-message.unread-message .cell.m-user-editable{padding-right:0px;}
+        .default-btn, .blue-bdr-btn { border-radius: 3px;   padding: 4px 10px;  min-width: initial;  font-size: 12px;}
+        .download-file-dis-bx.new-toggle-dropdown {
+            padding-bottom: 10px;
+            font-size: 13px;
+        }
+        .c-t-in{min-height: 50px;}
+        .f-dis-link-btn {
+            margin-left: 5px;
+        }
+        .download-files-download .file-type-title-icon strong {
+            max-width: 120px;
+        }
+
+
+
+            
+        }
+                
+        @media screen and (max-width:639px) {
+        .l-s-item {
+            padding: 10px 0 5px 0;
+        }	
+        .sidebar-menu span {
+            padding-top: 0px;
+        }
+        .side-icon i {
+            font-size: 26px;
+        }
+        .l-s-item.active:after{border-bottom: 3px solid #145388;}    
+        .fillter-btn {
+            padding-left:10px;
+            display: inline-block;
+            padding-right:5px;
+        }
+        .filter-tags-list .ul-row-col li {
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }	
+        .search-box {
+            width: 82%;
+        }
+        .event-col {
+            width: 50%;
+        }
+        .logo {
+            left: 54px;
+        }
+        .fiter-tag .close-f-tag {
+            top: 4px;
+        }
+        .fiter-tag {
+            padding: 3px 24px 3px 7px;
+        }
+        .sidebar-menu .scroll {
+            padding-top: 54px;
+        }
+        .filter-tags-list {
+            padding-left: 0;
+            width: 100%;
+            display: inline-block;
+        }
+        .lft-search-filter {
+            padding-right: 0;
+        }
+        .filter-tags-list .ul-row-col {
+            white-space: nowrap;
+            overflow-y: auto;
+        }
+        .fillter-btn .btn {
+            padding: 3px 8px 3px 8px;
+            line-height: 29px;
+        }
+        .message-link {
+            position: absolute;
+            left: 60px;
+            bottom: 7px;
+        }
+        .h-i-profile span {
+            font-size: 15px;
+            padding-left: 4px;
+        }
+        .ah-tab > .ah-tab-item {
+            margin-right: 15px !important;
+            padding: 2px 0 !important;
+            font-size: 15px !important;
+        }
+        figure.event-lft-img img {
+            max-height: 300px;
+        }
+        .e-d-gallery .h-i-profile {padding: 5px 10px;}
+        .table-row { margin: 10px 0; background-color: #ffffff;  padding: 10px;}
+        .u-p-files-list .c-table-row .cell:before{margin-bottom: 10px;}	
+        .right-pro-text .p-usr-name strong {float: left;}
+        .right-pro-text .all-reviews-status {
+            padding: 0;
+            padding-top: 5px;
+        }
+        .event-right-content {padding-top: 0;}    
+        .right-pro-text .join-event-bx {margin-top: 10px; text-align: left;  display: inline-block;  position: relative; z-index: 9999;}
+        .all-reviews-status strong{margin-right: 5px;}
+        .right-pro-text .m-s-info{padding-top:15px;}
+        .insert-file-slider.e-d-gallery {margin-bottom: 15px;}
+        .insert-file-slider.e-d-gallery .owl-carousel .owl-item .event-lft-img img { max-height: 300px;}
+        .e-d-tabs-bx .ah-tab-content-wrapper {margin: 15px 0;}
+        .file-type-title-icon strong {max-width: 320px;}
+        .inbox-wrapper .ah-tab > .ah-tab-item{margin-right: 10px !important;font-size:13px !important;}
+        .pay-status-bx {min-height: inherit;    }
+        .payment-status-sec .cmn-ul-list li{margin-bottom: 15px;width: 33.33%;}
+        .payment-status-sec {padding: 15px 20px; padding-bottom: 0;    }
+        .payments-content-sec .cmn-rit-top-heading-sec.message-top-bx .inbox-rit-search {
+            float: right;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .payments-content-sec .cmn-rit-top-heading-sec.message-top-bx .inbox-rit-search .cmn-ul-list li {
+            padding-left: 15px;
+            padding-right: 15px;
+            display: inline-block;
+            width: 100%;
+        }
+        .payments-content-sec .payments-status-bx .cmn-rit-top-heading-sec.message-top-bx > .float-left {
+            float: none !important;
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+        }
+        .payments-content-sec .message-list.payment-history-list .u-p-files-list .c-table-row {
+            box-shadow: none;
+            margin: 10px 0 0 0;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            padding: 12px;
+        }
+        .payments-content-sec .message-list.payment-history-list .u-p-files-list .cell {
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin-bottom: 10px;
+        }
+        .message-list.payment-history-list .u-p-files-list .cell.payment-amount-editable {
+            text-align: left;
+        }
+        .message-list.payment-history-list .u-p-files-list .c-table-row .cell:before {
+            margin-bottom: 5px;
+        }
+        .payments-content-sec .cmn-rit-top-heading-sec.message-top-bx .inbox-rit-search .cmn-ul-list {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .payments-content-sec .cmn-rit-top-heading-sec.message-top-bx .inbox-rit-search .cmn-ul-list li {
+            padding-left: 0;
+            padding-right: 0;
+            display: inline-block;
+            width: 100%;
+        }
+        .events-content-sec .cell.event-type-editable {
+            width: 9%;
+        }
+        .message-list.group-message-list.events-group-table .cell.event-more-editable {
+            left: 22.5%;
+        }
+        .navbar .logo img {
+            height: 25px;
+        }
+        .navbar {
+            padding: 5px 15px;
+        }
+        .timer-box {
+            padding-left: 0;
+        }
+        .event-title a {
+            font-size: 14px;
+        }
+        .fc .fc-col-header-cell-cushion{font-size: 12px;}
+        .cmn-new-toggle.move-group-dd .new-toggle-dropdown{padding: 10px;}
+        .cmn-new-toggle.move-group-dd .cmn-search-bx button.btn.link-btn {
+            font-size: 14px;
+        }
+        .group-message-list .c-table-row .message-time a {
+            font-size: 11px;
+        }
+        .group-message-list .u-p-files-list .cell .message-short-text, .group-message-list .c-table-row .message-time a {
+            font-size: 12px;
+        }
+        .u-p-files-list .cell {
+            padding: 5px 10px;
+        }
+        .message-list{padding: 0 10px 10px 10px;}
+        .message-list.group-message-list.events-group-table .c-table-row .cell.event-type-editable {
+            padding-left: 10px;
+        }
+        .wishlist-icon {
+            top: 9px;
+        }
+        .user-name.e-icn-bx .user a {
+            max-width: 80px;
+        }
+        .testi-info {
+            padding: 15px 30px;
+            padding-left: 26%;
+        }
+    
+        .testi-outer-bx {
+            padding-top: 0;
+        }
+        .testi-img {
+            border-radius: 5px;
+        }
+        .ftr-links-bx strong, 
+        .ftr-social-links-bx strong {
+            font-size: 14px;
+            padding-bottom: 10px;
+            padding-top: 15px;
+            
+        }
+        .ftr-social-links-bx strong {width: 128px;}
+        .testi-info {
+            padding-left: 30%;
+        }
+        .company-rewards-sec .col-sm-6.col-md-3.col-lg-3 {
+            width: 50%;
+        }
+        .company-rewards-sec{margin-top: 30px;padding:30px 0;padding-bottom:0;}
+        .testi-outer-bx {padding-top:64px;}
+        .testi-info strong {font-size: 15px;}
+        .footer-social-icn {
+            padding: 0 !important;
+            width: 100%;
+        }
+        .ftr-social-links-bx {
+            display: flex;
+            align-items: center;
+        }
+        .copyright-text {
+            text-align: left;
+        }
+         .blog-outer-bx,.e-t-outer{
+            padding: 15px ;
+        }
+        
+        .owl-carousel .owl-item img {
+            width: 100%;
+            max-width: 100%;
+        }
+     
+        
+    
+        
+    }
+        
+        @media screen and (max-width:580px) {
+        
+        .favorites-content-sec .u-p-files-list .c-table-row .cell.favorite-icon-editable { width: auto;}
+        .favorites-content-sec .u-p-files-list .c-table-row .cell.event-details-editable {  width: 100%;}
+        .favorites-content-sec .message-list .u-p-files-list .c-table-row,.notification-content-sec .message-list .u-p-files-list .c-table-row
+         { box-shadow: none;  margin: 10px 15px 0 15px; background-color: #f8f8f8;border-radius: 10px;}
+        .favorites-content-sec .message-list .u-p-files-list .c-table-row .cell:before, .notification-content-sec .message-list .u-p-files-list .c-table-row .cell:before{font-size: 12px;  line-height: 16px; font-weight: normal; text-transform: uppercase; color: #333333;}
+        .favorites-content-sec .message-list .u-p-files-list .c-table-text,.notification-content-sec .message-list .u-p-files-list .c-table-text 
+        .favorites-content-sec .message-list.inbox-events-list .u-p-files-list .message-user-bx span,  .notification-content-sec .message-list.inbox-events-list .u-p-files-list .message-user-bx span{font-size: 16px;}
+        .favorites-content-sec .message-list .u-p-files-list .cell, .notification-content-sec .message-list .u-p-files-list .cell  { border-bottom: 0;}
+        .notification-content-sec .cell.notification-time-editable .c-table-text {text-align: left;}
+        .notification-content-sec .message-list .u-p-files-list .c-table-row{margin: 10px 0 0 0;padding: 10px 15px;}
+        .c-table-row.table-header {display: none !important;    }
+        .reviews-content-sec .message-list.review-events-list .cell.review-details-editable {width: 100%;}
+        .reviews-content-sec .message-list.review-events-list .cell.review-amount-editable {width: 16%;}
+        .write-review-content-bx .review-bx { padding: 0 0 0 55px; margin: 0;}
+        .write-review-content-bx .review-bx figure.n-m-pic { left: 0; }
+        .message-list.review-events-list .cell.review-date-time-editable { width: 30%; }
+        .reviews-content-sec .message-list.review-events-list .new-toggle-dropdown{margin: 0;}
+        .reviews-content-sec .cell.review-details-editable .message-user-bx span{max-width: 98px;}
+        .reviews-content-sec .message-list.review-events-list .cell.review-amount-editable {width: 12%;}
+        .reviews-content-sec .message-list.review-events-list .cell.review-write-editable.text-right {width: 12%;}
+        .reviews-content-sec .cell.review-details-editable .message-user-bx span {
+            padding-top: 5px;
+            white-space: inherit;
+            overflow: inherit;
+            text-overflow: inherit;
+            max-width: 100%;
+            display: inline-block;
+        }
+        .reviews-content-sec .u-p-files-list .c-table-row .cell {margin-bottom: 0;}
+        .cell.review-write-editable.text-right.t-r-c-bx .c-table-text.text-right a{height: 20px; width: 20px;line-height: 22px;}
+        .reviews-content-sec .u-p-files-list .c-table-row{padding: 0 0 7px;}
+        .file-manager-content-sec .message-list .u-p-files-list .c-table-row,
+        .events-content-sec .message-list .u-p-files-list .c-table-row {
+            box-shadow: none;
+            margin: 10px 0 0 0;
+            background-color: #ffffff;
+            border-radius: 0;
+            padding: 5px 10px;
+            padding-top: 0;
+        }
+        .file-manager-content-sec .message-list .u-p-files-list .cell, .events-content-sec .message-list .u-p-files-list .cell{
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin-bottom: 6px;
+        }
+        .file-manager-content-sec .message-list .u-p-files-list .cell.payment-amount-editable {
+            text-align: left;
+        }
+        .events-content-sec .message-list .u-p-files-list .c-table-row .cell:before{
+            margin-bottom: 5px;
+        }
+        .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-ck-editable:before{content: none;}
+        .file-manager-content-sec .message-list {padding: 0 15px 15px 15px;}
+        .file-manager-content-sec .cell.fm-ck-editable {
+            width: 60px;
+            float: left;
+        }
+        .file-manager-content-sec .cell.fm-type-editable {
+            width: 70px;
+            float: left;
+        }
+        .file-manager-content-sec .cell.fm-size-editable {
+            width: 100px;
+            float: left;
+        }
+        .file-manager-content-sec .cell.fm-file-name-editable.f-m-file-name {
+            display: inline-block;
+        }
+        .file-manager-content-sec .fm-file-name-editable .file-type-title-icon strong{max-width:275px;}
+        .file-manager-content-sec .inbox-rit-search {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            height: 50px;
+        }
+        .file-manager-content-sec .cmn-rit-top-heading-sec.message-top-bx {
+            height: 98px;
+            position: relative;
+            padding-top: 50px;
+            text-align: left;
+            width: 100%;
+            display: -webkit-box;
+        }
+        .inbox-message-number {
+            max-width: 130px;
+            font-size: 12px;
+            padding-left: 10px;
+        }
+        .file-manager-content-sec .cmn-rit-top-heading-sec.message-top-bx .selected-ck-status {
+            max-width: 80px;
+            font-size: 12px;
+            padding-left: 15px;
+        }
+        .events-content-sec .cell.event-details-editable {
+            width: 100%;
+        }
+        .events-content-sec .cell.event-type-editable, .events-content-sec .cell.event-status-editable {
+            width: 33%;float: left;
+        }
+        .events-content-sec .cell.event-date-time-editable, .events-content-sec .cell.event-message-editable {
+            width: 67%;float: left;
+        }
+        .events-content-sec .group-message-list .u-p-files-list .c-table-row{width: 100%;display:inline-block; padding: 0;}
+        .events-content-sec .cell.event-hosted-by-editable,
+        .events-content-sec .cell.event-amount-editable,
+        .events-content-sec .cell.event-duration-editable
+        {width: 33.33%;float: left;}
+        .events-content-sec .complite-cancel-status {
+            text-align: left;
+        }
+        .events-content-sec .cell.event-message-editable .message-delete-btn {
+            text-align: left;
+        }
+        .events-content-sec .cell.event-details-editable .message-user-bx span {
+            max-width: 100%;
+        }
+        .file-manager-content-sec .checkbox.custom {
+            margin-bottom: 0;
+            margin-top: 5px;
+        }
+        .message-list.group-message-list.events-group-table .cell.event-more-editable:before{display:none;}
+        .cmn-sidebar-left, .cmn-sidebar-content{
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 1px 10px rgb(0 0 0 / 6%);
+            width: 100%;
+            border-right: 0;
+        }
+        
+        .inbox-users-list {
+            padding: 10px 10px;
+        }
+        .inbox-meg-usr-bx {
+/*            max-height: 120px;*/
+            overflow-y: auto;
+        } 
+        .inbox-meg-usr-bx ul {
+    height: 86vh;
+    overflow-y: auto;
+}   
+        .inbox-group-box .tabs-list .nav-link span {
+            font-size: 16px;
+            padding-top: 0;
+            padding-left: 5px;
+            width: auto;
+        }
+        .message-content-sec .cmn-sidebar-left .tabs-list{
+            height: 36px;
+        }
+        .inbox-wrapper {
+            min-height: 100%;
+            display: inline-block;
+            width: 100%;
+        }
+        .message-content-sec .cmn-sidebar-content .cmn-rit-top-heading-sec {
+            height: auto;
+        }
+        .inbox-group-box .tabs-list .nav-link {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        .inbox-group-box .tabs-list .nav-link.active {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        .chat {
+            height: 480px;
+        }
+        
+        .chat .msg li {margin: 0;}
+        .chat {height: 370px;}    
+        .chat .msg li div {
+            display: block;
+            width: auto;
+            max-width: 500px;
+            height: auto;
+            overflow-wrap: break-word;
+        }
+        .chat.firstView .msg li.first div {
+            font-size: 13px;
+        }
+        .chat .msg li time {
+            font-size: 10px;
+        }
+        .chat .input {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            z-index: 10;
+            width: 94%;
+            height: 42px;
+            background: #fff;
+            border: 1px solid #CACACB;
+            border-radius: 8px;
+        }
+        .chat .msgSpace > div {
+            height: calc(100% - 55px);
+        }
+        .u-m-c-top{padding: 15px 15px 10px 15px;}
+        .main-user-msg strong {
+            font-size: 14px;
+        }
+        .main-user-msg {
+            line-height: 16px;
+        }    
+        .user-message-chat-rit.group-message-chat-rit .cmn-profile-pic {
+            width: 32px;
+            height: 32px;
+        }
+        .usr-top-left {
+            padding-left:38px;
+        }
+        
+        .chat.firstView .msg li.first div {
+            font-size: 12px;
+        }
+        .cmn-sidebar-content {
+            margin-top: 15px;
+        }
+        .cmn-sidebar-outer {
+            background-color: transparent;
+        }
+        .inbox-group-box .inbox-groups-list {
+            padding: 0 15px;
+        }
+        .default-popup.create-group-popup .modal-content {
+            margin-top: 30px;
+        }
+        .create-group-popup .custom input[type="checkbox"]:after {top: -1px;left: -1px;}
+        .modal.default-popup.create-group-popup .custom input[type="checkbox"]:before {
+            left: 3px;
+            top: 3px;
+        }
+        .modal.default-popup.create-group-popup .form-ck-forgot-p-link span.ck-bx-c{position: relative;top: -3px;}
+        ul.cmn-ul-list.calendar-dots {
+            margin-left: -5px;
+            margin-right: -5px;
+            position: absolute;
+            left: 46%;
+            bottom: 8px; 
+        }
+        .right-pro-text {
+            margin-top: 20px;
+            border-top: 1px solid #f3f0f0;
+            padding-top: 20px;
+        }
+        .share-profile-popup .modal-dialog {
+            width: 90%;
+        }
+        .meeting-room-link .form-group button.btn.cmn-btn{padding:6px 7px;}
+        .share-profile-popup .add-time-input button.btn.default-btn {
+            right: 5px;
+            top: 4px !important;
+        }
+        .right-pro-text .m-s-info .cmn-ul-list li.my-profile-language {
+            padding-bottom: 10px;
+        }
+        .my-profile-language span {
+            padding: 3px 5px 3px 5px;
+            font-size: 13px !important;
+        }
+        .create-folder-popup .modal-dialog, .delete-slot-popup .modal-dialog {width:93%;}
+        .fc .fc-timegrid-slot-label-cushion{font-size:12px;}
+        .event-calender-bx .fc .fc-toolbar-title {font-size: 14px !important;}
+        .month-wise-calendar .react-calendar__tile {padding: 5px!important;}
+        .c-table-row.my-group-message .cell:before{content:none;}
+        .c-table-row.my-group-message .c-table-row .cell:before{margin-bottom:0;}
+        .group-message-list .u-p-files-list .c-table-row {padding: 5px 0 5px;}
+        .group-message-list .u-p-files-list .c-table-row .cell {margin-bottom: 0;}
+        .message-list.group-message-list.events-group-table .cell.event-message-editable {position:absolute;right:0;width:auto;top:0;top: 5px;}
+        .message-list.group-message-list.events-group-table .cell.event-message-editable .message-delete-btn {text-align: right; }
+        .message-list.group-message-list.events-group-table .cell.event-message-editable:before{content:none;}
+        .file-manager-content-sec .cmn-rit-top-heading-sec.message-top-bx .inbox-rit-search .flex-container {
+            width: 94%;
+        } 
+        .file-manager-content-sec .cmn-search-bx .form-control {
+            max-width: 100%;
+        }
+        .file-manager-content-sec .cmn-rit-top-heading-sec.message-top-bx .inbox-rit-search .flex-select-bx {
+            margin-left: 0;
+            width: 94%;
+            position: absolute;
+            top: 51px;
+        }
+        .c-table-row .cell.noti-message-editable {
+        width: 50%;
+        float: left;
+        }
+        .c-table-row .cell.notification-time-editable {
+            display: inline-block;
+            width: 50%;
+        }
+        .u-p-files-list .c-table-row .cell:before {
+            margin-bottom: 5px;
+        }
+    .notification-content-sec .message-list .u-p-files-list .c-table-row {
+            margin:10px 0 0 0;
+            padding:10px;
+        }
+    .share-profile-popup .meeting-room-link .add-time-input button.btn.default-btn {right: 3px;top: 2px !important;}
+    .default-popup.share-profile-popup .add-time-input{padding-bottom: 0;}
+    .message-list.review-events-list .u-p-files-list .cell.review-details-editable {
+        padding-top: 10px;
+    }
+    .reviews-content-sec .message-list.review-events-list .cell.review-write-editable.text-right {
+        width: 26%;
+    }
+    .reviews-content-sec .message-list.review-events-list .cell.review-duration-editable {
+        width: 13%;
+    }
+    .message-list.review-events-list .cell.review-hosted-by-editable {
+        width: 19%;
+    }
+    .events-content-sec .message-list.group-message-list.events-group-table .cell.event-date-time-editable{width: 33%;}
+    .message-list.group-message-list.events-group-table .c-table-row .cell.event-type-editable {
+        padding-left: 0;
+    }
+    .message-list.group-message-list.events-group-table .u-p-files-list .cell {
+        font-size: 11px;
+        min-height: 50px;
+    }
+    .message-list.group-message-list.events-group-table .u-p-files-list .cell.event-duration-editable {
+        padding-left: 0;
+    }
+    .events-content-sec .cell.event-details-editable .message-user-bx span {
+        padding-top: 0;
+    }
+    .message-list.group-message-list.events-group-table .c-table-row .cell.event-type-editable {
+        top: 0;
+    }
+    .events-content-sec .cell.event-hosted-by-editable .c-table-text {
+        top: 0px;
+    }
+    .message-list.group-message-list.events-group-table .c-table-row .cell.event-type-editable .c-table-text {
+        position: relative;
+        top: -2px;
+    }
+    .message-list.group-message-list.events-group-table .c-table-row .cell.event-amount-editable .c-table-text {
+        position: relative;
+        top: -2px;
+    }
+    
+    .slider-content-left .cmn-heading h1, .section-heading h2 {
+        font-size: 22px;
+    }
+    .testi-info {
+        padding: 15px 30px;
+        padding-left: 40%;
+    }
+    
+    .copyright-social {
+        display: inline-block;
+    }
+     .footer-social-icn {
+        font-size: 16px;
+        float: left;
+        padding-top: 10px !important;
+    }  
+    .slider-content-left {
+        padding-top: 20px;
+    }
+    .ftr-links-bx {
+        padding-top: 22px;
+    }	
+    .ftr-social-links-bx strong {
+        width: 160px;
+    }
+    .testi-outer-bx {
+        padding-top: 0;
+    }
+    .footer-links-list .col-sm-6.col-md-4.col-lg-4 {
+        width: 50%;
+    }
+    .testi-outer-bx {
+        padding: 10px 0;
+    }
+    .section-heading p {
+        width: 100%;
+        font-size: 14px;
+    }
+    .message-list .u-p-files-list .custom-table .message-time .custom.checkbox > label{padding-left:0;}    
+    .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-date-time-editable{
+        width: 50%;
+        float: left;
+    }
+    .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-size-editable{
+        width: 50%;
+    }
+    .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-type-editable{
+        width: 50%;
+    }
+    .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-source-editable {
+        width: 50%;
+        display: inline-block;
+    }
+    .move-to-bx .inbox-rit-search {
+        position: initial;height:auto;
+    }
+    .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell {
+        min-height: 38px;
+    }
+    .cell.review-details-editable .message-user-bx 
+    figure.cmn-profile-pic.event-img span{padding-top: 0;position: relative; top: 5px;}
+    .cell.review-details-editable .message-user-bx { min-height: 24px; padding-left: 40px;}
+    .reviews-content-sec .cell.review-details-editable .message-user-bx span{padding-top:0;}
+    .notification-content-sec .inbox-message-number{padding-left: 0;}
+    .reviews-content-sec .message-list.review-events-list .u-p-files-list .custom-table 
+    .c-table-row.cmn-new-toggle .cell.review-write-editable.text-right:before{content:none;}
+    .reviews-content-sec .message-list.review-events-list .u-p-files-list .custom-table 
+    .c-table-row.cmn-new-toggle .cell.review-write-editable.text-right {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+    
+    .reviews-content-sec .message-list.review-events-list .u-p-files-list .custom-table 
+    .c-table-row.cmn-new-toggle .cell.review-date-time-editable{
+        width:50%;
+    }
+    .reviews-content-sec .message-list.review-events-list .u-p-files-list .custom-table 
+    .c-table-row.cmn-new-toggle .cell.review-date-time-editable{
+        width:50%;
+    }
+    .reviews-content-sec .message-list.review-events-list .u-p-files-list .custom-table 
+    .c-table-row.cmn-new-toggle .cell.review-duration-editable{
+        width:50%;
+    }
+    .reviews-content-sec .message-list.review-events-list .u-p-files-list .custom-table 
+    .c-table-row.cmn-new-toggle .cell.review-hosted-by-editable{width:50%;} 
+    .favorites-content-sec .message-list.inbox-events-list 
+    .u-p-files-list .custom-table .c-table-row .cell:before{content:none;}
+    .favorites-content-sec .message-list .u-p-files-list .c-table-row {padding: 0 8px;}
+    .favorites-content-sec .message-list.inbox-events-list 
+    .u-p-files-list .custom-table .c-table-row .cell.favorite-icon-editable {
+        width: 44px;
+        display: inline-block;
+        padding-top: 0;
+        padding-bottom: 8px;
+    }
+    .favorites-content-sec .message-list.inbox-events-list 
+    .u-p-files-list .custom-table .c-table-row .cell.event-details-editable, .favorites-content-sec .message-list.inbox-events-list 
+    .u-p-files-list .custom-table .c-table-row .cell.fav-event-details-editable {
+        width: 50%;
+        display: inline-block;
+    }
+    .favorites-content-sec .message-list.inbox-events-list 
+    .u-p-files-list .custom-table .c-table-row .cell.fav-date-time-editable, .favorites-content-sec .message-list.inbox-events-list 
+    .u-p-files-list .custom-table .c-table-row .cell.fav-location-editable {
+        width: 35%;
+        display: inline-block;
+    }
+    .favorites-content-sec .message-list .u-p-files-list .c-table-text {
+        font-size: 13px;
+    }
+    .favorites-content-sec .message-list.inbox-events-list 
+    .u-p-files-list .custom-table .c-table-row .cell {
+        margin-bottom:0;
+    }
+    footer .footer-links-list .col-sm-6.col-md-3.col-lg-3 {
+        width: 50%;
+    }
+    .ftr-links-bx {
+        padding-top: 0;
+    }
+    .payments-content-sec .message-list.payment-history-list .u-p-files-list .cell.payment-name-editable {
+        width: 100%;
+        display: inline-block;
+    }
+    .payments-content-sec .message-list.payment-history-list .u-p-files-list .cell.payment-order-number-editable {
+        width: 40%;
+        float: left;
+        margin-bottom: 0;
+    }
+    .payments-content-sec .message-list.payment-history-list .u-p-files-list .cell.payment-date-time-editable {
+        width: 40%;
+        float: left;
+        margin-bottom: 0;
+    }
+    .payments-content-sec .message-list.payment-history-list .u-p-files-list .cell.payment-amount-editable {
+        width: 20%;
+        float: left;
+        margin-bottom: 0;
+    }
+    .payments-content-sec .message-list.payment-history-list .u-p-files-list .cell.event-status-editable {
+        width: auto;
+        position: absolute;
+        right: 0;
+        top: 7px;
+    }
+    
+    .payments-content-sec .message-list.payment-history-list .u-p-files-list .cell.event-status-editable:before{content:none;} 
+    .payments-content-sec .message-list.payment-history-list .u-p-files-list .c-table-row {
+        position: relative;
+        display: inline-block;
+    }
+    .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-ck-editable {
+        width: 26px;
+    }
+    .file-manager-content-sec .checkbox.custom {
+        margin-bottom: 0;
+        margin-top: 24px;
+    }
+    .favme {
+        font-size: 11px;
+        width: 23px;
+        height: 23px;
+        line-height: 25px !important;
+        border-radius: 100%;
+        background-color: #f8f8f8;
+    }	
+    .wishlist-icon {
+        right: 9px;
+        top: 5px;
+    }
+    
+    .favorites-content-sec .message-list .u-p-files-list .c-table-text,
+    .favorites-content-sec .message-list.inbox-events-list .u-p-files-list .custom-table .c-table-row .cell.fav-location-editable .c-table-textt
+    {
+        font-size: 12px;
+    }
+    .favorites-content-sec .message-list.inbox-events-list .u-p-files-list .custom-table .c-table-row .cell.fav-event-details-editable {
+        padding: 4px 0;
+    }
+    .favorites-content-sec .u-p-files-list .c-table-row .cell.favorite-icon-editable .favorite-icon-btn {
+        top: 3px;
+    }
+    .favorites-content-sec .message-list.inbox-events-list .u-p-files-list .custom-table .c-table-row .cell.event-details-editable {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .favorites-content-sec .message-list .u-p-files-list .c-table-row {
+        padding: 0;
+    }
+    .repeat-box .radio.custom {
+        top: 11px;
+    }
+    .repeat-box .radio.custom {
+        top: 11px;
+    }
+    .repeat-event-popup {
+        padding: 40px 10px 8px 10px;
+    }
+    .download-files-download .c-table-row {
+        background-color: #ffffff;
+        box-shadow: 0 0 black;
+        min-height: initial;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding: 10px 0;
+        display: inline-block;
+        position: relative;
+    }
+    .e-d-download .download-files-download .c-table-row .cell.download-title-name-editable {
+        width: 100%;
+    }
+    
+    .e-d-download .download-files-download .c-table-row .cell.download-action-editable {
+        width: auto;
+        position: absolute;
+        right: 0;
+        top: 21px;
+    }
+    .e-d-download .download-files-download .c-table-row .cell.download-action-editable::before{
+    content: none;
+    }
+    .c-t-in {
+        min-height: inherit;
+        font-size: 12px;
+    }
+    .e-d-download .download-files-download .c-table-row .cell.download-total-download-editable {
+        width: 50%;
+    }
+    .e-d-download .download-files-download .c-table-row .cell.download-size-editable {
+        width: 25%;
+    }
+    .e-d-download .download-files-download .c-table-row .cell.download-cost-editable {
+        width: 25%;
+    }
+    .e-d-download .download-files-download .c-table-row .cell.download-title-name-editable {
+        padding-bottom: 15px;
+    }
+    .download-files-download .download-add-btn .default-btn {
+        padding: 4px 8px;
+        font-size: 10px;
+        line-height: normal;
+        min-width: inherit;
+    }
+    .download-add-btn .btn.link-btn {
+        margin-right: 8px;
+        position: relative;
+        top: 2px;
+        font-size: 14px;
+    }
+    .message-list.group-message-list.events-group-table .cell.event-more-editable {
+        right: 36px;
+        left: inherit;
+        top: 8px;
+    }    
+    .group-message-list .c-table-row.my-group-message .message-time a {
+          width: 70px;
+    }    
+    .message-list.group-message-list .c-table-row.my-group-message .cell {
+        padding:0 5px;
+    }
+    .message-user-bx{
+        padding-left: 36px;
+    }
+    .download-file-dis-bx.new-toggle-dropdown {
+        padding-bottom: 0;
+        font-size: 13px;
+        padding-top: 7px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .download-files-download .file-type-title-icon strong {
+        max-width: 190px;
+    }
+    .download-file-dis-bx.new-toggle-dropdown {
+        font-size: 12px;
+    }
+    .card-bank-tabs .inbox-group-box .tabs-list .nav-link span{padding-left: 0;}
+    .card-bank-tabs .saved-card-list  p {width: 36%;}
+    .card-bank-tabs .cards-add-pay-bx {width: 100%;    padding: 0;}
+    .payment-card-add {
+        padding: 15px;
+        padding-bottom: 0;
+    }
+    .b-c-box {
+        display: inline-block;
+        width: 100%;
+        padding: 0 10px;
+        padding-top: 10px;
+    }
+
+    
+    
+    }
+                
+    @media screen and (max-width:479px) {
+        .sign-in-up-sec .container-flex-bx{padding-top:0;}
+        .login-signup-form { padding:15px;}
+        .or-sign-in-with {font-size: 16px;width: 100%;padding-bottom: 20px;text-align: center;margin-top: 20px;}
+        .or-sign-in-up-link p {font-size: 16px;}
+        .form-group.form-btns-social {margin-top:0;}
+        .form-group.form-ck-forgot-p-link {margin-bottom: 0;}
+        .login-signup-form .form-heading {
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+        .form-heading h1 {
+            font-size: 20px;
+        }
+        .form-heading p {
+            font-size: 14px
+        }
+        .form-label, .input-text-bx span {
+            font-size: 14px;
+        }
+        .form-group.form-btns-social button.btn.default-btn {
+            float: none;
+            width: 100%;
+        }
+        .login-signup-form {
+            padding: 15px;
+            padding-top: 30px;
+        }
+        .form-group.form-btns-social .footer-social-icn {
+            padding: 0 !important;
+            float: none;
+            text-align: center;
+            width: 100%;
+            display: inline-block;
+        }
+        .form-group.form-btns-social .footer-social-icn li {
+            padding-left: 10px;
+            float: none;
+            display: inline-block;
+        }
+        .or-sign-in-up-link {
+            margin-top: 0;
+        }
+        .skip-link a {
+            font-size: 16px;
+        }
+        .login-signup-form .default-btn,  .login-signup-form .blue-bdr-btn {
+            border-radius: 5px;
+            padding: 8px 15px;
+            min-width: inherit;
+            font-size: 15px;
+            width: 100%;
+        }    
+        .form-group.form-forgot-btns {
+            display: inline-block;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 100%;
+        }
+        .or-text {
+            font-size: 20px;
+            color: #161616;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+        }
+        .f-sign-in-link {text-align: center;}
+        .login-signup-form .form-control {padding-left: 30px;}
+        .password .input-icon::after { top: 10px; left: 8px;font-size: 16px;}
+        figure.sign-in-up-logo-icon { top: -45px; width: calc(100% - 30px);}
+        .skip-link { position: absolute; right: 15px;  top: -10px;}
+        .form-group.form-forgot-btns .or-text{display:none;}
+        .form-group.form-forgot-btns .f-sign-in-link{margin-top:15px;}
+        .login-signup-form .form-group {
+            margin-bottom: 20px;
+        }	
+        .wrap-l-s-bx {
+            width: 100%;
+        }
+        .wrap-l-s-bx {
+            width: 100%;
+        }
+        .container-flex-bx {
+            padding-top: 0;
+            background-image: none !important;
+            background-color: #ffffff;
+            width: 100%;
+            min-height: inherit;
+            display: inline-block;
+            flex-wrap: inherit;
+            justify-content: inherit;
+            align-items: inherit;
+            padding: 15px;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+        }
+        html {background-color: #ffffff;}
+        .sidebar-menu span {
+            font-size: 12px;
+        }
+        .side-icon i {
+            font-size: 26px;
+        }
+        .l-s-item.active:after {
+            height: 3px;
+            border-bottom: 3px solid #145388;
+        }
+        .search-box {
+            width: 80%;
+        }
+        .event-col {
+            width: 100%;
+        }
+        .top-nav.sticky .h-rit-bx {
+            margin-left: -7px;
+            margin-right: -7px;
+        }
+        .top-nav.sticky .r-m-t-bx {
+            padding-left: 7px;
+            padding-right: 7px;
+        }    
+        .side-nav-bx ul li {
+            padding-bottom: 15px;
+        }
+        .event-img {
+            height: 113px;
+            width: 150px;
+            float: left;
+        }
+        .search-box {
+            width: 75%;
+        }
+        .e-icn-bx{padding-left:22px;}
+        .event-s-info {
+            height: auto;
+            min-height: initial;
+            display: inline-block;
+            width: 54%;
+            padding-bottom: 5px;
+            min-height: 113px;
+        }
+        .top-nav.sticky .r-m-t-bx.noti-message-menu.chat-message-menu, .top-nav.sticky .r-m-t-bx.create-event-menu {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .create-event-btn i {
+            top: 2px;
+        }
+        .e-d-heding {
+            display: inline-block;
+            align-items: center;
+            width: 100%;
+        }
+        .event-details .e-d-heding {
+            display: inline-block;
+            align-items: center;
+            width: 100%;
+        }
+        .e-d-heding h1 {
+            font-size: 18px;
+            margin-right: 0;
+            line-height: normal;
+            padding-bottom: 10px;
+        }
+        .t-s-bx.download-event-search .ts-option {
+            font-size: 16px;
+            display: none;
+        }
+        .table-cell {
+            padding: 0;
+        }
+        
+        .download-files-download .download-add-btn {
+            text-align: left;
+            width: 100%;
+        }
+        .ah-tab > .ah-tab-item {margin-right: 15px !important;padding: 2px 0 !important;font-size: 14px !important;}
+        .e-d-heding h1 { font-size: 16px; margin-right: 0; line-height: normal; padding-bottom: 0; float: left;}
+        .download-add-btn .default-btn {min-width: inherit;font-size: 13px;padding: 2px 6px;}
+        .fc table {font-size: 12px;}
+        .ts-time span {font-size: 13px;}
+        .fc .fc-button-group > .fc-button {height: 26px; width: 26px; line-height: 26px;}
+        .fc .fc-button .fc-icon {vertical-align: middle; font-size: 18px; top: -2px;}
+        .fc .fc-button{padding: 2px 5px;}
+        .event-countdown strong{font-size: 16px;}	
+        .e-d-calender .left-e-cal {border-bottom:0;padding-bottom:15px;margin-bottom:15px;padding-right:0;border-right: 0;}
+        .time-slot-list .ts-btn {margin-left: auto;padding-right: 5px;}	
+        a.fc-col-header-cell-cushion {font-size: 12px;}
+        .fc .fc-toolbar.fc-header-toolbar {margin-bottom: 10px;}
+        .time-slot-list{padding:0 5px;}
+        .e-d-calender .left-e-cal {border-bottom: 0;padding-bottom: 15px;margin-bottom: 0;    padding-right: 0;border-right: 0;}
+        .t-s-bx.download-event-search { padding: 7px 10px;}
+        .e-d-tabs-bx .ah-tab-content-wrapper { margin: 15px 0;}
+        .default-btn, .blue-bdr-btn{padding: 5px 10px;}
+        .e-d-heding h1{margin-right: 5px;}
+        .event-countdown{margin-top: 0;}
+        .fc .fc-button{padding: 2px 5px;}
+        .fc .fc-button .fc-icon {font-size: 16px;}
+        .main-calender-event-view .white-content-bx {padding: 10px;}
+        .fc .fc-button{line-height: normal;padding:3px 5px;}
+        .fc .fc-toolbar.fc-header-toolbar {margin-bottom: 15px;}
+        .fc .fc-button .fc-icon {font-size: 16px;}
+        .h-evnt-d, .meeting-short-info, .my-account{padding:15px;}
+        .custom.checkbox > label, .custom.radio > label {font-size: 14px;}
+        .event-right-content {padding-top: 0;}
+        .fc .fc-button{padding: 2px 5px !important;font-size: 14px!important; line-height: normal!important;}
+        .fc .fc-button .fc-icon {font-size: 16px!important;left: -1px!important;}
+        .event-calender-bx .fc .fc-view-harness {height: 200px !important;}
+        .main-calender-event-view a.fc-col-header-cell-cushion {font-size: 10px;}
+        .fc .fc-timegrid-axis-cushion, .fc .fc-timegrid-slot-label-cushion {padding: 0 4px; font-size: 12px;}
+        .fc .fc-toolbar.fc-header-toolbar {margin-bottom: 10px !important;}
+        .form-control, .chosen-container-multi .chosen-choices {width:100% !important;}
+        .file-type-title-icon strong {max-width:250px;}
+        .time-slot-right .ts-btn .link	{font-size:16px;}
+        .ts-time .form-control { font-size: 14px;  padding: 5px 7px; padding-right: 30px; }
+        .e-d-download .cmn-search-bx .btn.link-btn { top: 4px; right: 6px; }
+        .custom-table{margin-top: 15px;}
+        .t-s-bx .ts-btn .default-btn{min-width: inherit;}
+        .inbox-wrapper .ah-tab > .ah-tab-item { margin-right: 10px !important; font-size: 12px !important;}
+        .noti-setting-heading .inbox-message-number{padding-top: 16px;}
+        .favorites-content-sec .cmn-rit-top-heading-sec.message-top-bx > .float-left{display:none;}
+        .favorites-content-sec .cmn-search-bx .btn.link-btn {top: 4px;}
+        .favorites-content-sec .cmn-rit-top-heading-sec {height: auto;width: 100%;display: inline-block;}
+        .message-list.review-events-list .cell.review-date-time-editable {width:50%;}
+        .reviews-content-sec .message-list.review-events-list .cell.review-amount-editable {width:50%;}
+        .reviews-content-sec .message-list.review-events-list .cell.review-duration-editable {width:25%;}
+        .message-list.review-events-list .cell.review-hosted-by-editable {width:36%;}
+        .message-list.review-events-list .cell.review-write-editable.text-right {width:36%;text-align:left!important;}
+        .message-list.review-events-list .cell.review-write-editable.text-right .c-table-text.text-right {text-align:left!important;}
+        ul.cmn-ul-list.calendar-dots {
+            margin-left: -5px;
+            margin-right: -5px;
+            position: absolute;
+            left: 45%;
+            bottom: 10px; 
+        }
+        ul.cmn-ul-list.calendar-dots li {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .month-wise-calendar .react-calendar__tile {padding: 5px 5px!important;}
+        .pay-status-bx {min-height: 120px;}
+        .payment-status-sec .cmn-ul-list li {padding-left: 5px;padding-right: 5px;}
+        .payment-status-sec .cmn-ul-list {margin-left: -5px;margin-right: -5px;}
+        .payment-status-sec .cmn-ul-list li:first-child{width:100%;}
+        figure.pay-s-lft-img, a.pay-s-lft-img {
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            position: absolute;
+            right: 10px;
+            left: inherit;
+        }
+        .pay-status-bx {
+            min-height: inherit;
+            padding: 10px;
+        }
+        .payment-status-sec .cmn-ul-list li {
+            margin-bottom: 10px;
+            width: 50%;
+        }
+        .pay-status-bx .pay-s-lft-img a.pay-s-lft-img {
+            height: 26px;
+            width: 26px;
+            line-height: 29px;
+        }
+        .pay-status-bx figure.pay-s-lft-img {
+            height: 36px;
+            width: 36px;
+            line-height: 32px;
+        }
+        .pay-s-rit-text strong {
+            font-size: 16px;
+        }
+        button.btn.default-btn.start-end-btn {
+            font-size: 14px;
+        }
+        .payment-status-sec {padding: 15px;padding-bottom: 0;}
+        .payments-content-sec .cmn-rit-top-heading-sec.message-top-bx {padding-top: 0;}
+        .payments-content-sec .cmn-rit-top-heading-sec.message-top-bx button.btn.default-btn.start-end-btn {
+            padding: 7px 10px;width: 100%;}
+        .pay-s-rit-text span {padding-top: 5px;}
+        .favorites-content-sec .message-list .u-p-files-list .c-table-text, .notification-content-sec .message-list .u-p-files-list .c-table-text .favorites-content-sec .message-list.inbox-events-list .u-p-files-list .message-user-bx span, .notification-content-sec .message-list.inbox-events-list .u-p-files-list .message-user-bx span {
+            font-size: 14px;
+        }
+        .create-folder-popup .modal-dialog {
+            width: 90%;
+        }
+        .file-manager-content-sec .fm-file-name-editable .file-type-title-icon strong {
+            max-width: 168px;
+        }
+        .file-manager-content-sec .u-p-files-list .cell {
+            padding-left: 0;
+        }
+        .file-manager-content-sec .cell.fm-size-editable {
+            width: 80px;
+        }
+        .message-list{padding:0 0 10px 0;}
+        .message-list.group-message-list.events-group-table .cell.event-more-editable {left: 26.5%;}
+        .create-group-popup .modal-dialog {width: 92%;}
+        .create-group-popup button.btn.default-btn {padding: 8px 15px; min-width: inherit; font-size: 14px;}
+        .create-group-popup .modal-header .modal-title { font-size: 16px;}
+        .white-content-bx .tab-heading .link-btn{font-size: 14px;}
+        .calender-events .mid-content-sec.in-page-content-sec { margin-left: 0; margin-bottom: 15px;}
+        .event-title a {
+            font-size: 14px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 90%;
+        }
+        .new-label {
+            padding: 3px 6px;
+            font-size: 9px;
+        }
+        .event-title {
+            padding-bottom: 5px;
+        }
+        .e-icn-bx{padding-bottom: 0;min-height: 24px;}
+        .av.pos-iocn{    left: 0;
+            top: 3px !important;
+            width: 18px;}
+        
+            .price i.av.pos-iocn {
+                font-size: 14px;
+            }
+            .event-s-info .user-name.e-icn-bx .rating {
+                padding-left: 0;
+            }
+            .user-name.e-icn-bx .user a {
+                max-width: 50px;
+            }
+            .event-img {
+                border-radius:5px 0 0 5px;
+                }
+            .e-icn-bx .date i.av.av-event-time-icon {
+                font-size: 14px;
+                top: 2px;
+            }   
+            .event-col{margin-bottom: 15px;}
+            .confirm-message-popup .modal-dialog {
+                width: 86%;
+            }
+            .modal-header .modal-title {
+                font-size: 16px;
+            }
+            .quick-start-bx {
+                padding-top: 10px;
+            }
+            .quick-start-bx .default-btn {
+                padding: 6px 10px;
+                font-size: 14px;
+                min-width: inherit;
+            }
+            .quick-start-meet-popup .modal-header {
+                border-bottom: 1px dotted #ccc;
+                padding: 10px 15px 7px 15px;
+            }
+            .ah-tab > .ah-tab-item {
+                margin-right: 15px !important;
+                padding: 2px 0 !important;
+                font-size: 11px !important;
+                margin-right: 8px !important;
+            }
+            .event-detail-bx {
+                min-height: inherit;
+            }
+            .event-detail-bx{border-radius:5px;}
+            .join-event-bx .btn.default-btn {
+                padding: 5px 10px;
+                font-size: 14px;
+            }
+            .event-calender-bx .fc .fc-toolbar-title {
+                font-size: 13px !important;
+            }
+            .dot-dd-bx .link-btn.dropdown-toggle {
+                border-radius: 3px;
+                font-size: 13px;
+                padding: 4px 7px;
+            }
+            .e-d-calender {
+                border-radius: 5px;
+                padding: 10px;
+            }
+            .event-countdown strong {
+                font-size: 14px;
+            }
+            .meeting-space h3 {
+                line-height: 22px;
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            .meeting-space {margin-top:10px;}
+            .meeting-space .m-s-info .cmn-ul-list li strong{font-size: 12px;}
+            .fc-direction-ltr .fc-button-group > .fc-button:not(:first-child) { margin-left:5px!important;}
+            .event-calender-bx .fc .fc-toolbar-title {font-size:12px!important;} 
+            .white-content-bx{border-radius:5px;}  
+            .fc .fc-timegrid-axis-cushion, .fc .fc-timegrid-slot-label-cushion{font-size: 11px;}
+            .white-content-bx { padding: 5px; }
+            button.react-calendar__navigation__label {font-size: 12px!important;}
+            .message-top-bx {padding: 10px;}
+            .events-content-sec .cell.event-type-editable .c-table-text {max-width:80px;}
+            .message-list.group-message-list.events-group-table .cell.event-more-editable {left:inherit;right:6px;}
+            .message-list.group-message-list.events-group-table .cell.event-details-editable 
+            .message-user-bx span {max-width: 90%;}
+            .message-right-bx.groups-right-bx .group-message-list .u-p-files-list .c-table-row.my-group-message .cell.m-user-editable {
+                margin-bottom: 0;
+            }
+            .message-right-bx.groups-right-bx .group-message-list .u-p-files-list .cell {
+                padding: 0 10px;
+                display: inline-flex;
+            }
+            .my-group-message .cell.m-user-editable, .my-group-message .cell.message-short-editable, .my-group-message .cell.m-time-editable, .my-group-message .cell.m-d-editable {
+                width:50%;
+                display: inline-block;
+                text-align: left;
+            }
+            .group-message-list .u-p-files-list .c-table-row.my-group-message{display:inherit;position:relative;}     
+            .message-list.group-message-list.events-group-table .c-table-row .cell.event-type-editable,
+            .message-list.group-message-list.events-group-table .c-table-row .cell.event-hosted-by-editable
+            {padding-left: 0;}
+    
+            .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-source-editable {
+                width: auto;
+            }
+            .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-type-editable {
+                width: 30%;
+            }
+            .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-type-editable .c-table-text {
+                width: 100%;
+            }       
+            .pay-s-rit-text span {
+                padding-top: 0;
+            }
+            .h-rit-bx .r-m-t-bx.create-event-menu a.btn.cmn-bdr-btn i {
+                top: 2px;
+            }
+            .c-table-row .cell.noti-message-editable {
+                width: 55%;
+                float: left;
+            }
+            .c-table-row .cell.notification-time-editable {
+                width: 45%;
+            }
+        .message-list.inbox-noti-list .u-p-files-list .c-table-row .cell {
+                margin-bottom: 5px;
+        }
+        .message-top-bx {
+            padding: 10px 10px;
+        }
+        .inbox-message-number {
+            padding-left: 5px;
+        }
+        .cmn-rit-top-heading-sec {
+            height: auto;
+        }
+        .c-table-row.unread-notification .message-user-bx span{font-size: 13px;}
+        .reviews-content-sec .message-list.review-events-list .cell.review-write-editable.text-right {
+            position: absolute;
+            right: 0;
+            top: 10px;
+        }   
+        .reviews-content-sec .message-list.review-events-list .cell.review-write-editable.text-right:before{content:none;}
+        .message-list.review-events-list .cell.review-write-editable.text-right .c-table-text.text-right {
+            text-align: right!important;
+        }
+        .reviews-content-sec .message-list.review-events-list .cell.review-duration-editable {
+            width: 50%;
+        }
+        .events-content-sec .message-list.group-message-list.events-group-table .cell.event-date-time-editable{padding-left:0;}
+        .slider-content-left {
+            padding-top: 5%;
+        }
+        .slider-content-left p {
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 20px;
+        }.why-should-sec {
+            padding-top: 30px;
+        }
+        .wb_process_item {
+            margin-top: 30px;
+        }
+        .wb_process_item .wb_process_content h3 {
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .wb_info {
+            padding-bottom: 13px;
+        }
+        
+        .e-t-outer {
+            padding: 15px 15px;
+        }
+        .section-heading p {
+            width: 100%;
+            font-size: 14px;
+        }
+        .section-heading p {
+            margin-bottom: 15px;
+        }
+        .blog-outer-bx {
+            padding: 15px 15px;
+        }
+            .company-rewards-sec {
+            padding: 30px 0;
+            margin-top: 30px;
+        }
+        .company-rewards-sec {
+            padding: 30px 0;
+            margin-top: 30px;
+            padding-bottom: 0;
+        }
+        .our-testimonils-sec {
+            padding: 30px 0;
+        }
+        .testi-detail-bx {
+            position: relative;
+            padding-left: 15px;
+            margin-left: 0;
+            padding-right: 15px;
+        }
+        .testi-info {
+            padding: 15px 10px;
+            padding-left: 0;
+            padding-left: 15px;
+            padding-top: 80px;
+        }
+        .testi-img-outer {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin: 0;
+            display: inline-block;
+            border-radius: 15px;
+            z-index: 1;
+            position: absolute;
+            bottom: inherit;
+            left: 50%;
+            margin-left: -65px;
+            top: -98px;
+        }
+        .testi-img {
+            width: 130px;
+        }
+        .testi-outer-bx {
+            padding-top: 104px;
+        }
+        .testi-info {
+            text-align: center;
+        }
+        .c-r-box strong {
+            font-size: 18px;
+            padding-top: 5px;
+            font-weight: 600;
+        }
+        .c-r-box span {
+            font-size: 14px;
+            line-height: normal;
+        }
+        
+        .c-r-box {
+            padding: 15px 2px;
+        }
+        .col-sm-6.col-md-4.col-lg-4.f-s-col {
+            width: 100%;
+        }
+        .message-list.group-message-list.events-group-table .u-p-files-list .cell { min-height: 54px;}
+        .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-date-time-editable {
+            width: 60%;
+        }
+        .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-size-editable {
+            width: 40%;
+        }
+        .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-type-editable {
+            width: 60%;
+        }
+        .file-manager-content-sec .message-list .u-p-files-list .c-table-row .cell.fm-source-editable {
+            width: 40%;
+            display: inline-block;
+        }
+    .favorites-content-sec .message-list.inbox-events-list 
+    .u-p-files-list .custom-table .c-table-row .cell.favorite-icon-editable {
+        width: 34px;
+        display: inline-block;
+    }
+    .favorites-content-sec .message-list.inbox-events-list 
+    .u-p-files-list .custom-table .c-table-row .cell.fav-date-time-editable .c-table-text, .favorites-content-sec .message-list.inbox-events-list 
+    .u-p-files-list .custom-table .c-table-row .cell.fav-location-editable .c-table-text{font-size: 12px;}
+    .setting-toggle-bx strong { font-size: 14px; line-height: normal;}
+    .m-s-info i {
+        font-size: 18px;
+        width: 24px;
+    }
+    .m-s-info span {
+        position: relative;
+        top: 2px;
+    }
+    .favorites-content-sec .message-user-bx span{font-size: 13px;}
+    .modal.default-popup.repeat-event-popup:before{vertical-align: middle;}
+    .modal.default-popup.repeat-event-popup .modal-dialog {
+        width: 94%;
+    }
+    .modal.default-popup.repeat-event-popup .repeat-box .cmn-ul-list li:first-child {
+        width: 100%;
+    }
+    .repeat-box.repeat-for-bx .radio.custom {
+        top: 0;
+    }
+    .repeat-event-popup {
+        padding: 20px 10px 0px 10px;
+    }
+    .repeat-on-bx label {
+        padding-top: 0;
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+    .repeat-box .radio.custom {
+        top: 2px;
+    }
+    .repeat-box.repeat-for-bx label {
+        padding-bottom: 5px;
+    }
+    .repeat-on-bx .cmn-ul-list li{ width: 100%;}
+    .repeat-box.repeat-for-bx .cmn-ul-list li {
+        width: 50%;
+    }
+    .repeat-every-bx .week-day-number-select {
+        width: 100%;
+    }
+    .flex-select-bx, .week-day-number-select {
+        width: 100%;
+    }
+    .download-files-download .file-type-title-icon strong {
+        max-width: 157px;
+    }
+    .e-d-download .download-files-download .c-table-row .cell.download-total-download-editable {
+        width: 40%;
+    }
+    .e-d-download .download-files-download .c-table-row .cell.download-size-editable {
+        width: 30%;
+    }
+    .e-d-download .download-files-download .c-table-row .cell.download-cost-editable {width: 30%;}
+    .u-m-c-top {padding: 10px;}
+    .u-p-files-list .c-table-row .cell i.v-p-icon{display:block;}
+    .u-p-files-list .c-table-row .message-time.view-people-btn span{display:none;}
+    .message-right-bx.groups-right-bx .group-message-list .u-p-files-list .cell.message-short-editable{width:100%;}
+    .message-right-bx.groups-right-bx .group-message-list .u-p-files-list .cell.m-user-editable{width:100%;}
+    .message-right-bx.groups-right-bx .group-message-list .u-p-files-list .cell.m-time-editable{position: absolute;}
+    .message-right-bx.groups-right-bx .group-message-list .u-p-files-list .cell.m-d-editable {
+        position: absolute;
+        right: 0;
+        top: 8px;
+        width: auto;
+    }
+    .message-right-bx.groups-right-bx .group-message-list .u-p-files-list .cell.m-time-editable {
+        position: absolute;
+        right: 28px;
+        top: 11px;
+        width: auto;
+    }
+    .group-message-list .c-table-row.my-group-message .message-time a {
+        width: auto;
+    }
+    .u-p-files-list .c-table-row .cell i.v-p-icon{font-size: 16px;}
+    .u-p-files-list .c-table-row .cell .message-delete-btn i{font-size: 14px;}
+    .message-short-text {
+        width: 100%;
+        color: #919090;
+        font-family: 'NunitoSans-Regular' !important;
+        padding-left: 36px;
+        padding-bottom: 4px;
+    }
+    .download-files-download .file-type-title-icon strong {
+        max-width: 135px;
+    }
+    .file-dis-view-link {
+        font-size: 11px;
+        position: relative;
+        top: 1px;
+    }
+    .card-bank-tabs .saved-card-list  p {
+        width: 100%;
+        padding-bottom: 7px;
+    }
+    
+    
+    
+    }
+        
+    @media screen and (max-width:359px) {
+        .forgot-link a {font-size: 13px;}
+        .custom.checkbox > label, .custom.radio > label { font-size: 14px;}
+        .or-sign-in-up-link {margin-top: 0;}
+        .or-sign-in-with {margin-top: 15px;font-size: 16px;}
+        .form-btns-social .footer-social-icn li a {width: 30px;height: 30px;line-height: 30px;}
+        .form-group.form-btns-social .default-btn, .form-group.form-btns-social .blue-bdr-btn {border-radius: 5px;   padding: 5px 10px;
+            min-width: inherit; font-size: 14px;}
+        .login-signup-form {padding: 0; padding-top: 25px;}
+        figure.sign-in-up-logo-icon {top: -45px;width: calc(100% - 15px);}
+        .dt-2 span, .price, .date {font-size: 11px;}
+        .e-icn-bx{padding-left: 20px;}
+        .date{padding-left: 5px;}
+        .event-details .e-d-tabs-bx .ah-tab > .ah-tab-item{margin-right: 10px !important;}
+        .category-rit-bx{padding:2px 8px 2px 5px;}
+        .h-evnt-d.h-event-tags .e-des-tags-edit{padding-top: 0;}
+        .event-countdown strong {font-size: 14px;padding-right: 8px;}
+        .event-countdown .c-d-bx {min-width: 32px;}
+        .meeting-space{margin-top: 10px;}
+        .event-calender-bx .fc .fc-toolbar-title {font-size: 12px !important;}
+        .dot-dd-bx .link-btn.dropdown-toggle {border-radius: 3px; font-size: 11px; padding: 4px 5px; }
+        .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {margin-left: 5px;}
+        .fc .fc-button-group > .fc-button {
+            height: 22px;
+            width: 22px;
+            line-height: 24px;
+        }
+        .fc .fc-button .fc-icon {
+            font-size: 13px!important;
+            left: -1px!important;
+        }
+        .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
+            margin-left: 5px !important;
+        }
+        button.fc-myCustomButton-button.fc-button.fc-button-primary {
+            position: relative;
+            top: 2px;
+        }
+        .fc-direction-ltr .fc-button-group > .fc-button:not(:first-child) {margin-left: 5px !important;}
+        .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {margin-left: 5px;}
+        .main-calender-event-view a.fc-col-header-cell-cushion {font-size: 8px; }
+        .file-type-title-icon strong {max-width:220px;}
+        .inbox-wrapper .ah-tab > .ah-tab-item {margin-right: 13px !important; font-size: 11px !important;}
+        .payment-status-sec {padding: 10px 10px 0 10px;padding-bottom: 0;}
+        .pay-s-rit-text span {font-size: 12px;}
+        .file-manager-content-sec .cell.fm-ck-editable {width: 50px;}
+        .file-manager-content-sec .fm-file-name-editable .file-type-title-icon strong {max-width:138px;}
+        .file-manager-content-sec .inbox-message-number {max-width: 113px; font-size: 12px; padding-left: 5px;}
+        .file-manager-content-sec .flex-container .flex-select-bx select.form-control.custom-select-bx {max-width: 90px;    }	
+        .message-list.group-message-list.events-group-table .cell.event-more-editable {
+            left: 27.5%;
+        }
+        .event-img {
+            height: 98px;
+            width: 130px;
+        }
+        .event-s-info {
+            width: 55%;
+            min-height: 98px;
+        }
+        .rating i {
+            font-size: 8px;
+            padding-left: 2px;
+        }
+        .event-title a {
+            font-size: 13px;
+            width: 83%;
+        }
+        .e-icn-bx {
+            min-height: 20px;
+        }
+        .user-name.e-icn-bx .user a {
+            max-width: 47px;
+            line-height: 15px;
+        }
+        p.rated-usr-no {
+            padding-left: 5px;
+            font-size: 11px;
+            position: relative;
+            top: -1px;
+            line-height: normal;
+        }
+        .user-name.e-icn-bx span.user {
+            line-height: 13px;
+        }
+        i.av.av-user-icon.pos-iocn {
+            top: 0px !important;
+        }
+        .event-s-info .user-name.e-icn-bx .rating {
+            padding-left: 0;
+            line-height: 12px;
+        }
+        .user-name.e-icn-bx {
+            padding-bottom: 0;
+            min-height: 18px;
+        }
+        .cmn-heading{padding-bottom: 15px;}
+        .r-m-t-bx.my-account-menu .btn-group .dropdown-menu.dropdown-menu-lg-right .dropdown-item {
+            padding: 3px 10px;
+        }
+        .dropdown-menu {
+            min-width: 130px;
+        }
+        .fc .fc-button {
+            font-size: 12px!important;
+        }
+        .inbox-wrapper .av-default-tabs .ah-tab > .ah-tab-item {
+            margin-right: 9px !important;
+        }
+        .user-name a {
+            font-size: 13px;
+        }
+        .c-table-row .cell.notification-time-editable {
+            width: 40%;
+        }
+        .c-table-row .cell.noti-message-editable {
+            width: 60%;
+            float: left;
+        }
+        .notification-content-sec .message-list .u-p-files-list .c-table-row {
+            padding: 10px 5px;
+            padding-bottom: 5px;
+        }
+        .reviews-content-sec .message-list.review-events-list .cell.review-write-editable.text-right {
+            position: absolute;
+            right: 13px;
+            top: 9px;
+        }
+        .blog-info .dt-2 span, .blog-info .price, .blog-info .date {
+            font-size: 12px;
+        }        
+        .e-t-content strong {
+            font-size: 18px;
+        }     
+        .landing-page .navbar-brand{    padding-top: 0;}
+        .c-r-box {
+            padding: 10px;
+        } 
+        .testi-outer-bx {
+            padding: 15px 0;
+        }
+        footer {
+            padding: 0;
+        }  
+        .download-files-download .file-type-title-icon strong {
+            max-width: 107px;
+        }
+        .file-dis-view-link {
+            font-size: 10px;
+            position: relative;
+            top: 1px;
+        }
+    
+    
+     }
+                

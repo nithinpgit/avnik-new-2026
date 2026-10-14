@@ -1,0 +1,504 @@
+<?php
+
+namespace App\Http\Controllers\Api\UserControllers\Payments;
+
+use App\Http\Controllers\Controller;
+use App\Models\Events\Event;
+use App\Models\Events\EventPayment;
+use App\Models\Events\EventTimeSlot;
+use App\Models\Events\ExtendDuration;
+use Carbon\Carbon;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use PDOException;
+use Stripe;
+
+
+class StripePaymentController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    private $status_code = 200;
+
+
+
+
+    public function index()
+    {
+        //
+
+        // if (auth()->user()) {
+        //     $Payment = $stripe->paymentIntents->retrieve('pi_1IEZxMDlNqjyccEq8dziXW32', []);
+        //     return response()->json($Payment);
+        // }
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+
+        $user = auth()->user();
+        $stripe = new \Stripe\StripeClient(config('services.stripe.secret'));
+        if ($user) {
+            DB::beginTransaction();
+
+            try {
+                $event = Event::where('id', $request->eventId)->first();
+                if (!is_null($event)) {
+                    if ($event->user_fk_id == auth()->user()->id) {
+
+                        return response()->json(['status' => 'failed', 'success' => false, 'message' => 'sorry You can not book your own event']);
+                    }
+                } else {
+                    return response()->json(['status' => 'failed', 'success' => false, 'message' => 'Sorry We are not found this event']);
+                }
+                $slot = EventTimeSlot::whereId($request->slotId)->where('event_fk_id', $request->eventId)->first();
+                if ($slot) {
+                    $eventPayment = EventPayment::where('user_fk_id', auth()->user()->id)->where('event_time_slot_id', $request->slotId)->where('event_fk_id', $request->eventId)->first();
+
+                    if ($eventPayment) {
+
+                        return response()->json(["status" => 'failed', "message" => "You did payment already for this event"]);
+                    } else {
+
+                        if ((int)$slot->booked_seats <= (int)$event->number_of_seats) {
+                            if ($event->cost > 0) {
+                                $payment = $stripe->paymentIntents->create([
+                                    'amount' => 100 * (float)$event->cost,
+                                    'currency' => 'usd',
+                                    'payment_method' => $request->stripeToken,
+                                    'confirm' => true,
+                                    'receipt_email' => auth()->user()->email,
+                                    'description' => 'Payment for' . $event->title,
+                                ]);
+                                if ($payment->status == "succeeded") {
+                                    $eventPayment = new EventPayment();
+                                    $eventPayment->user_fk_id = $user->id;
+                                    $eventPayment->to_user = $event->user_fk_id;
+                                    $eventPayment->event_time_slot_id = $slot->id;
+                                    $eventPayment->event_fk_id = $event->id;
+                                    $eventPayment->event_date_time = Carbon::now();
+                                    $eventPayment->amount = $event->cost;
+                                    $eventPayment->stripe_id = $payment->id;
+                                    $eventPayment->paid = true;
+                                    $eventPayment->accept_by_host = "accepted";
+                                    $eventPayment->amount_refunded = $payment->amount_refunded;
+                                    $eventPayment->transaction_id = $payment->balance_transaction;
+                                    $eventPayment->status = $payment->status;
+                                    $eventPayment->save();
+                                } else {
+                                    return response()->json(["status" => 'failed', "message" => "Payment not done try again"]);
+                                }
+                            } else {
+                                $eventPayment = new EventPayment();
+                                $eventPayment->user_fk_id = $user->id;
+                                $eventPayment->to_user = $event->user_fk_id;
+                                $eventPayment->event_time_slot_id = $slot->id;
+                                $eventPayment->event_fk_id = $event->id;
+                                $eventPayment->event_date_time = Carbon::now();
+                                $eventPayment->amount = $event->cost;
+                                $eventPayment->paid = false;
+                                $eventPayment->accept_by_host = "accepted";
+                                $eventPayment->amount_refunded = false;
+                                $eventPayment->status = "succeeded";
+                                $eventPayment->save();
+
+                                EventTimeSlot::whereId($request->slotId)->where('event_fk_id', $request->eventId)->update([
+                                    'booked_seats' => (int)$slot->booked_seats + 1,
+                                ]);
+
+                                DB::commit();
+                                return response()->json(["status" => $this->status_code, "message" => "Payment Done Successfulsly", "data" => $eventPayment]);
+                            }
+                            EventTimeSlot::whereId($request->slotId)->where('event_fk_id', $request->eventId)->update([
+                                'booked_seats' => (int)$slot->booked_seats + 1,
+                            ]);
+                        } else {
+                            return response()->json(["status" => "failed", "success" => false, "message" => "No more seats available for this slot"]);
+                        }
+
+                        DB::commit();
+                        return response()->json(["status" => $this->status_code, "message" => "Payment Done Successfully", "data" => $payment]);
+                    }
+                } else {
+
+                    return response()->json(['status' => 'failed', 'success' => false, 'message' => 'Sorry We are not found this slot']);
+                }
+            } catch (PDOException $e) {
+
+                DB::rollBack();
+
+                return response()->json($e);
+            }
+        } else {
+            return response()->json("login first");
+        }
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+
+    public function show($id)
+    {
+        //
+        $Payment = EventPayment::where('id', $id)->first();
+
+        if ($Payment) {
+
+            return response()->json(['show' => $Payment]);
+        } else {
+
+            return response()->json(['show' => $id]);
+        }
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request)
+    {
+        //
+        $stripe = new \Stripe\StripeClient(config('services.stripe.secret'));
+
+        $user = auth()->user();
+        if ($user) {
+            DB::beginTransaction();
+            try {
+                $slot = EventTimeSlot::where('meeting_room_id', $request->roomId)->first();
+                if (!is_null($slot)) {
+                    $event = Event::where('id', $slot->event_fk_id)->first();
+                    if (!is_null($event)) {
+                        if ($event->user_fk_id == auth()->user()->id) {
+                            return response()->json(['status' => 'failed', 'success' => false, 'message' => 'sorry You can not book your own event']);
+                        }
+
+                        $extend = ExtendDuration::where('room_id', $request->roomId)->orderBy('id', 'desc')->first();
+
+                        if ($extend == null) {
+                            if ($event->cost > 0 && $request->cost > 0) {
+
+                                if ($slot && $event) {
+                                    $payment = $stripe->paymentIntents->create([
+                                        'amount' => 100 * (float)$event->cost,
+                                        'currency' => 'usd',
+                                        'payment_method' => $request->stripeToken,
+                                        'confirm' => true,
+                                        'receipt_email' => auth()->user()->email,
+                                        'description' => 'Payment for' . $event->title,
+                                    ]);
+                                    if ($payment->status == "succeeded") {
+                                        $eventPayment = new EventPayment();
+                                        $eventPayment->user_fk_id = $user->id;
+                                        $eventPayment->to_user = $event->user_fk_id;
+                                        $eventPayment->event_time_slot_id = $slot->id;
+                                        $eventPayment->event_fk_id = $event->id;
+                                        $eventPayment->event_date_time = Carbon::now();
+                                        $eventPayment->amount = $request->cost;
+                                        $eventPayment->stripe_id = $payment->id;
+                                        $eventPayment->paid = true;
+                                        $eventPayment->accept_by_host = "accepted";
+                                        $eventPayment->amount_refunded = $payment->amount_refunded;
+                                        $eventPayment->transaction_id = $payment->balance_transaction;
+                                        $eventPayment->status = $payment->status;
+                                        $eventPayment->save();
+                                        DB::commit();
+                        
+                                        return response()->json(["status" => $this->status_code, "message" => "Payment Done Successfully", "data" => $eventPayment]);
+                                    }
+                                }
+                            }else {
+                                $slot = EventTimeSlot::where('meeting_room_id', $request->roomId)->first();
+                                $event = Event::where('id', $slot->event_fk_id)->first();
+                                if($slot && $event) {
+                                    $user = auth()->user();
+                                    $eventPayment = new EventPayment();
+                                    $eventPayment->user_fk_id = $user->id;
+                                    $eventPayment->to_user = $event->user_fk_id;
+                                    $eventPayment->event_time_slot_id = $slot->id;
+                                    $eventPayment->event_fk_id = $event->id;
+                                    $eventPayment->event_date_time = Carbon::now();
+                                    $eventPayment->amount = $request->cost;
+                                    $eventPayment->paid = false;
+                                    $eventPayment->accept_by_host = "accepted";
+                                    $eventPayment->amount_refunded = false;
+                                    $eventPayment->status = "succeeded";
+                                    $eventPayment->save();
+                                     DB::commit();
+                                    return response()->json(["status" => $this->status_code, "message" => "Payment Done Successfully", "data" => $eventPayment]);
+                                }else {
+                                    return response()->json(["status" => "failed", "success" => false, "message" => "Event Not Found"]);
+                                }
+                            }
+                        } else {
+                            if (!is_null($extend)) {
+                                $eventPayment=EventPayment::where('event_fk_id',$event->id)->where('extended',0)->first();
+                                $totalCost = $event->cost + $extend->cost;
+                                if(!is_null($eventPayment)){
+                                    $totalCost=$totalCost-$event->cost;
+                                }else{
+                                    $totalCost=$totalCost;
+                                }
+
+                                if ($totalCost > 0) {
+                                    if ($totalCost == $request->cost) {
+                                        if ($slot && $event) {
+                                            $payment = $stripe->paymentIntents->create([
+                                                'amount' => 100 * (float)$request->cost,
+                                                'currency' => 'usd',
+                                                'payment_method' => $request->stripeToken,
+                                                'confirm' => true,
+                                                'receipt_email' => auth()->user()->email,
+                                                'description' => 'Payment for' . $event->title,
+                                            ]);
+                                            if ($payment->status == "succeeded") {
+                                                $eventPayment = new EventPayment();
+                                                $eventPayment->user_fk_id = $user->id;
+                                                $eventPayment->to_user = $event->user_fk_id;
+                                                $eventPayment->event_time_slot_id = $slot->id;
+                                                $eventPayment->event_fk_id = $event->id;
+                                                $eventPayment->event_date_time = Carbon::now();
+                                                $eventPayment->amount = $request->cost;
+                                                $eventPayment->stripe_id = $payment->id;
+                                                $eventPayment->paid = true;
+                                                $eventPayment->extended = true;
+                                                $eventPayment->extended_id = $request->extendedDurationId;
+                                                $eventPayment->accept_by_host = "accepted";
+                                                $eventPayment->amount_refunded = $payment->amount_refunded;
+                                                $eventPayment->transaction_id = $payment->balance_transaction;
+                                                $eventPayment->status = $payment->status;
+                                                $eventPayment->save();
+                                                DB::commit();
+                                                return response()->json(["status" => $this->status_code, "message" => "Payment Done Successfully", "data" => $eventPayment]);
+                                            }
+                                        }
+                                    }else if($event->cost == 0 && $request->cost > 0&&$extend->cost==$request->cost){
+                                        $slot = EventTimeSlot::where('meeting_room_id', $request->roomId)->first();
+                                        $event = Event::where('id', $slot->event_fk_id)->first();
+                                        if($slot && $event) {
+                                            $user = auth()->user();
+                                            $eventPayment = new EventPayment();
+                                            $eventPayment->user_fk_id = $user->id;
+                                            $eventPayment->to_user = $event->user_fk_id;
+                                            $eventPayment->event_time_slot_id = $slot->id;
+                                            $eventPayment->event_fk_id = $event->id;
+                                            $eventPayment->event_date_time = Carbon::now();
+                                            $eventPayment->amount = $request->cost;
+                                            $eventPayment->paid = false;
+                                            $eventPayment->extended = true;
+                                            $eventPayment->extended_id = $request->extendedDurationId;
+                                            $eventPayment->accept_by_host = "accepted";
+                                            $eventPayment->amount_refunded = false;
+                                            $eventPayment->status = "succeeded";
+                                            $eventPayment->save();
+                                            DB::commit();
+                                            return response()->json(["status" => $this->status_code, "message" => "Payment Done Successfully", "data" => $eventPayment]);
+                                        }else {
+                                            return response()->json(["status" => "failed", "success" => false, "message" => "Event Not Found"]);
+                                        } 
+                                } else {
+                                    return [$event->cost,$request->cost ,$extend->cost,$request->cost];
+                                        return response()->json(['status' => 'failed', 'success' => false, 'message' => 'Sorry Wrong Cost']);
+                                    }
+                                } else {
+                                    if ($slot && $event) {
+                                        $payment = $stripe->paymentIntents->create([
+                                            'amount' => 100 * (float)$request->cost,
+                                            'currency' => 'usd',
+                                            'payment_method' => $request->stripeToken,
+                                            'confirm' => true,
+                                            'receipt_email' => auth()->user()->email,
+                                            'description' => 'Payment for' . $event->title,
+                                        ]);
+                                        if ($payment->status == "succeeded") {
+                                            $eventPayment = new EventPayment();
+                                            $eventPayment->user_fk_id = $user->id;
+                                            $eventPayment->to_user = $event->user_fk_id;
+                                            $eventPayment->event_time_slot_id = $slot->id;
+                                            $eventPayment->event_fk_id = $event->id;
+                                            $eventPayment->event_date_time = Carbon::now();
+                                            $eventPayment->amount = $request->cost;
+                                            $eventPayment->stripe_id = $payment->id;
+                                            $eventPayment->paid = true;
+                                            $eventPayment->extended = true;
+                                            $eventPayment->accept_by_host = "accepted";
+                                            $eventPayment->amount_refunded = $payment->amount_refunded;
+                                            $eventPayment->transaction_id = $payment->balance_transaction;
+                                            $eventPayment->status = $payment->status;
+                                            $eventPayment->save();
+                                            DB::commit();
+                                            return response()->json(["status" => $this->status_code, "message" => "Payment Done Successfully", "data" => $eventPayment]);
+                                        }
+                                    }
+                                }
+                            } else {
+                                return response()->json(['status' => 'failed', 'success' => false, 'message' => 'sorry something wrong 2']);
+                            }
+                        }
+                    } else {
+                        return response()->json(['status' => 'failed', 'success' => false, 'message' => 'sorry something wrong']);
+                    }
+                } else {
+                    return response()->json(['status' => 'failed', 'success' => false, 'message' => 'sorry meeting Not found']);
+                }
+            } catch (PDOException $e) {
+
+                DB::rollBack();
+                return response()->json($e);
+            }
+        } else {
+            return response()->json("login first");
+        }
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+
+    public function freePayment(Request $request, $stripe)
+    {
+        $slot = EventTimeSlot::where('meeting_room_id', $request->roomId)->first();
+        $event = EventTimeSlot::where('id', $slot->event_fk_id)->first();
+        if ($slot && $event) {
+            $user = auth()->user();
+            $eventPayment = new EventPayment();
+            $eventPayment->user_fk_id = $user->id;
+            $eventPayment->to_user = $event->user_fk_id;
+            $eventPayment->event_time_slot_id = $slot->id;
+            $eventPayment->event_fk_id = $event->id;
+            $eventPayment->event_date_time = Carbon::now();
+            $eventPayment->amount = $request->cost;
+            $eventPayment->paid = false;
+            $eventPayment->accept_by_host = "accepted";
+            $eventPayment->amount_refunded = false;
+            $eventPayment->status = "succeeded";
+            $eventPayment->save();
+            DB::commit();
+            return response()->json(["status" => $this->status_code, "message" => "Payment Done Successfully", "data" => $eventPayment]);
+        } else {
+            return response()->json(["status" => "failed", "success" => false, "message" => "Event Not Found"]);
+        }
+    }
+    public function bookSlotExtendedDuration(Request $request, $stripe)
+    {
+        $user = auth()->user();
+        $slot = EventTimeSlot::where('meeting_room_id', $request->roomId)->first();
+        $event = EventTimeSlot::where('id', $slot->event_fk_id)->first();
+        if ($slot && $event) {
+            $payment = $stripe->paymentIntents->create([
+                'amount' => 100 * (float)$request->cost,
+                'currency' => 'usd',
+                'payment_method' => $request->stripeToken,
+                'confirm' => true,
+                'receipt_email' => auth()->user()->email,
+                'description' => 'Payment for' . $event->title,
+            ]);
+            if ($payment->status == "succeeded") {
+                $eventPayment = new EventPayment();
+                $eventPayment->user_fk_id = $user->id;
+                $eventPayment->to_user = $event->user_fk_id;
+                $eventPayment->event_time_slot_id = $slot->id;
+                $eventPayment->event_fk_id = $event->id;
+                $eventPayment->event_date_time = Carbon::now();
+                $eventPayment->amount = $request->cost;
+                $eventPayment->stripe_id = $payment->id;
+                $eventPayment->paid = true;
+                $eventPayment->extended = true;
+                $eventPayment->accept_by_host = "accepted";
+                $eventPayment->amount_refunded = $payment->amount_refunded;
+                $eventPayment->transaction_id = $payment->balance_transaction;
+                $eventPayment->status = $payment->status;
+                $eventPayment->save();
+                DB::commit();
+                return response()->json(["status" => $this->status_code, "message" => "Payment Done Successfully", "data" => $eventPayment]);
+            }
+        }
+    }
+    public function bookSlot(Request $request, $stripe)
+    {
+        return [$request, $stripe];
+        $user = auth()->user();
+        $slot = EventTimeSlot::where('meeting_room_id', $request->roomId)->where('event_fk_id', $request->eventId)->first();
+        $event = EventTimeSlot::where('id', $request->eventId)->first();
+        if ($slot && $event) {
+            $payment = $stripe->paymentIntents->create([
+                'amount' => 100 * (float)$event->cost,
+                'currency' => 'usd',
+                'payment_method' => $request->stripeToken,
+                'confirm' => true,
+                'receipt_email' => auth()->user()->email,
+                'description' => 'Payment for' . $event->title,
+            ]);
+            if ($payment->status == "succeeded") {
+                $eventPayment = new EventPayment();
+                $eventPayment->user_fk_id = $user->id;
+                $eventPayment->to_user = $event->user_fk_id;
+                $eventPayment->event_time_slot_id = $slot->id;
+                $eventPayment->event_fk_id = $event->id;
+                $eventPayment->event_date_time = Carbon::now();
+                $eventPayment->amount = $request->cost;
+                $eventPayment->stripe_id = $payment->id;
+                $eventPayment->paid = true;
+                $eventPayment->extended = true;
+                $eventPayment->accept_by_host = "accepted";
+                $eventPayment->amount_refunded = $payment->amount_refunded;
+                $eventPayment->transaction_id = $payment->balance_transaction;
+                $eventPayment->status = $payment->status;
+                $eventPayment->save();
+                DB::commit();
+
+                return response()->json(["status" => $this->status_code, "message" => "Payment Done Successfully", "data" => $eventPayment]);
+            }
+        }
+    }
+    public function destroy($id)
+    {
+        //
+        $Payment = EventPayment::where('id', $id)->delete();
+        if ($Payment) {
+            return response()->json($Payment);
+        } else {
+            return response()->json(['delete' => $id]);
+        }
+    }
+}

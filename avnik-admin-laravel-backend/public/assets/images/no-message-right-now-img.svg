@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92.768" height="92.767" viewBox="0 0 92.768 92.767">
+  <g id="no-message-right-now-img" transform="translate(-1032 -494)">
+    <g id="ringing" transform="matrix(0.961, -0.276, 0.276, 0.961, 1028.344, 515.334)">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="37.5" cy="37.5" r="37.5" transform="translate(3.697 0.372)" fill="#e5eaf5"/>
+      <g id="send-invitation" transform="translate(30.006 21.086) rotate(16)">
+        <path id="Path_3338" data-name="Path 3338" d="M26.251-1.332H4.185A4.189,4.189,0,0,0,0,2.852v13.5A4.189,4.189,0,0,0,4.169,20.54v6.128l8.806-6.128H26.251a4.189,4.189,0,0,0,4.184-4.184V2.852a4.189,4.189,0,0,0-4.184-4.184Zm2.4,17.688a2.4,2.4,0,0,1-2.4,2.4H12.417l-6.464,4.5v-4.5H4.185a2.4,2.4,0,0,1-2.4-2.4V2.852a2.4,2.4,0,0,1,2.4-2.4H26.251a2.4,2.4,0,0,1,2.4,2.4Zm0,0" fill="#0030a0"/>
+        <path id="Path_3339" data-name="Path 3339" d="M171.293,131.172h14.143v1.783H171.293Zm0,0" transform="translate(-163.147 -126.203)" fill="#0030a0"/>
+        <path id="Path_3340" data-name="Path 3340" d="M171.293,211.172h14.143v1.783H171.293Zm0,0" transform="translate(-163.147 -202.399)" fill="#0030a0"/>
+        <path id="Path_3341" data-name="Path 3341" d="M171.293,291.172h14.143v1.783H171.293Zm0,0" transform="translate(-163.147 -278.595)" fill="#0030a0"/>
+      </g>
+    </g>
+  </g>
+</svg>

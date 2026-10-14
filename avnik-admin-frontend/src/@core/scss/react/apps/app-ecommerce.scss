@@ -1,0 +1,8 @@
+@import '../../base/bootstrap-extended/include';
+
+.app-ecommerce {
+  .checkout-items {
+    max-height: 450px;
+    overflow-y: auto;
+  }
+}

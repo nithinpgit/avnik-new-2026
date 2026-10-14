@@ -1,0 +1,212 @@
+@font-face {
+  font-family: 'liberate-meet-icons';
+  src:
+    url('../fonts/liberate-meet-icons.ttf?jo60bh') format('truetype'),
+    url('../fonts/liberate-meet-icons.woff?jo60bh') format('woff'),
+    url('../fonts/liberate-meet-icons.svg?jo60bh#liberate-meet-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.lm{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'liberate-meet-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lm-rectangle1-icon:before {
+  content: "\e93d";
+}
+.lm-add-card-icon:before {
+  content: "\e900";
+}
+.lm-all-mic-off-icon:before {
+  content: "\e901";
+}
+.lm-all-mic-on-icon:before {
+  content: "\e902";
+}
+.lm-all-webcam-off-icon:before {
+  content: "\e903";
+}
+.lm-all-webcam-on-icon:before {
+  content: "\e904";
+}
+.lm-arrow-icon:before {
+  content: "\e905";
+}
+.lm-back-icon:before {
+  content: "\e906";
+}
+.lm-chat-icon:before {
+  content: "\e907";
+}
+.lm-choose-color-icon:before {
+  content: "\e908";
+}
+.lm-clear-all-icon:before {
+  content: "\e909";
+}
+.lm-close-icon:before {
+  content: "\e90a";
+}
+.lm-closed-caption-icon:before {
+  content: "\e90b";
+}
+.lm-dashed-line-icon:before {
+  content: "\e90c";
+}
+.lm-delete-icon:before {
+  content: "\e90d";
+}
+.lm-desktop-view-icon:before {
+  content: "\e90e";
+}
+.lm-dollar-icon:before {
+  content: "\e90f";
+}
+.lm-download-icon:before {
+  content: "\e910";
+}
+.lm-dropdown-icon:before {
+  content: "\e911";
+}
+.lm-ellipse-icon:before {
+  content: "\e912";
+}
+.lm-emoji-icon:before {
+  content: "\e913";
+}
+.lm-end-icon:before {
+  content: "\e914";
+}
+.lm-eraser-icon:before {
+  content: "\e915";
+}
+.lm-exit-full-screen-icon:before {
+  content: "\e916";
+}
+.lm-exit-user-icon:before {
+  content: "\e917";
+}
+.lm-flip-dropdown-icon:before {
+  content: "\e918";
+}
+.lm-full-screen-icon:before {
+  content: "\e919";
+}
+.lm-Group-557-icon:before {
+  content: "\e91a";
+}
+.lm-horizontal-more-icon:before {
+  content: "\e91b";
+}
+.lm-image-icon:before {
+  content: "\e91c";
+}
+.lm-invite-icon:before {
+  content: "\e91d";
+}
+.lm-left-arrow-icon:before {
+  content: "\e91e";
+}
+.lm-left-page-icon:before {
+  content: "\e91f";
+}
+.lm-left-tool-icon:before {
+  content: "\e920";
+}
+.lm-left-tool-1-icon:before {
+  content: "\e921";
+}
+.lm-link-icon:before {
+  content: "\e922";
+}
+.lm-logo-icon:before {
+  content: "\e923";
+}
+.lm-meeting-start-icon:before {
+  content: "\e924";
+}
+.lm-menu-icon:before {
+  content: "\e925";
+}
+.lm-mic-off-icon:before {
+  content: "\e926";
+}
+.lm-mic-on-icon:before {
+  content: "\e927";
+}
+.lm-notification-icon:before {
+  content: "\e928";
+}
+.lm-on-cost-icon:before {
+  content: "\e929";
+}
+.lm-pencil-icon:before {
+  content: "\e92a";
+}
+.lm-pointer-icon:before {
+  content: "\e92b";
+}
+.lm-present-icon:before {
+  content: "\e92c";
+}
+.lm-rectangle-icon:before {
+  content: "\e92d";
+}
+.lm-redo-icon:before {
+  content: "\e92e";
+}
+.lm-right-arrow-icon:before {
+  content: "\e92f";
+}
+.lm-right-page-icon:before {
+  content: "\e930";
+}
+.lm-screen-share-icon:before {
+  content: "\e931";
+}
+.lm-search-icon:before {
+  content: "\e932";
+}
+.lm-send-icon:before {
+  content: "\e933";
+}
+.lm-solid-line-icon:before {
+  content: "\e934";
+}
+.lm-sound-waves-icon:before {
+  content: "\e935";
+}
+.lm-text-icon:before {
+  content: "\e936";
+}
+.lm-undo-icon:before {
+  content: "\e937";
+}
+.lm-vertical-more-icon:before {
+  content: "\e938";
+}
+.lm-webcam-off-icon:before {
+  content: "\e939";
+}
+.lm-webcam-on-icon:before {
+  content: "\e93a";
+}
+.lm-zoom-in-icon:before {
+  content: "\e93b";
+}
+.lm-zoom-out-icon:before {
+  content: "\e93c";
+}
+
+

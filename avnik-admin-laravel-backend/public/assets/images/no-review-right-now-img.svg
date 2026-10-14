@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="92.768" height="92.767" viewBox="0 0 92.768 92.767">
+  <g id="no-review-right-now-img" transform="translate(-1032 -494)">
+    <g id="ringing" transform="matrix(0.961, -0.276, 0.276, 0.961, 1028.344, 515.334)">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="37.5" cy="37.5" r="37.5" transform="translate(3.697 0.372)" fill="#e5eaf5"/>
+      <g id="Polygon_8" data-name="Polygon 8" transform="translate(23.054 19.937)">
+        <path id="Path_1" data-name="Path 1" d="M18.4,0l5.152,12.256L36.8,13.369,26.737,22.056,29.773,35,18.4,28.113,7.028,35l3.036-12.944L0,13.369l13.248-1.113Z" fill="none"/>
+        <path id="Path_2" data-name="Path 2" d="M18.4,3.871l-4.121,9.8-10.6.89,8.051,6.949L9.3,31.868l9.1-5.509,9.1,5.509L25.069,21.514l8.051-6.949-10.6-.89L18.4,3.871M18.4,0l5.152,12.256L36.8,13.369,26.737,22.056,29.773,35,18.4,28.113,7.028,35l3.036-12.944L0,13.369l13.248-1.113Z" fill="#0030a0"/>
+      </g>
+    </g>
+  </g>
+</svg>

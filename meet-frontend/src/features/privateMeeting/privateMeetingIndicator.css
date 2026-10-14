@@ -1,0 +1,26 @@
+.private-meet-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(20, 83, 136, 0.25);
+  background: #ffffff;
+  color: #145388;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+.private-meet-indicator__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e80b0b;
+  flex-shrink: 0;
+}
+
+.private-meet-indicator__label {
+  white-space: nowrap;
+}

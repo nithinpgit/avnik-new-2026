@@ -1,0 +1,41 @@
+/* Matches .meeting-content-stage bounds — over whiteboard / docs / share stages. */
+.meeting-paused-overlay {
+  position: absolute;
+  top: var(--meeting-topbar-height, 52px);
+  left: 0;
+  right: 0;
+  bottom: var(--meeting-stage-bottom, 87px);
+  z-index: 28;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--meeting-stage-inset, 16px) 20px;
+  pointer-events: auto;
+  background: #ffffff;
+}
+
+.video-conference.normal .meeting-paused-overlay {
+  right: var(--meeting-sidebar-width, 260px);
+}
+
+.meeting-paused-overlay__panel {
+  max-width: min(420px, 100%);
+  padding: 28px 32px;
+  text-align: center;
+}
+
+.meeting-paused-overlay__title {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+}
+
+.meeting-paused-overlay__text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #475569;
+}

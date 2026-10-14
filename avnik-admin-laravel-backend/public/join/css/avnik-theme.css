@@ -1,0 +1,29 @@
+/* Anik Default Theme change*/
+.blue-dark-color, 
+.icon-input-box i,
+.play-test-sound,
+.WBCP-right .nav.nav-pills li.active a,
+.presenter-o-btns .iocn-toggle-bx .btn-toogle, .av-toggle-btn
+{color:#0F71A3;}
+.blue-dark-color:hover,
+.link-btn:hover,
+.group-chat-pop-footer .group-message-advance li button:hover,
+.group-chat-pop-footer .group-message-advance li .fileUpload:hover i,
+.participants-list .dropdown-menu ul.meet-dd-o li a:hover,
+.c-options-list .l-b-btn a:hover,
+.c-options-list .l-b-btn li:hover, 
+.c-options-list .l-b-btn:hover,
+.share-contact-group button.btn.cmn-btn:hover
+{color:#145388;}
+.blue-dark-bg-color, 
+.cmn-cricle-btn
+{background-color:#ffffff;}
+.red-btn
+{background-color: #DB2727;border:1px solid #DB2727;}
+.red-btn:hover,
+.modal .btn.cmn-btn.red-btn:hover
+{background-color: #b70000;border:1px solid #b70000;}
+.sub-menu.open a.l-t-btn.dropdown-toggle
+{background-color:#E8E8E8; color: #145388;}
+.modal .cmn-btn:hover
+{background-color:#145388;color:#ffffff;border-color:#145388;}

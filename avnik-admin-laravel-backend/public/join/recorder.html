@@ -1,0 +1,1888 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <script>
+         const recorder = true;
+      </script>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <meta name="robots" content="index, follow">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+      <title>Liberate</title>     
+      <script src="config.js"></script>  
+      <link href="css/c3.min.css" rel="stylesheet">
+      <link href="css/jquery.toast.css" rel="stylesheet">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
+      <link href="css/hover.css" rel="stylesheet">
+      <link href="css/mfb.min.css" rel="stylesheet">       
+      <link href="css/cooltipz.css" rel="stylesheet">
+      <link href="css/custom-style.css?t=345353" rel="stylesheet">
+      <link href="css/style.css?t=43535" rel="stylesheet">
+      <link href="css/override.css?t=43535" rel="stylesheet">
+      <link href="css/recorder.css?t=345353" rel="stylesheet">
+      <link href="css/jquery.horizontalmenu.css" rel="stylesheet">
+      <link href="css/responsive.css?t=43535" rel="stylesheet">
+      <link href="css/font-face.css" rel="stylesheet">
+      <link href="css/avnik-fonts.css" rel="stylesheet">
+      <link href="css/liberate-font-icon.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script>
+         var getParameterByName = (name) => {
+           name = name.replace(/[\[]/, '\\\[').replace(/[\]]/, '\\\]');
+           var regex = new RegExp('[\\?&]' + name + '=([^&#]*)'),
+               results = regex.exec(location.search);
+           return results === null ? '' : decodeURIComponent(results[1].replace(
+               /\+/g, ' '));
+         }
+         let dev = getParameterByName('dev') ? true:false;
+         var recognition;
+         var roomData = {};
+      </script>
+      
+      
+   </head>
+   <body id="body" class="fix-header fix-sidebar card-no-border">
+      <div id="welcome-loader" class="loader" style="display: block !important;z-index: 9999999999;">
+         <div class="loader-label">Welcome</div>
+         <div class="loader-txt"> <img src="images/loader.gif" alt="" /> </div>
+         <div class="loader-small" style="display: none;"> <img style="width: 100px;" src="images/load.gif" alt="" /> </div>
+      </div>
+      <div class="toster"></div>
+      <form style="width: 1px;height: 1px;opacity: 0;position: fixed;bottom: 0px;left: 0px;" id="ppt-form" method="post" action="" enctype="data-ajax">
+         <input style="width: 1px;height: 1px;" accept=".pdf,.doc,.docx,.xls,.ppt,.pptx,.jpeg,.png,.jpg" id="ppt-file" type="file" name="sampleFile" />
+      </form>
+      <form style="width: 1px;height: 1px;opacity: 0;position: fixed;bottom: 0px;left: 0px;" id="mp4-form" method="post" action="" enctype="data-ajax">
+         <input style="width: 1px;height: 1px;" accept=".mp4" id="mp4-file" type="file" name="sampleFile" />
+      </form>
+      <form style="width: 1px;height: 1px;opacity: 0;position: fixed;bottom: 0px;left: 0px;" id="whiteboard-image" method="post" action="" enctype="data-ajax">
+         <input style="width: 1px;height: 1px;" accept=".jpg, .jpeg, .png" id="whiteboard-image-file" type="file" name="sampleFile" />
+      </form>
+      <div class="loader opacity-5">
+         <div class="loader-label">Connecting....</div>
+         <div class="loader-txt"> <img src="images/loader.gif" alt="" /> </div>
+      </div>
+      <section id="fullareawb" class="whiteboard-sec">
+         <div class="WS-title-collapse"></div>
+         <div id="middle_block" class="middle_block">
+            <div id="screen_patent" class="mid-parent hide"></div>
+            <div id="conference" class="mid-parent-conf" style="display: none;"></div>
+            <div id="presentation" class="mid-parent" style="display: none;">
+               <div class="slide-parent"></div>
+            </div>
+            <div id="whiteboard" class="whiteboard mid-parent disable-board image_section">
+                 <div id="whiteboard-area" style="width: 1500px;height: 800px;"></div>
+            </div>
+            <div class="wb-block-notify" id="wb-using">Some one is using whiteboard, please wait..</div>
+            <div id="youtube-share" class="mid-parent"></div>
+            <div id="mp4video-parent" class="mid-parent">
+               <video id="mp4Video" playsinline autoplay controls></video>
+            </div>
+            <button class="content-close-btn click71"> <i class="mr-close-icon"></i> </button>
+         </div>
+
+<div class="l-meet-logo">
+    <div class="meet-logo"><a href="#" data-cooltipz-dir="bottom-left" aria-label="Avnik Meet"><img class="app-logo" src="" alt="" /></a> </div>
+</div>
+
+
+
+<div id="WB_buttons">
+<div class="t-rit-c-btns">
+<!--
+ <div class="t-t-b add-pra-top-btn">
+    <a href="javascript:void(0);" class="cmn-cricle-btn" data-toggle="modal" data-target="#play-music-popup" title="Play Music" rel="tooltip"><i class="lm lm-sound-waves-icon"></i></a>
+</div>
+-->
+
+<div class="t-t-b notification-top-btn">
+   <div class="dropdown notification-dd"><a class="cmn-cricle-btn dropdown-toggle" href="#" role="button" id="notification-dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="lm lm-notification-icon"></i><span class="count-status-dot">0</span></a>
+     <div class="dropdown-menu" aria-labelledby="notification-dd">
+	     <button type="button" class="close cmn-close-btn" data-dismiss="modal" aria-label="Close"><i class="lm lm-close-icon"></i></button>
+        <div class="notification-list">
+         <div class="mute-notification">
+            <strong>Mute Notification</strong>
+            <div class="switch-container">
+               <input  type="checkbox" id="switch" class="change2">
+               <label for="switch" class="switch-label">
+                  <div class="switch-rail">
+                     <div class="switch-slider"></div>
+                  </div>
+               </label>
+            </div>
+         </div>
+         <ul class="ul-list" id="pushNotifList">
+         </ul>
+      </div>
+        </div>
+</div>              
+</div>
+
+<div class="t-t-b add-pra-top-btn" data-cooltipz-dir="bottom" aria-label="Conference Mode"> <button type="button" class="btn cmn-cricle-btn click70"> 
+   <i class="mr-desktop-view-icon"></i> 
+   </button></div>
+<!--<div class="t-t-b practitioners-top-btn invite-btn">
+   <div class="invite-user-btn show-host hide">
+      <button type="button" class="btn cmn-cricle-btn" data-toggle="modal" data-target="#invite-user-btn" data-cooltipz-dir="bottom" aria-label="Invite">
+      <i class="mr-invite-icon invite_icon_section"></i>
+      </button>
+   </div>
+</div>-->
+
+            </div>
+            <div class="WB-main-btn btn-control" >
+               <div class="WB-con-btn-area" data-cooltipz-dir="bottom-right" aria-label="Participant">
+                  <div class="WB-tools-btn cmn-cricle-btn click69">
+                     <span class="chat-message-show noti-msg-dot" style="display: none;">&nbsp;</span>
+                     <i class="mr-grid-view-icon grid_view_icon"></i>
+                  </div>
+               </div>
+               <div id="right-cam-parent" class="WB-tools-sidebar shw-rside">
+                  <div id="right-cam-area" class="right-control">
+                     <div class="right-tab-main-sec rit-manage-sidebar">
+                        <div id="participant" class="tab-pane fade in active">
+                           <div id="tutor-video"  style="z-index: 999 !important;" class="tutor-video-area layoutchild">                                 
+                              <div class="host-vide visiable">
+                                 <div class="audio-chker-blk">
+                                    <div id="hosta1" class="first-dot"></div>
+                                    <div id="hosta2" class="second-dot"></div>
+                                    <div id="hosta3" class="third-dot"></div>
+                                 </div>
+                                 <div id="host-avatar" class="avatar-parent pra-info-box click68">
+                                    <div class="pra-name">Angela Johnson</div>
+                                    <div class="dropdown my-account-dd" style="opacity: 0;"><a class="link-btn dropdown-toggle" href="#" role="button" id="my-account-dd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="lm lm-menu-icon"></i></a>
+                                       <div class="dropdown-menu" aria-labelledby="my-account-dd">
+                                           <div class="side-nav-bx">
+                                            <ul>
+                                          <li><a href="javascript:void(0);" data-toggle="modal" data-target="#request-join-metting-popup"><i class="lm lm-exit-user-icon"></i> Request Join Metting</a></li>
+                                          <li><a href="javascript:void(0);" data-toggle="modal" data-target="#end-metting-popup"><i class="lm lm-exit-user-icon"></i> End Metting</a></li>
+                                               <li><a href="javascript:void(0);" data-toggle="modal" data-target="#exit-user-popup"><i class="lm lm-exit-user-icon"></i> Exit User</a></li>
+                                          <li><a href="javascript:void(0);" data-toggle="modal" data-target="#make-host-popup"><i class="lm lm-present-icon"></i> Make Host</a></li>						 
+                                          <li><a href="#"><i class="lm lm-webcam-on-icon"></i> Video Mute</a></li>
+                                          <li><a href="#"><i class="lm lm-mic-on-icon"></i> Voice Mute</a></li>						 
+                                          <li><a href="#"><i class="lm lm-chat-icon"></i> Message</a></li>
+                                           </ul>
+                                       </div>
+                                   </div>
+                               </div>			
+                                    <div id="host-name" class="avatar-inner vertical-center">
+                                       <div id="host-name-val" class="vertical-center"></div>
+                                    </div>
+                                 </div>
+                                 <div id="tutor-pause-msg" class="hide"></div>
+                                 <video  class="av2bg" id="host-video" autoplay muted playsinline></video>
+                                 <div class="av-cmn-dd hide">
+                                    <div class="dropdown">
+                                       <button class="dropbtn" data-cooltipz-dir="topo" aria-label="Network Signal"><i class="av av-network-signal-icon"></i></button>
+                                       <div class="dropdown-outer">
+                                          <div class="dropdown-content">
+                                             <ul class="cmn-ul-list">
+                                                <li>Connection: <span>Good</span></li>
+                                                <li>Bitraet: <span>3282Kbps 2377Kbps</span></li>
+                                                <li>Packet loss: <span>0% 0%</span></li>
+                                                <li>Resolution: <span>960x720</span></li>
+                                                <li>Frame rate: <span>30</span></li>
+                                                <li>Server count: <span>1</span></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="pin-p-icon hide">
+                                    <button class="btn cmn-icon-btn" data-cooltipz-dir="top" aria-label="Pin to Presenter"><i class="av av-pin-icon"></i></button>
+                                 </div>
+                            
+                                 <div class="presenter-o-btns">
+                                    <div class="cmn-toggle-bx iocn-toggle-bx p-video-option">
+                                       <div title="Start Private Chat" rel="tooltip" id="pre-vid-chat-par" class="btn-group dropleft hide">                                             
+                                       </div>
+                                       <div id="leave-meeting-par" data-cooltipz-dir="top" aria-label="Leave Room" class="btn-group dropleft hide">                                             
+                                       </div>                                          
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="participants-video-list-sec">
+                              <div class="well well-sm view-icons">
+                                 <strong class="p-list-heading">Participants (<span id="part-count">0</span>)</strong>
+                                 <a id="autoaccept-tooltip" data-cooltipz-dir="left" aria-label="Auto accept is off"><i id="autoacceptswitch" class="mr-attended-icon autoaccept show-host hide click64"></i></a>
+                                 <div class="search-participants search_section">
+                                    <div class="search-toggle">
+                                       <button class="search-icon icon-search">
+                                       <i class="mr-search-icon"></i>
+                                       </button>
+                                       <button class="search-icon icon-close">
+                                       <i class="mr-close-icon"></i>
+                                       </button>
+                                    </div>
+                                    <div class="search-container">
+                                       <form>
+                                          <button type="submit" name="submit" value="Go" class="search-icon">
+                                          <i class="mr-search-icon"></i>
+                                          </button>
+                                          <input class="keyup1" type="text" name="q" id="user-search" placeholder="Search here..." />                              
+                                       </form>
+                                    </div>
+                                 </div>
+                               
+                              </div>
+                              <div id="products" class="list-group participants_lsit_area">
+                                 <div class="PVL-list">
+                                    <ul class="participants-list" id="userList">
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="close_control_btn WB-tools-btn cmn-cricle-btn click62" data-cooltipz-dir="bottom-right" aria-label="Close">
+                        <i class="mr-close-icon close_icon_section"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="WB-main-btn btn-chat">
+               <span>
+               <a class="Smallbutton cmn-cricle-btn click65"  id="showChat" data-target=".showchat"  >
+               <span class="chat-message-show chat-mgs-dot" style="display: none;">&nbsp;</span>
+               <i class="mr-chat-icon" ></i>
+               </a>
+            </span>
+               <div id="chat-par-cont" class="showchat target" style="display: none;">
+                  <div class="WB-chat-popup-sec">
+                     <div class="WB-chat-popup">
+                        <div class="WBCP-top">
+                           <div class="WBCP-right">
+                              <ul class="nav nav-pills">
+                                 <li  style="z-index: 99999;" class="click62">
+                                    <a>
+                                    <button rel="tooltip" class="chat-mute link-btn dropdown RC-top-list mic-list red-txt" data-cooltipz-dir="top" aria-label="Chat Sound"> 
+                                       <i id="chat-snd-on-icon" class="mr-sound-mute-icon icon_mr_section"></i>  
+                                       <i id="chat-snd-off-icon" class="mr-sound-unmute-icon icon_mr_section hide"></i>
+                                    </button>
+                                 </a>
+                                 </li>
+                                 <li class="active click61" style="z-index: 99999;"><a id="grpuchata" data-toggle="pill" href="#group_chat" data-cooltipz-dir="top" aria-label="Group Chat">
+                                    <i class="mr-group-chat-icon"></i>
+                                    </a>
+                                 </li>
+                                 <li id="pvtabli" class="hide click60"><a class="person-chat" id="pvchatSelect" data-toggle="pill" href="#person_chat" data-cooltipz-dir="top" aria-label="Person Chat">
+                                    <span class="chat-message-show noti-msg-dot" style="display: none;">&nbsp;</span>
+                                    <i class="mr-user-chat-icon"></i>
+                                    </a>
+                                 </li>
+                                 <li><a href="#" class="chat-close-btn click59"  data-cooltipz-dir="top" aria-label="Close Chat"><i class="mr-close-icon"></i></a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="tab-content">
+                           <div id="group_chat" class="tab-pane fade in active">
+                              <div class="WBCP-left"> <span>Group Message</span> </div>
+                              <div class="group_chat_popup_sec">
+                                 <div class="chat-rbox">
+                                    <ul id="chatUl" class="chat-list message_box_scroll">
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="group-chat-pop-footer">
+                                 <div class="group-messages-footer">
+                                    <div class="popup-messages-footer">
+                                       <textarea id="chatInput" placeholder="Type a message..." class="chat-pop-input keyup2"></textarea>
+                                    </div>
+                                    <span class="smily-hold"> <span id="smily"></span> </span>
+                                    <div class="group-message-advance">
+                                       <ul>
+                                          <li>
+                                             <div class="fileUpload">
+                                                <i class="mr-attachment-icon"></i>
+                                                <form id="chat-file-form" method="post" action="" enctype="data-ajax">
+                                                   <input id="chat-file" type="file" name="sampleFile" class="upload upload_file_section" />
+                                                </form>
+                                             </div>
+                                          </li>
+                                          <li class="smiley-btn"> &nbsp; </li>
+                                          <li>
+                                             <button type="button" class="send-message-btn click58">
+                                             <i class="mr-send-icon"></i>
+                                             </button>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="person_chat" class="tab-pane person-chat-content fade">
+                              <div class="WBCP-left"> <span class="click1" id="selectChatUsrName">User</span> </div>
+                              <div class="WBCP-left WB-username WB_hide_show"> <span class="click57"><i class="zmdi zmdi-chevron-left"></i> Riyo Khan</span> </div>
+                              <div class="WB-pop-list-sec">
+                                 <div id="pvsearch" class="WB-search"> 
+                                    <i class="mr-search-icon"></i>
+                                    <input class="search_new_section keyup3" id="searchUserInp" type="text" placeholder="Search for users">
+                                 </div>
+                                 <div class="WB-pop-list">
+                                    <ul id="pv-chat-users-ul" class="chatonline message_user_scroll style-none">
+                                    </ul>
+                                 </div>
+                                 <div id="pvChatList" class="WB-pop-person-chat">
+                                    <div class="chat-rbox">
+                                       <ul id="chatListPv" class="chat-list message_box_scroll">
+                                       </ul>
+                                    </div>
+                                    <div class="group-chat-pop-footer">
+                                       <div class="group-messages-footer">
+                                          <div class="popup-messages-footer">
+                                             <textarea id="pvChatInput" placeholder="Type a message..." class="chat-pop-input keyup4"></textarea>
+                                          </div>
+                                          <div class="group-message-advance">
+                                             <ul>
+                                                <li>
+                                                   <div class="fileUpload click56"> 
+                                                      <i class="mr-attachment-icon attach_icon_section"></i>
+                                                      <input type="file" class="upload" />
+                                                   </div>
+                                                </li>
+                                                <li>
+                                                   <button type="button">
+                                                   <i class="mr-emoji-icon" style="opacity: 0;"></i>
+                                                   </button>
+                                                </li>
+                                                <li>
+                                                   <button class="click55" type="button">
+                                                   <i class="mr-send-icon"></i>
+                                                   </button>
+                                                </li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="top-left-tools">
+              <div class="t-l-btn-list">                  
+                  <div class="t-l-btn">
+                     <div class="editing-options-panel">
+                        <div class="dropdown lm-tools-dd open">
+                        <a class="cmn-cricle-btn dropdown-toggle dd-open click54" id="my-account-dd" data-toggle="dropdown" aria-expanded="true"><i class="lm lm-left-tool-icon"></i> </a>
+                            <div class="wbtoollist">                   
+                              <div class="lft-side-tools" id="menu">             
+                                 <div class="l-side-btn-list">
+                                    <div class="l-side-btn disable-wb">
+                                       <div id="tool-move" class="first-tool-li">            
+                                          <a class="l-t-btn" data-cooltipz-dir="right" aria-label="Pointer"><i class="mr-pointer-icon"></i></a>              
+                                       </div>
+                                    </div>
+                                    <div class="l-side-btn disable-wb">
+                                       <div class="sub-menu click53">
+                                          <a class="l-t-btn dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" data-cooltipz-dir="right" aria-label="Shapes"> 
+                                          <i id="selected-shape" class="mr-rectangle-icon"></i> 
+                                          </a>                   
+                                          <div id="shape-drop" class="dropdown-menu dropdown-menu-lg-right ">
+                                             <div class="tool-btn-list">
+                                                <ul>
+                                                   <li> 
+                                                      <span id="tool-rectangle">
+                                                      <a class="tool-icon-btn" data-cooltipz-dir="top" aria-label="Rectangle">
+                                                      <i class="mr-rectangle-icon"></i></a>
+                                                      </span> 
+                                                   </li>
+                                                   <li> 
+                                                      <span id="tool-ellipse"><a href="JavaScript:void(0);" class="tool-icon-btn" data-cooltipz-dir="top" aria-label="Ellipse">
+                                                      <i class="mr-ellipse-icon"></i></a></span> 
+                                                   </li>
+                                                   <li> 
+                                                      <span id="tool-line"><a href="JavaScript:void(0);" class="tool-icon-btn" data-cooltipz-dir="top" aria-label="Line">
+                                                      <i class="mr-solid-line-icon"></i></a></span> 
+                                                   </li>
+                                                   <li> 
+                                                      <span id="tool-dashed"><a href="JavaScript:void(0);" class="tool-icon-btn" data-cooltipz-dir="top" aria-label="Dashed Line">
+                                                      <i class="mr-dashed-line-icon"></i></a></span>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="l-side-btn disable-wb">
+                                       <div id="tool-pencil">             
+                                          <a class="l-t-btn" data-cooltipz-dir="right" aria-label="Pencil"> 
+                                          <i class="mr-pencil-icon"></i> 
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="l-side-btn disable-wb">
+                                       <div id="tool-undo" class="click52">           
+                                          <a class="l-t-btn" data-cooltipz-dir="right" aria-label="Undo">
+                                          <i class="mr-undo-icon"></i>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="l-side-btn disable-wb">
+                                       <div id="tool-redo" class="click51">              
+                                          <a class="l-t-btn" data-cooltipz-dir="right" aria-label="Redo">
+                                          <i class="mr-redo-icon"></i>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="l-side-btn no-mouse">
+                                       <div id="tool-color">             
+                                          <a class="l-t-btn" data-cooltipz-dir="right" aria-label="Colors"> 
+                                          <i class="mr-choose-color-icon"></i>
+                                          <input class="picker color-pic wbcolor-pick change3" type="color" id="html5colorpicker" value="#000000">
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="l-side-btn disable-wb">
+                                       <div id="tool-eraser">
+                                          <a class="l-t-btn" data-cooltipz-dir="right" aria-label="Eraser">
+                                          <i class="mr-eraser-icon"></i>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="l-side-btn  disable-wb">
+                                       <div id="tool-text">              
+                                          <a class="l-t-btn" data-cooltipz-dir="right" aria-label="Text">
+                                          <i class="mr-text-icon"></i>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="l-side-btn disable-wb">
+                                       <div class="l-t-btn">
+                                          <div id="add-image">             
+                                             <a class="l-t-btn" data-cooltipz-dir="right" aria-label="Image">
+                                             <i class="mr-image-icon"></i></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="l-side-btn">
+                                       <div class="l-t-btn">
+                                          <div id="save" class="click50">
+                                             <div class="av-tt-bx av-tt-right">
+                                                <a class="l-t-btn" id="Download" data-cooltipz-dir="right" aria-label="Download">
+                                                <i class="mr-download-icon"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="l-side-btn disable-wb">
+                                       <div class="l-t-btn">
+                                          <div id="clearall" class="last-tool-li click49">
+                                             <a class="l-t-btn" data-cooltipz-dir="right" aria-label="Clear">
+                                             <i class="mr-clear-all-icon"></i>
+                                             </a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <!--
+                                    <div class="l-side-btn m-view-more">
+                                       <div class="av-tt-bx av-tt-right">
+                                          <div class="sub-menu">
+                                             <a href="JavaScript:void(0);" class="l-t-btn dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" data-cooltipz-dir="right" aria-label="More...">
+                                             <i class="lm lm-menu-icon"></i></a>
+                                             <div class="dropdown-menu dropdown-menu-lg-right">
+                                                <div class="tool-btn-list">
+                                                   <ul>
+                                                      <li class="disable-wb">
+                                                         <div id="tool-eraser-mob">
+                                                            <a class="l-t-btn" data-cooltipz-dir="top" aria-label="Eraser Mobile"><i class="mr-eraser-icon"></i></a>
+                                                         </div>
+                                                      </li>
+                                                      <li class="disable-wb">
+                                                         <div id="tool-text">
+                                                            <a class="l-t-btn" data-cooltipz-dir="top" aria-label="Text"><i class="mr-text-icon"></i></a>
+                                                         </div>
+                                                      </li>
+                                                      <li class="disable-wb">
+                                                         <div id="add-image">
+                                                            <a class="l-t-btn" data-cooltipz-dir="top" aria-label="Image Upload"><i class="mr-image-icon"></i></a>
+                                                         </div>
+                                                      </li>
+                                                   </ul>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                 -->
+                                 
+                              </div>
+                            </div>
+                        </div>
+                        </div>
+                  </div>
+               </div>
+
+               <div class="t-l-btn meeting-timer-panel">
+                  <div class="t-l-btn-list">
+                     <div class="t-l-btn">
+                        <div class="host-info-btn" data-cooltipz-dir="bottom" aria-label="Settings">
+                           <button  type="button" id="settings-open" class="btn cmn-icon-btn box_icon_mobile click46" data-toggle="modal" data-target="#host-info-btn"  > 
+                           <i class="mr-setting-icon"></i> 
+                           </button>
+                        </div>
+                     </div>                     
+                     <div class="t-l-btn">
+                        <div class="presenter-btn not-now">
+                           <button type="button" class="btn cmn-icon-btn" data-toggle="modal" data-target="#presenter-btn" data-cooltipz-dir="bottom" aria-label="Presenter"> 
+                           <i class="av-add-friend-icon"></i> 
+                           </button>
+                        </div>
+                     </div>    
+                     <div class="t-l-btn">
+                        <div class="invite-user-btn show-viewer send-presenting-request hide" data-cooltipz-dir="bottom" aria-label="Send Presenting Request">
+                           <button type="button" class="btn cmn-icon-btn click45"> <i class="mr-present-icon"></i> </button>
+                        </div>
+                     </div>
+                     <div class="t-l-btn">
+                        <div class="start-end-meeting-bx">
+                           <div id="meeting-stoped-block" class="meeting-timer-bx">
+                              <ul class="cmn-ul-list">
+                                 <li><span class="timer-bx">00:00:00</span></li>
+                                 <li class="show-host hide border-left start-meeting-bx">
+                                    <button type="button" class="start-meeting-btn link-btn click44" data-cooltipz-dir="bottom" aria-label="Start Meeting">
+                                    <i class="mr-start-timer-icon"></i>
+                                    </button>
+                                 </li>                      
+                              </ul>
+                           </div>
+                           <div id="meeting-started-block" class="meeting-timer-bx ongoing-meeting hide">
+                              <ul class="cmn-ul-list">
+                                 <li><span class="timer-bx">00:00:00</span></li>
+                                 <li class="show-host hide border-left hide start-meeting-btn" id="playbtn">
+                                    <button type="button" class="start-meeting-btn link-btn click43" data-cooltipz-dir="bottom" aria-label="Start Meeting"> 
+                                    <i class="mr-start-timer-icon"></i>
+                                    </button>
+                                 </li>
+                                 <li class="show-host hide border-left start-meeting-bx pause-meeting-bx" id="pausebtn" >
+                                    <button type="button" class="start-meeting-btn link-btn click42" data-cooltipz-dir="bottom" aria-label="Pause Meeting">
+                                    <i class="mr-pause-timer-icon"></i>
+                                    </button>
+                                 </li>
+                                 <li class="show-host end-meeting-bx border-left">
+                                    <button type="button" class="end-meeting link-btn click41" data-cooltipz-dir="bottom" aria-label="End Meeting">
+                                    <i class="mr-end-meeting-icon"></i>
+                                    </button>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="meeting-timer-bx ongoing-user-waves" style="display:none;"> 
+                              <span class="waves-icon">
+                              <i class="mr-voice-icon"></i>
+                              </span> 
+                              <strong></strong> 
+                           </div>
+                        </div>
+                     </div>
+                     <div class="t-l-btn hide" id="leave-meet">
+                        <div class="leave-meeting click40"  title="Leave Meeting" rel="tooltip">
+                           <button type="button" class="btn cmn-icon-btn"> <i class="mr-exit-user-icon red-icon"></i> </button>
+                        </div>
+                     </div>
+                     <div id="speakerbox" class="t-l-btn speakerbox current-speaker-bx">
+                        <div class="start-end-meeting-bx">
+                           <div class="meeting-timer-bx ongoing-user-waves">
+                              <span class="waves-icon">
+                                 <div class="audio-chker-blk">
+                                    <div id="hosta1" class="first-dot" style="opacity: 1;"></div>
+                                    <div id="hosta2" class="second-dot" style="opacity: 1;"></div>
+                                    <div id="hosta3" class="third-dot" style="opacity: 1;"></div>
+                                 </div>
+                              </span>
+                              <strong id="current-speaker">Kamu</strong> 
+                           </div>
+                        </div>
+                     </div>                  
+                  </div>
+                  
+               </div> 
+            <div class="t-l-btn recording-new-btn show-host hide recording-pres click39">
+              <div class="recording-top-btn" data-cooltipz-dir="bottom" aria-label="Recording">
+                  <a href="#" class="cmn-cricle-btn"><span>&nbsp;</span></a>
+              </div>
+              <strong class="recoff">Start Recording</strong>
+              <strong class="recon">Stop Recording</strong>
+            </div>
+            <div id="rec-indi" class="t-l-btn recording-new-btn" style="display: none;">
+               <div class="recording-top-btn playing-recording" data-cooltipz-dir="bottom" aria-label="Recording..">
+                   <a style="cursor: not-allowed;" href="#" class="cmn-cricle-btn"><span>&nbsp;</span></a>
+               </div>
+               <strong>Recording...</strong>
+             </div>
+             </div>
+            </div>          
+          </div>
+         </div>
+         <div class="controls-options-new">
+           <a href="javascript:void(0);" class="cmn-cricle-btn link-btn click38"><i class="lm lm-right-arrow-icon"></i></a>
+           <div class="c-options-list bottommenus">
+            <ul class="cmn-ul-list">
+            <li>
+               <div class="share-doc-video-bx">
+               <ul class="b-c-o-l">
+                  <li class="screen-share-tool disable-viewer-btn " data-cooltipz-dir="top" aria-label="Screen Share">			
+                     <button class="link-btn div-btn screen-button click37">			 
+                     <i class="mr-screen-share-icon on-btn"></i>
+                     <i class="mr-share-off-icon off-btn hide"></i>			              
+                     </button>           
+                  </li>
+                  <li class="share-document-tool disable-viewer-btn" data-cooltipz-dir="top" aria-label="Share Document">
+                     <button class="link-btn  div-btn p-share click36" >
+                     <i class="mr-document-share-icon document_icon_share on-btn"></i>
+                     <i class="mr-document-off-icon off-btn hide"></i>
+                     </button> 
+                  </li>
+                  <li class="share-video-tool disable-viewer-btn" data-cooltipz-dir="top" aria-label="Share Video">
+                     <button class="link-btn div-btn y-share click35">
+                     <i class="mr-video-share-icon video_icon_share on-btn"></i>				
+                     <i class="mr-video-off-icon off-btn hide"></i>
+                     </button> 
+                  </li>
+               </ul>
+            </div>
+            </li> 
+            <li class="zoom-blk zoom-in-out-bx" style="display: none;">
+               <div class="l-b-btn zoom-in-out-tool">
+                  <ul>
+                     <li class="click34" data-cooltipz-dir="top" aria-label="Zoom In">
+                        <i class="mr-zoom-in-icon zoom_icon_section "></i>
+                     </li>
+                     <li class="pages-value"><span class="zoomval">100%</span></li>
+                     <li class="click33" data-cooltipz-dir="top" aria-label="Zoom Out">        
+                        <span class="av av-zoom-out-icon"><span class="path1"></span>
+                        <span class="path2"></span><span class="path3"></span>
+                        <span class="path4"></span></span>
+                        <i class="mr-zoom-out-icon zoom_out_section"></i>         
+                     </li>
+                  </ul>
+               </div>
+            </li>           
+            <li class="zoom-blk page-pre-next-bx" style="display: none;">
+               <div class="l-b-btn next-pre-page-tool hide-viewer">
+                  <ul>
+                     <li class="hide-viewer disable disabledoctool click32" data-cooltipz-dir="top" aria-label="Previous Page">
+                        <a title="Previous Page"> 
+                        <i class="mr-left-page-icon"></i>
+                        </a>
+                     </li>
+                     <li class="p-input-value hide-viewer disable disabledoctool">
+                        <input class="form-control pagen" value="1">
+                     </li>
+                     <li class="hide-viewer disable disabledoctool click31" data-cooltipz-dir="top" aria-label="Next Page">
+                        <a title="Next Page">
+                        <i class="mr-right-page-icon"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </li>
+            <li>
+               <div class="l-b-btn full-screen-tool" data-cooltipz-dir="top" aria-label="Full Screen">
+                  <div class="click30">
+                     <a>
+                        <i id="exit-fs" class="full-screen-close hide"><img src="images/fullscreen-icon.svg" alt=""/></i>
+                        <i id="enable-fs" class="mr-full-screen-icon"></i>
+                     </a>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="l-b-btn camera-on-off-tool click29">
+                  <div class="camEnableBtn dropdown RC-top-list camera-list red-txt disable-viewer"  data-cooltipz-dir="top" aria-label="click here to turn on Camera">
+                     <i class="mr-webcam-on-icon webcam_icon_section"></i>
+                  </div>
+                  <div class="camDisableBtn dropdown RC-top-list camera-list green-txt disable-viewer hide"  data-cooltipz-dir="top" aria-label="Click here to turn Off Camera">
+                     <i class="mr-webcam-on-icon webcam_icon_section"></i>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="l-b-btn mic-on-off-tool click28">
+                  <button class="micEnableBtn link-btn dropdown RC-top-list mic-list red-txt disable-viewer"  data-cooltipz-dir="top" aria-label="Click here to unmute Mic"> 
+                  <i class="mr-mic-on-icon icon_mr_section"></i>  
+                  </button>
+                  <button  class="micDisableBtn link-btn dropdown RC-top-list mic-list green-txt disable-viewer hide"  data-cooltipz-dir="top" aria-label="Click here to mute Mic"> 
+                  <i class="mr-mic-on-icon icon_mr_section"></i>  
+                  </button>
+               </div>
+            </li>
+            <li class="remove-viewer">
+               <div class="l-b-btn camera-all-on-off-tool click27"  data-cooltipz-dir="top" aria-label="Turn OFF All">
+                  <button class="link-btn div-btn"> 
+                  <i id="cam-on-all" class="mr-all-webcam-on-icon on-btn"></i> 
+                  <i id="cam-off-all" class="mr-all-webcam-off-icon off-btn hide"></i> 
+                  </button>
+               </div>
+            </li>
+            <li class="remove-viewer">
+               <div class="l-b-btn all-mic-on-off-tool click26"  data-cooltipz-dir="top" aria-label="Mute All">
+                  <button class="link-btn div-btn">
+                  <i id="mic-on-all" class="mr-all-mic-on-icon on-btn"></i>
+                  <i id="mic-off-all" class="mr-all-mic-off-icon off-btn hide"></i> 
+                  </button>
+               </div> 
+            </li>  
+         </ul>
+        </div>
+      </div>
+      <div class="caption" style="display: none;"></div>        
+         </div>
+         </div>
+         </div>
+      </section>
+      <a id="wb-download" download="whitebaord.png"></a>
+      <div id="portrait-rotate">
+         <div class="portrait-rotate-message">
+            <figure><img src="images/rotate-screen-img.svg" alt="" /></figure>
+         </div>
+      </div>
+   <!--
+      <div class="triangle-arrow-boxes">
+        <div class="box-1">
+            fdsf sdf sdfsf fdsf sdf sdfsf fdsf sdf sdfsf
+        </div>
+        <div class="box-2">
+          fdsf sdf sdfsf fdsf sdf sdfsf fdsf sdf sdfsf
+        </div>
+        <div class="box-3">
+         fdsf sdf sdfsf fdsf sdf sdfsf fdsf sdf sdfsf
+        </div>
+        <div class="box-4">
+         fdsf sdf sdfsf fdsf sdf sdfsf fdsf sdf sdfsf
+        </div>
+      </div>
+   -->
+<div class="dummy-popup-btns hide">
+<ul class="cmn-ul-list">
+<li> <a href="javascript:void(0);" class="btn cmn-btn" data-toggle="modal" data-target="#on-cost-payment-btn">Payment</a></li>
+<li> <a href="javascript:void(0);" class="btn cmn-btn" data-toggle="modal" data-target="#on-cost-request-btn">Extend</a></li>
+<li> <a href="javascript:void(0);" class="btn cmn-btn" data-toggle="modal" data-target="#review-tips-popup">Review</a></li>
+<li> <a href="javascript:void(0);" class="btn cmn-btn" data-toggle="modal" data-target="#paying-message-popup">P M Payment</a></li>
+
+</ul>
+</div>  
+
+ <div class="modal fade cmn-modal host-info-popup icon_settings_page enter-name-popup" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog common-modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal_out_section">
+                  <div class="modal-header">
+                     <h2 id="modal-title" class="modal-title common-modal-head-txt">Message</h2>
+                  </div>
+                  <button id="settings-close" type="button" class="close settings-close hide" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><i class="mr-close-icon"></i></span> </button>
+               </div>
+               <div class="modal-body common-modal-body">
+                  <div id="modal-content"></div>
+               </div>
+               <div class="modal-footer">
+                  <div id="modal-button" class="common-modal-footer"><button type="button" class="ladda-button animate-btn zoom-out" data-dismiss="modal"><span class="label">Ok</span> <span class="spinner"></span></button></div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+<!-- Write Review Popup Modal start -->
+<div class="modal review-tips-popup" id="review-tips-popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">	
+      <div class="modal-header">
+         <div class="popup-heading">
+         <h1>Session ended, Tip & rate the session</h1>
+         </div>
+       
+         </div>
+<div class="modal-body">
+   <div class="review-tips-content">    
+    <div class="form-group">
+    <div class="review-tips-heading"><strong>Add a tip</strong></div>
+    <div class="tips-option-radio">
+      <div class="radio custom hide">
+         <label>
+         <input type="radio" name="tipamount" value="0" checked="checked"><span>$0</span> </label>
+       </div>
+    <div class="radio custom">
+      <label>
+      <input type="radio" name="tipamount" value="5"><span>$5</span> </label>
+    </div>
+    <div class="radio custom">
+      <label>
+      <input type="radio" name="tipamount" value="10"><span>$10</span> </label>
+    </div>
+    <div class="radio custom">
+      <label>
+      <input type="radio" name="tipamount" value="15"><span>$15</span> </label>
+   </div>
+   <div class="radio custom">
+      <label>
+      <input type="radio" name="tipamount" value="20"><span>$20</span> </label>
+   </div>  
+ </div>
+ </div>
+    <div class="form-group">
+       <div class="review-tips-heading"><strong>Rate the User</strong></div>
+       <div class="review-tips-input-bx">
+       <ul class="ul-list">
+       <li>
+       <div class="give-rated">
+        <div class="cmn-toggle starcomp click23"> 
+        <button class="btn-link"><i class="mr-star-rating-icon"></i> <img src="images/star-rating.svg" alt=""> </button>
+        </div>
+      </div>
+      </li>
+      <li>
+       <div class="give-rated">
+        <div class="cmn-toggle starcomp click22"> 
+        <button class="btn-link"><i class="mr-star-rating-icon"></i> <img src="images/star-rating.svg" alt=""> </button>
+        </div>
+      </div>
+      </li>
+      <li>
+       <div class="give-rated">
+        <div class="cmn-toggle starcomp click21"> 
+        <button class="btn-link"><i class="mr-star-rating-icon"></i> <img src="images/star-rating.svg" alt=""> </button>
+        </div>
+      </div>
+      </li>
+      <li>
+       <div class="give-rated">
+        <div class="cmn-toggle starcomp click20"> 
+        <button class="btn-link"><i class="mr-star-rating-icon"></i> <img src="images/star-rating.svg" alt=""> </button>
+        </div>
+      </div>
+      </li>
+      <li>
+       <div class="give-rated">
+        <div class="cmn-toggle starcomp click19"> 
+        <button class="btn-link"><i class="mr-star-rating-icon"></i> <img src="images/star-rating.svg" alt=""> </button>
+        </div>
+      </div>
+      </li>
+      </ul>
+       </div>
+       </div>
+       <div class="form-group">
+ <textarea class="form-control" id="review-comment" placeholder="Write your commnet..." value=""></textarea>
+ </div>
+ <button class="btn cmn-btn click18">Submit</button>
+       </div>
+       </div>
+     </div>
+   </div>
+ </div>
+<!-- Write Review Popup Modal End -->
+
+<!-- play-music-popup Modal start -->
+<div class="modal play-music-popup fade" id="play-music-popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+     <div class="modal-header">
+     <div class="popup-heading">
+     <h1>Play Music</h1>
+     </div>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="lm lm-close-icon"></i></button>
+     </div>
+       <div class="modal-body">      
+             <div class="play-music-list">       
+            <audio id="audio" preload="none" tabindex="0">
+              <source src="https://archive.org/download/calexico2006-12-02..flac16/calexico2006-12-02d1t02.mp3" data-track-number="1" />
+              <source src="https://archive.org/download/ra2007-07-21/ra2007-07-21d1t05_64kb.mp3" data-track-number="2" />
+              <source src="https://archive.org/download/slac2002-02-15/slac2002-02-15d1t07_64kb.mp3" data-track-number="3" />
+              <source src="https://archive.org/download/blitzentrapper2009-02-24.flac16/blitzentrapper2009-02-24t02_64kb.mp3" data-track-number="4" />
+              <source src="https://archive.org/download/samples2003-11-21.flac16/samples2003-11-21d2t04.mp3" data-track-number="5" />    
+              <source src="https://archive.org/download/mikedoughty2004-06-16.flac16/d1t13.mp3" data-track-number="6" />
+              <source src="https://archive.org/download/glove2004-03-18.shnf/glove2004-03-18d1t05.mp3" data-track-number="7" />
+              <source src="https://archive.org/download/guster2005-11-12.flac16/guster2005-11-12d2t04.mp3" data-track-number="8" />
+              <source src="https://archive.org/download/oar2004-11-12.flac/oar2004-11-12d1t01.mp3" data-track-number="9" />
+              <source src="https://archive.org/download/mmj2003-09-26.shnf/mmj2003-09-26d2t08.mp3" data-track-number="10" />
+              Your browser does not support HTML5 audio.
+           </audio>
+   <div class="player">
+     <div class="large-toggle-btn">
+       <i class="large-play-btn"><span class="screen-reader-text">Large toggle button</span></i>
+     </div>
+     <div class="info-box">
+       <div class="track-info-box">
+         <div class="track-title-text"></div>
+         <div class="audio-time">
+           <span class="current-time">00:00</span> /
+           <span class="duration">00:00</span>
+         </div>
+       </div>
+       <!-- /.info-box -->
+ 
+       <div class="progress-box">
+         <div class="progress-cell">
+           <div class="progress">
+             <div class="progress-buffer"></div>
+             <div class="progress-indicator"></div>
+           </div>
+         </div>
+       </div>
+ 
+     </div>
+     <!-- /.progress-box -->
+ 
+     <div class="controls-box">
+       <i class="previous-track-btn disabled"><span class="screen-reader-text">Previous track button</span></i>
+       <i class="next-track-btn"><span class="screen-reader-text">Next track button</span></i>
+     </div>
+     <!-- /.controls-box -->
+ 
+   </div>
+   <!-- /.player -->
+ 
+   <div class="play-list">
+     <div class="play-list-row" data-track-row="1">
+       <div class="small-toggle-btn">
+         <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+       </div>
+       <div class="track-number">
+         1.
+       </div>
+       <div class="track-title">
+         <a class="playlist-track" href="#" data-play-track="1">Calexico - Across The Wire</a>
+       </div>
+     </div>
+     <div class="play-list-row" data-track-row="2">
+       <div class="small-toggle-btn">
+         <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+       </div>
+       <div class="track-number">
+         2.
+       </div>
+       <div class="track-title">
+         <a class="playlist-track" href="#" data-play-track="2">Ryan Adams &amp; The Cardinals - Cold Roses</a>
+       </div>
+     </div>
+     <div class="play-list-row" data-track-row="3">
+       <div class="small-toggle-btn">
+         <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+       </div>
+       <div class="track-number">
+         3.
+       </div>
+       <div class="track-title">
+         <a class="playlist-track" href="#" data-play-track="3">The Slackers - Married Girl</a>
+       </div>
+     </div>
+     <div class="play-list-row" data-track-row="4">
+       <div class="small-toggle-btn">
+         <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+       </div>
+       <div class="track-number">4.
+       </div>
+       <div class="track-title">
+         <a class="playlist-track" href="#" data-play-track="4">Blitzen Trapper - Saturday Night</a>
+       </div>
+     </div>
+     <div class="play-list-row" data-track-row="5">
+       <div class="small-toggle-btn">
+         <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+       </div>
+       <div class="track-number">5.</div>
+       <div class="track-title">
+         <a class="playlist-track" href="#" data-play-track="5">The Samples - Feel Us Shaking</a>
+       </div>
+     </div>
+     <div class="play-list-row" data-track-row="6">
+       <div class="small-toggle-btn">
+         <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+       </div>
+       <div class="track-number">6.</div>
+       <div class="track-title">
+         <a class="playlist-track" href="#" data-play-track="6">Mike Doughty - American Car</a>
+       </div>
+     </div>
+     <div class="play-list-row" data-track-row="7">
+       <div class="small-toggle-btn">
+         <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+       </div>
+       <div class="track-number">
+         7.
+       </div>
+       <div class="track-title">
+         <a class="playlist-track" href="#" data-play-track="7">G. Love &amp; Special Sauce - Dreamin'</a>
+       </div>
+     </div>
+     <div class="play-list-row" data-track-row="8">
+       <div class="small-toggle-btn">
+         <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+       </div>
+       <div class="track-number">
+         8.
+       </div>
+       <div class="track-title">
+         <a class="playlist-track" href="#" data-play-track="8">Guster - Amsterdam</a>
+       </div>
+     </div>
+     <div class="play-list-row" data-track-row="9">
+       <div class="small-toggle-btn">
+         <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+       </div>
+       <div class="track-number">
+         9.
+       </div>
+       <div class="track-title">
+         <a class="playlist-track" href="#" data-play-track="9">O.A.R. - About Mr. Brown</a>
+       </div>
+     </div>
+     <div class="play-list-row" data-track-row="10">
+       <div class="small-toggle-btn">
+         <i class="small-play-btn"><span class="screen-reader-text">Small toggle button</span></i>
+       </div>
+       <div class="track-number">
+         10.
+       </div>
+       <div class="track-title">
+         <a class="playlist-track" href="#" data-play-track="10">My Morning Jacket - Phone Went West</a>
+       </div>
+     </div>
+   </div>
+   </div>	   
+   </div>
+   </div>
+ </div>
+ </div>
+ <!-- play-music-popup Modal end -->
+
+      <!-- End Presenter Modal Start -->
+  <div class="modal fade cmn-modal presenter-confirm-popup" id="presenter-confirm-btn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="mr-close-icon"></i></span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="message-m-box message_content_section">
+                     <span class="message-with-icon">
+                     <i class="av av-control-give-icon"></i>
+                     </span>
+                     <strong>Are you sure you want to give control?</strong>
+                  </div>
+               </div>
+               <div class="modal-footer modal_mobile_footer">
+                  <div class="no-yes-btns">
+                     <ul class="cmn-ul-list">
+                        <li><button type="button" class="btn cmn-btn light-blue-btn" data-dismiss="modal">No</button></li>
+                        <li><button type="button" class="btn cmn-btn">End</button></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </div>
+      <!-- End Presenter Modal End -->
+      <!-- Do you accept Modal Start -->
+   <div class="modal fade cmn-modal help-popup help-single-detail" id="help-single-detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal_out_box_section" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <a href="#help-popup-btn" class="help-back-link pull-left" data-toggle="modal" data-dismiss="modal">
+                  <i class="av av-arrow-left-2-icon"></i> Help Center</a>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class=" mr-close-icon"></i></span> </button>
+               </div>
+               <div class="modal-body modal_out_help_main_box">
+                  <div class="help-contant-sec">
+                     <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                           <div class="help-full-detail-bx">
+                              <h2>Present during a video call</h2>
+                              <p>You can present your entire screen or a specific window in a meeting. While you present, you can share information such as documents, presentations, spreadsheets, and more. Tip for Google Workspace Users: Learn tips for great presentations and Learn how to hold large remote events for up to 250 people.</p>
+                           </div>
+                           <div class="help-full-detail-bx">
+                              <h2>Present during a meeting</h2>
+                              <ol>
+                                 <li>Join a video meeting. </li>
+                                 <li>In the bottom-right corner, select Present now. </li>
+                                 <li>
+                                    Select Your entire screen, A window, or Chrome tab.
+                                    <ul>
+                                       <li>If you present a Chrome tab, it shares that tab's audio by default.</li>
+                                       <li>To present a different tab, select the tab you want to present, click Share this tab instead.
+                                       </li>
+                                    </ul>
+                                 </li>
+                                 <li>Select Share. </li>
+                              </ol>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </div>
+      <!-- Do you accept Modal End -->	
+      <!-- Help Modal Start -->
+   <div class="modal fade cmn-modal help-popup" id="help-popup-btn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><i class=" mr-close-icon"></i></span> </button>
+                  <h2 class="help_txt">Help</h2>
+               </div>
+               <div class="modal-body modal_out_help_box">
+                  <div class="help-contant-sec">
+                     <div class="help-contant-bx">
+                        <h2>how to use meet</h2>
+                        <div class="row">
+                           <div class="col-sm-6 col-md-6 col-lg-6">
+                              <div class="h-c-b">
+                                 <a href="#help-single-detail" data-toggle="modal" data-dismiss="modal">
+                                    <i><img src="images/note-icon.svg" alt=""/> </i> 
+                                    <span>
+                                       <p class="hcb_content">Present during a video meeting
+                                       <p>
+                                    </span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-sm-6 col-md-6 col-lg-6">
+                              <div class="h-c-b">
+                                 <a href="help-single-detail.html">
+                                    <i><img src="images/note-icon.svg" alt=""/> </i> 
+                                    <span>
+                                       <p class="hcb_content">Record a video meeting</p>
+                                    </span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-sm-6 col-md-6 col-lg-6">
+                              <div class="h-c-b">
+                                 <a href="help-single-detail.html">
+                                    <i><img src="images/note-icon.svg" alt=""/> </i> 
+                                    <span>
+                                       <p class="hcb_content">Live steam a video meeting</p>
+                                    </span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-sm-6 col-md-6 col-lg-6">
+                              <div class="h-c-b">
+                                 <a href="help-single-detail.html">
+                                    <i><img src="images/note-icon.svg" alt=""/> </i> 
+                                    <span>
+                                       <p class="hcb_content">Change your background</p>
+                                    </span>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="help-contant-bx">
+                        <h2>troubleshoot issues with meet</h2>
+                        <div class="row">
+                           <div class="col-sm-6 col-md-6 col-lg-6">
+                              <div class="h-c-b">
+                                 <a href="help-single-detail.html">
+                                    <i><img src="images/note-icon.svg" alt=""/> </i> 
+                                    <span>
+                                       <p class="hcb_content">Present your screen issues </p>
+                                    </span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-sm-6 col-md-6 col-lg-6">
+                              <div class="h-c-b">
+                                 <a href="help-single-detail.html">
+                                    <i><img src="images/note-icon.svg" alt=""/> </i> 
+                                    <span>
+                                       <p class="hcb_content">Video and audio quality</p>
+                                    </span>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="col-sm-6 col-md-6 col-lg-6">
+                              <div class="h-c-b">
+                                 <a href="help-single-detail.html">
+                                    <i><img src="images/note-icon.svg" alt=""/> </i> 
+                                    <span>
+                                       <p class="hcb_content">Laptop is overheating</p>
+                                    </span>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </div>
+      <!-- Help Modal End -->
+      
+
+    <!-- Start host user name Modal Start -->
+   <div class="modal fade cmn-modal confirm-popup host-user-name-popup" id="host-user-name-btn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal_inner_section" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><i class=" mr-close-icon"></i></span> </button>
+            </div>
+            <div class="modal-body">
+               <div class="message-m-box message_icon"> 
+                  <span class="message-with-icon"> 
+                  <i class="mr-host-popup-icon"></i> 
+                  </span> 
+                  <strong>Do you want to make host user name?</strong> 
+               </div>
+            </div>
+            <div class="modal-footer">
+               <div class="no-yes-btns message_icon_content">
+                  <ul class="cmn-ul-list">
+                     <li>
+                        <button type="button" class="btn cmn-btn light-blue-btn" data-dismiss="modal">No</button>
+                     </li>
+                     <li>
+                        <button type="button" class="btn cmn-btn">Yes</button>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Start host user name Modal End --> 
+   <!-- Start exit user name Modal Start -->
+   <div class="modal fade cmn-modal confirm-popup exit-user-name-popup" id="exit-user-name-btn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><i class="mr-close-icon"></i></span> </button>
+            </div>
+            <div class="modal-body">
+               <div class="message-m-box"> <span class="message-with-icon"> 
+                  <i class="mr-exit-user-icon"></i> 
+                  </span> 
+                  <strong>Do you want to exit user name?</strong> 
+               </div>
+            </div>
+            <div class="modal-footer">
+               <div class="no-yes-btns">
+                  <ul class="cmn-ul-list">
+                     <li>
+                        <button type="button" class="btn cmn-btn light-blue-btn" data-dismiss="modal">No</button>
+                     </li>
+                     <li>
+                        <button type="button" class="btn cmn-btn">Yes</button>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Start exit user name Modal End --> 
+   <!-- Start end meeting Modal Start -->
+   <div class="modal fade cmn-modal confirm-popup end-meeting-popup" id="end-meeting-btn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button id="closeEndPop" type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><i class="mr-close-icon"></i></span> </button>
+            </div>
+            <div class="modal-body">
+               <div class="message-m-box message_section">
+                  <span class="message-with-icon">
+                     <div class="end-meeting-img">
+                        <figure><img src="images/end-meeting-icon.svg"/></figure>
+                        <span class="runing-timer-number">10</span>
+                     </div>
+                  </span>
+                  <strong id="end-pop-head">Do you want to end now ?</strong>
+                  <p id="end-pop-content"></p>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <div class="no-yes-btns">
+                  <ul class="cmn-ul-list">
+                     <li>
+                        <button type="button" class="btn cmn-btn red-btn click17" data-dismiss="modal">End Now</button>
+                     </li>
+                     <li id="normalEnd">
+                        <button type="button" class="btn cmn-btn cmn-btn" data-dismiss="modal" >Cancel</button>
+                     </li>
+                     <li id="durationover">
+                        <button type="button" class="btn cmn-btn click16"  data-dismiss="modal">Extend Duration</button>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Start end meeting Modal End --> 
+   <!-- Start the meeting Modal Start -->
+   <div class="modal fade cmn-modal confirm-popup start-meeting-popup" id="start-meeting-btn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content modal_mobile_section">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><i class=" mr-close-icon"></i></span> </button>
+            </div>
+            <div class="modal-body">
+               <div class="message-m-box start_content"> <span class="message-with-icon"> 
+                  <i class="mr-end-meeting-icon"></i> 
+                  </span> 
+                  <strong>Start the meeting?</strong> 
+               </div>
+            </div>
+            <div class="modal-footer">
+               <div class="no-yes-btns">
+                  <ul class="cmn-ul-list">
+                     <li>
+                        <button type="button" class="btn cmn-btn light-blue-btn" data-dismiss="modal">No</button>
+                     </li>
+                     <li>
+                        <button type="button" class="btn cmn-btn">Yes</button>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Start the meeting Modal End --> 
+   
+
+<!-- On Cost Request Modal Start -->
+<div class="modal fade cmn-modal on-cost-request-popup" id="on-cost-request-btn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content">           
+         <div class="modal-body">
+            <div class="on-cost-request-body">
+               <div class="message-m-box">
+                  <span class="message-with-icon"> <img src="images/on-cost-img.png" alt=""/> </span>
+                  <div class="extend-metting-text"><p>The duration of this meeting is over. Do you wish to 
+                     extend this meeting?</p></div>
+               </div>
+               <div class="extend-duration-options">                    
+                    <div class="extend-radio-bx extend-for-free-option">
+                        <div class="radio custom">
+                           <label>
+                           <input type="radio" value="extendFree" name="extdurradio">
+                        <span class="extend-radio-text">Extend for Free for (x) min. (only once)</span> </label>
+                        </div>
+                     </div>
+                     <div class="extend-radio-bx send-pay-parti-option">
+                        <div class="radio custom">
+                           <label>
+                           <input type="radio" value="extendYou" checked="checked" name="extdurradio">                                                          
+                              <span class="extend-radio-text">Send payment request to all participants</span>
+                              <br/>
+                              <input class="form-control cost-extr" placeholder="cost ($)" value="">
+                               For
+                              <div class="custom-select-bx">
+                                 <select id="hours-ext" class="form-control">
+
+                                 </select>
+                                 <span class="sep"> : </span>
+                                 <select id="miutes-ext" class="form-control">
+      
+                                 </select>
+                              </div>
+                           </label>
+                        </div>
+                     </div>
+                     <div class="extend-radio-bx pay-to-extend-option">
+                        <div class="radio custom">
+                           <label>
+                           <input type="radio" value="extendMe" name="extdurradio">
+                           <span class="extend-radio-text">Pay to extend</span>
+                              <div class="custom-select-bx">
+                                 <select id="extByMeSelect" class="form-control">
+                                 </select>
+                              </div> 
+                     </label>
+                     </div>
+                  </div>                     
+               </div>
+               <div class="no-yes-btns">
+                  <ul class="cmn-ul-list">
+                     <li>
+                        <button type="button" class="btn cmn-btn red-btn click15" data-dismiss="modal" >End Meeting</button>
+                     </li>                       
+                     <li>
+                        
+                        <button type="button" class="btn cmn-btn click14">Continue</button>
+                     </li>
+                  </ul>
+               </div>
+               <!--
+               <div class="form-group">
+                  <label class="form-label">Duration</label>
+                  <div class="cmn-input-icon doller-icon-form">
+                     <select id="hours-ext" class="timedrop">
+                     </select>
+                     <span class="sep"> : </span>
+                     <select id="miutes-ext" class="timedrop">
+                     </select>
+                     
+                     <input type="number" placeholder="HH:MM" maxlength="2" value="" class="form-control time-extr"/>
+                      : 
+                     <input type="number" placeholder="HH:MM" maxlength="2" value="" class="form-control time-extr"/>
+                     
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label class="form-label">Cost</label>
+                  <div class="cmn-input-icon doller-icon-form">
+                     <input type="text" placeholder="Enter cost in doller" value="" class="form-control cost-extr" />
+                  </div>
+               </div>
+            -->
+            </div>
+         </div>
+       
+      </div>
+   </div>
+</div>
+<!-- On Cost Request Modal End --> 
+   <!-- Participant Make Payment Modal Start -->
+   <div class="modal fade cmn-modal paying-message-popup" id="paying-message-popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">           
+            <div class="modal-body">
+               <div class="message-m-box">
+                  <span class="message-with-icon"> <img src="images/on-cost-img.png" alt=""/> </span>
+                  <div class="extend-metting-text"><p>Please wait for atleast one participant to make the payment.</p></div>
+               </div>
+               <div class="paying-messages-timer  hide">                    
+                    <strong>00:53</strong>               
+               </div>
+            </div>          
+         </div>
+      </div>
+   </div>
+   <!-- Participant Make Payment Modal End --> 
+   <!-- Participant Make Payment Modal Start -->
+   <div class="modal fade cmn-modal paying-message-popup" id="host-wait-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">           
+            <div class="modal-body">
+               <div class="message-m-box">
+                  <span class="message-with-icon"> <img src="images/on-cost-img.png" alt=""/> </span>
+                  <div class="extend-metting-text"><p>Please wait for the host to extend the duration of the meeting.</p></div>
+               </div>
+               <div class="paying-messages-timer hide">                    
+                    <strong>00:53</strong>               
+               </div>
+            </div>          
+         </div>
+      </div>
+   </div>
+   <!-- Participant Make Payment Modal End --> 
+   
+ 
+    
+      <!-- Do you accept Modal Start -->
+      <div class="modal fade cmn-modal confirm-popup do-you-accept-popup" id="do-you-accept-btn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><i class="mr-close-icon"></i></span> </button>
+               </div>
+               <div class="modal-body">
+                  <div class="message-m-box">
+                     <span class="message-with-icon"> <img src="images/do-you-accept-img.png" alt=""/> </span>
+                     <p>Host has extended the time by <span id="extendtme"></span> hour for $<span id="extncost"></span></p>
+                     <div class="do_content">Do you accept?</div>
+                  </div>
+               </div>
+               <div class="modal-footer modal_mobile_footer">
+                  <div class="no-yes-btns">
+                     <ul class="cmn-ul-list">
+                        <li> <a class="btn cmn-btn light-blue-btn" data-toggle="modal" data-dismiss="modal">No</a> </li>
+                        <li class="click13"> <a class="btn cmn-btn" data-toggle="modal" data-dismiss="modal">Yes</a> </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Do you accept Modal End --> 
+      <!-- On Cost Payment Modal Start -->
+      <div class="modal fade cmn-modal on-cost-payment-popup" id="on-cost-payment-btn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal_box_out_box" role="document">
+            <div class="modal-content scroll_section scroll_out_box">
+               <div class="modal-header">
+                  <h2 id="cost-pay-txt">Payment</h2>
+               </div>
+               <div class="modal-body">
+                  <div class="payment-summary-content">
+                     <div class="row">
+                        <div class="col-12 col-sm-12">
+                           <div class="amount-payable-text bdr-bottom">
+                             <p class="payment-desc">Make a payment of $<span class="total-amount-pay"></span> to extend  the meeting for <span class="extendtme"></span>.</p>
+                           </div>
+                        </div>
+                        <div class="col-12 col-sm-12 hide">
+                           <div class="saved-card-list bdr-bottom">
+                              <ul>
+                                 <li>
+                                    <div class="radio custom">
+                                       <label>
+                                       <input type="radio" checked="" name="foo">
+                                    <span>XX XXX 432</span> </label>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="radio custom">
+                                       <label>
+                                       <input type="radio" name="foo">
+                                     <span>XX XXX 375</span> </label>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                           <div class="new-card-add-bx">                
+                              <div class="cmn-new-toggle">
+                                  <button type="button" class="hide btn add-card-btn click12" value="Show/Hide"> <i class="mr-add-card-icon"></i> Add Card</button>
+                                      <div id="add-card" class="add-card-form" style="display: block;">
+                                          <div class="row name_payment_section">
+                                                  <div class="col-sm-6">
+                                                  <div class="form-group">
+                                                      <label class="form-label" for="firstName">Name</label>
+                                                      <input type="text" class="form-control" id="firstName" placeholder="Name" value="" required="">
+                                                  </div>
+                                                  </div>
+                                                     <div class="col-sm-6">    
+                                                      <div class="form-group">
+                                                        <label class="form-label" for="CardNumber">Card Number</label>
+                                                        <div class="form-control block" id="card-number-element"></div>
+                                                        <!--<input type="text" class="form-control" id="CardNumber" placeholder="XXX - XXXX - XXXX - XXXX" value="9876 - 9587 - 9658 - 3625">-->
+                                                      </div>
+                                                   </div>
+                                                 </div>  
+                                                 <div class="row">  
+                                                    <div class="col-sm-6">
+                                                      <div class="form-group">
+                                                        <label class="form-label" for="CardExpiryDate">Card Expiry Date</label>
+                                                        <!--<input type="text" class="form-control" id="CardExpiryDate" placeholder="MM  / YY" value="">-->
+                                                        <div class="form-control block" id="card-expiry-element"></div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                      <div class="form-group">
+                                                        <label class="form-label" for="Cvv">CVV</label>
+                                                        <!--<input type="text" class="form-control" id="Cvv" placeholder="XXX" value="">-->
+                                                        <div class="form-control block" id="card-cvc-element"></div>
+                                                      </div>
+                                                    </div>
+                                                  </div> 
+                                            
+                                                  </div>
+                                                </div>
+                                      </div>	
+                        </div>
+                        <div class="col-12 col-sm-12">
+                           <div class="pay-btns">
+                           <ul class="cmn-ul-list">
+                              <li>
+                                 <button type="button" id="paymentback" class="btn bdr-btn click11" style="display: none;">Back</button>
+                              </li>
+                              <li class="click10" id="paymentleave" style="display: none;">
+                                 <button type="button" class="btn bdr-btn">Leave</button>
+                              </li>
+                              <li>
+                                 <button  type="button" class="btn cmn-btn click9">Pay ($<span class="total-amount-pay">20</span>)</button>
+                              </li>
+                           </ul> 
+                        </div>                         
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!-- Do you accept Modal End --> 
+      <!-- Extend Duration Modal Start -->
+      <div class="modal fade cmn-modal extend-duration-popup" id="extend-duration-btn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><i class="mr-close-icon"></i></span> </button>
+                  <h2>Extend Duration</h2>
+               </div>
+               <div class="modal-body">
+                  <div class="time-extend-box">
+                     <label class="form-label">Enter Time</label>
+                     <input type="text" placeholder="" value="04: 35 PM" class="form-control" />
+                  </div>
+               </div>
+               <div class="modal-footer modal_mobile_footer">
+                  <div class="no-yes-btns">
+                     <ul class="cmn-ul-list">
+                        <li>
+                           <button type="button" class="btn cmn-btn light-blue-btn" data-dismiss="modal">No</button>
+                        </li>
+                        <li>
+                           <button type="button" class="btn cmn-btn">Yes</button>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Extend Duration Modal End --> 
+      <!-- Invite Modal Start -->
+      <div class="modal fade cmn-modal invite-user-popup" id="invite-user-btn" tabindex="-1" role="dialog">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <div class="popup-heading">
+                     <h1>Invite More People</h1>
+                     </div>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><i class="mr-close-icon"></i></span> </button>
+               </div>
+               <div class="modal-body">
+                  <div class="invite-user-content">
+                     <div class="row">
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                           <figure class="iu-left-img"> <img src="images/invite-user-img.svg" alt="" /> </figure>
+                        </div>
+                        <div class="col-sm-8 col-md-8 col-lg-8">
+                           <div class="meeting-room-link">
+                              <h2>Send Meeting Room Link </h2>
+                              <div class="form-group form_content_section">
+                                 <input id="inviteLink" type="text" placeholder="" value="" class="form-control" />
+                                 <button class="btn cmn-btn click8">Copy URL</button>
+                              </div>
+                           </div>
+                           <div class="meeting-room-link invite-from-email hide">
+                              <h2>Invite From Email </h2>
+                              <div class="form-group">
+                                 <input type="text" placeholder="" value="gmailname@1542.com" class="form-control" />
+                                 <button class="btn cmn-btn">Send</button>
+                              </div>
+                           </div>                          
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Invite Modal End --> 
+      <!-- File Manager Modal Start -->
+      <div class="modal fade cmn-modal file-manager-popup" id="presenter-btn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title">File Manager</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><i class=" mr-close-icon"></i></span> </button>
+               </div>
+               Event Information 
+            </div>
+         </div>
+      </div>
+      <!-- Presenter Modal End -->
+      <!-- Host info Modal Start -->
+      <div class="modal fade cmn-modal host-info-popup icon_settings_page meeting-setting-popup setting-inside-popup" id="host-info-btn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal_out_section">
+                  <div class="modal-header">
+                     <h2 id="setthead">Settings</h2>
+                   </div>
+                  <button id="settings-close" type="button" class="settings-close close hide" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><i class="mr-close-icon"></i></span> </button>
+               </div>
+               <div class="modal-body"> 
+                     <div class="meeting-setting-content"> 
+                        <div id="settings-tab" class="ah-tab-content"  data-ah-tab-active="true">
+                           <div class="row">
+                              <div class="col-sm-6 col-md-6 col-lg-6">
+                                 <div class="e-info-lft-video">
+                                    <video id="videoElement" muted autoplay playsinline class="video-call-screen" alt=""></video>                                   
+                                 </div>
+                              </div>
+                              <div class="col-sm-6 col-md-6 col-lg-6">
+                                 <div class="form-group">
+                                    <label class="form-label" for="inputState">Camera</label>
+                                    <div class="icon-input-box camera-input">
+                                       <div class="custom-select-bx">
+                                          <select class="form-control change4" id="videoSelect">
+                                             <option selected="" value="">-Select-</option>
+                                          </select>
+                                       </div>
+                                       <i class="mr-webcam-on-icon webcam_icon_content"></i>
+                                    </div>
+                                 </div>
+                                 <div class="form-group form_section">
+                                    <label class="form-label mic-lab" for="inputState">Microphone
+                                       <div class="audio-chker-blk">
+                                          <div id="5a1" class="first-dot"></div>
+                                          <div id="5a2" class="second-dot"></div>
+                                          <div id="5a3" class="third-dot"></div>
+                                       </div>
+                                    </label>
+                                    <div class="icon-input-box">
+                                       <div class="custom-select-bx">
+                                          <select class="form-control change5" id="audioInputSelect">
+                                             <option selected="" value="">-Select-</option>
+                                          </select>
+                                       </div>
+                                       <i class="mr-mic-on-icon webcam_icon_content"></i> 
+                                    </div>
+                                 </div>
+                                 <div class="form-group outputaudio-grp">
+                                    <label class="form-label" for="inputState">Audio Output</label>
+                                    <div class="icon-input-box">
+                                       <div class="custom-select-bx">
+                                          <select class="form-control change6" id="audioOutputSelect">
+                                             <option selected="" value="">-Select-</option>
+                                          </select>
+                                       </div>
+                                       <i class="mr-audio-output-icon webcam_icon_content"></i> 
+                                    </div>
+                                 </div>
+                                 <button id="playsnd" class="btn gray-btn play-test-sound click7">Play Test Sound</button>
+                              </div>
+                           </div>
+                           <div class="webcam-radio-btns icon_settings_page">
+                              <ul class="cmn-ul-list">
+                                 <li>
+                                    <div class="radio custom">
+                                       <label>
+                                       <input type="radio" name="foo" class="radio_button">
+                                       Webcam Only </label>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="radio custom">
+                                       <label>
+                                       <input type="radio" name="foo">
+                                       Enable Mic Only </label>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="radio custom">
+                                       <label>
+                                       <input type="radio" name="foo">
+                                       Enable Webcam & Mic </label>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <div class="radio custom">
+                                       <label>
+                                       <input type="radio" name="foo">
+                                       None </label>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                
+               </div>
+               <div class="modal-footer">
+                  <div class="mf-alert-message">
+                     <div class="waithost">Please wait for the host to start the meeting</div>
+                     <div class="accepthost">Please wait for the host to start the meeting</div>
+                  </div>                  
+                  <button id="btnbooksettings" type="button"  class="ladda-button animate-btn zoom-out btn_section click6"><span class="label">Book Now</span> <span class="spinner"></span></button>
+                  <button id="btnpaysettings" type="button"  class="ladda-button animate-btn zoom-out btn_section click5"><span class="label">Proceed to payment ($<span class="total-amount-pay"></span>)</span> <span class="spinner"></span></button>
+                  <button id="continue-btn" type="button"  class="ladda-button animate-btn zoom-out btn_section disabled click4"><span class="label">Enter</span> <span class="spinner"></span></button>
+                  <button id="continue-btn-after" type="button" class="ladda-button animate-btn zoom-out btn_section click3"><span class="label">Continue</span> <span class="spinner"></span></button>             
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Start Join Meeting Modal Start -->
+   <div class="modal fade cmn-modal confirm-popup join-meeting-popup accept-deny-popup" id="accept-deny-popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <div class="block-btn" id="block-btn"></div>
+            </div>
+            <div class="modal-body">
+               <div class="someone-join-heading">Someone wants to join this meeting</div>
+               <div class="message-m-box name_section"><span id="block-name-avtr"></span><strong id="allow-name"></strong></div>                  
+            </div>
+            <div class="modal-footer">
+               <div class="footer_out_section">
+               <div class="no-yes-btns">
+               <ul class="cmn-ul-list message_section">
+               <li class="a-a-a-ck">
+               <div class="auto-accept-all">
+               <div class="checkbox custom">
+               <label> <input id="autoAccept" class="change1"  type="checkbox"> Auto Accept All </label>
+               </div>
+               </div>
+               </li>
+               <li id="deny-btn" class="deny-btn">
+               <button type="button" class="ladda-button animate-btn zoom-out animate-bdr-btn" data-dismiss="modal"><span class="label">Deny</span> <span class="spinner"></span></button>
+               </li>
+               <li id="allow-btn" class="allow-btn">
+               <button type="button" class="ladda-button animate-btn zoom-out"><span class="label">Admit</span> <span class="spinner"></span></button>
+               </li>
+               </ul>
+               </div>
+               </div>
+            </div>
+         </div>
+      </div>
+</div>
+   <!-- Start Join Meeting Modal End --> 
+      <audio id="audio" width="1" height="1">
+         <source src="images/speeker.MP3" type="audio/mpeg">
+      </audio>
+      <audio id="testaudio" width="1" height="1" >
+         <source src="/files/ring.mp3" type="audio/mpeg" loop="true"/>
+      </audio>
+   <span id="remove">
+      <!-- Host info Modal End --> 
+      <script src="js/jquery.min.js"></script>     
+      <script src="js/bootstrap.min.js"></script>   
+      <script src="js/perfect-scrollbar.jquery.min.js"></script> 
+      <script src="js/waves.js"></script> 
+      <script src="js/sidebarmenu.js"></script> 
+      <script src="js/jquery.toast.js"></script> 
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+      <script src="js/jquery.fileupload.js"></script> 
+      <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-with-addons.js"></script> 
+      <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script> 
+      <script src="js/literallycanvas.min.js"></script> 
+      <script src="js/inputEmoji.js"></script> 
+      <script src="https://js.stripe.com/v3/"></script>
+      <!--
+      <script src="js/custom/socket.js?t=345435"></script>
+      <script src="js/custom/main.js?t=34535"></script>
+      
+
+      <script src="js/custom/bundle1.js?t=34535"></script>
+      <script src="js/custom/bundle2.js?t=34535"></script>-->
+      <script src="js/custom/bundle.js?t=34535"></script>
+      
+      <script src="js/webrtc/adapter.js"></script> 
+     <!-- <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>-->
+      
+      <script src="js/webrtc/socket.io.min.js"></script>
+      <script src="js/webrtc/owt.js?t=433543445"></script> 
+      <script src="js/lib/layoutcontrol.min.js"></script> 
+      <script src="js/lib/layout.js" type="text/javascript"></script> 
+      <script src="https://www.youtube.com/iframe_api"></script>
+      <!--<script src="js/play-music.js"></script>
+        
+      <script src="js/custom/bundle3.js?t=34535"></script>    
+      <script src="js/custom/index.js"></script>  -->  
+    </span>    
+   <audio id="remoteAudio" playsInline autoPlay></audio> 
+</body>
+</html>

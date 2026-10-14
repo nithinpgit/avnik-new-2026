@@ -1,0 +1,12 @@
+<svg id="video-play-button" xmlns="http://www.w3.org/2000/svg" width="24.688" height="24.688" viewBox="0 0 24.688 24.688">
+  <g id="Group_1103" data-name="Group 1103">
+    <g id="Group_1102" data-name="Group 1102">
+      <path id="Path_1898" data-name="Path 1898" d="M12.344,0A12.344,12.344,0,1,0,24.688,12.344,12.344,12.344,0,0,0,12.344,0Zm0,22.925A10.581,10.581,0,1,1,22.925,12.344,10.581,10.581,0,0,1,12.344,22.925Z" fill="#340897"/>
+    </g>
+  </g>
+  <g id="Group_1105" data-name="Group 1105" transform="translate(8.817 7.935)">
+    <g id="Group_1104" data-name="Group 1104">
+      <path id="Path_1899" data-name="Path 1899" d="M179.391,157.6a.882.882,0,0,0-.4-.4l-7.054-3.527a.882.882,0,0,0-1.276.789v7.054a.882.882,0,0,0,1.276.789L179,158.786A.882.882,0,0,0,179.391,157.6Zm-6.962,2.494v-4.2l4.2,2.1Z" transform="translate(-170.666 -153.587)" fill="#340897"/>
+    </g>
+  </g>
+</svg>

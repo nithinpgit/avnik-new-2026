@@ -1,0 +1,239 @@
+.extend-modal {
+  text-align: center;
+}
+
+.extend-modal--wide {
+  width: min(520px, 100%);
+}
+
+.extend-modal__hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.extend-modal__timer-badge--warn {
+  background: #c2410c;
+}
+
+.extend-modal__lead {
+  margin: 0 0 16px;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.extend-modal__paid-count {
+  margin: 0 0 8px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.extend-modal__paid-list {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  max-height: 180px;
+  overflow: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.extend-modal__paid-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+}
+
+.extend-modal__paid-list li:last-child {
+  border-bottom: 0;
+}
+
+.extend-modal__paid-empty {
+  color: #94a3b8;
+  justify-content: center !important;
+}
+
+.extend-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.extend-option {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.extend-option.is-active {
+  border-color: #145388;
+  background: #f0f7fc;
+}
+
+.extend-option.is-disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.extend-option input {
+  margin-top: 3px;
+}
+
+.extend-option strong {
+  display: block;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.extend-option em {
+  display: block;
+  margin-top: 2px;
+  font-style: normal;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.extend-option-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 0 0 20px;
+  padding: 14px;
+  text-align: left;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.extend-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.extend-field__label {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.extend-field__control {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-height: 44px;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.extend-field__control:focus-within {
+  border-color: #145388;
+  box-shadow: 0 0 0 3px rgba(20, 83, 136, 0.15);
+}
+
+.extend-field__prefix {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 40px;
+  border-right: 1px solid #e2e8f0;
+  background: #f1f5f9;
+  border-radius: 7px 0 0 7px;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.extend-field__input,
+.extend-field__select {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0 12px;
+  border: 0;
+  background: transparent;
+  color: #0f172a;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.2;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.extend-field__input {
+  border-radius: 0 7px 7px 0;
+}
+
+.extend-field__input::-webkit-outer-spin-button,
+.extend-field__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.extend-field__input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.extend-field__control--select::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #64748b;
+  border-bottom: 2px solid #64748b;
+  transform: translateY(-65%) rotate(45deg);
+  pointer-events: none;
+}
+
+.extend-field__select {
+  padding-right: 36px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.extend-field__select option {
+  color: #0f172a;
+}
+
+.external-modal__btn--danger {
+  background: #dc2626;
+  border-color: #dc2626;
+  color: #fff;
+}
+
+.external-modal__btn--danger:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 520px) {
+  .extend-option-fields {
+    grid-template-columns: 1fr;
+  }
+}

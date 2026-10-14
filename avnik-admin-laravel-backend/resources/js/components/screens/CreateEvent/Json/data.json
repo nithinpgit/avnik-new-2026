@@ -1,0 +1,10 @@
+{
+"Appointments":
+    "Appointment - You will have all the controls and will be able to pass the controls to the participant. You can take back the controls any time you wish during the meeting.",
+"Training":
+    "Training - You will have all the controls and will be able to pass the controls to the participants, However they will not be able to pass the controls to anyone else. You can take back the controls any time you wish during the meeting.",
+"Webinar":
+    "Webinar - You will have all the controls, however passing the controls to another participant is not allowed.",
+"Discussion":
+    "Discussion - You will have all the controls and will be able to pass the controls to the participants. Participants will be able to pass controls to anybody in the room. However you can take back control any time you wish."
+}

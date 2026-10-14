@@ -1,0 +1,56 @@
+#####
+BUID ON LOCAL
+#####
+docker compose build
+
+#####
+RUN ON LOCAL
+#####
+docker compose up 
+
+#####
+BUID ON SERVER
+#####
+docker compose -f compose.prod.yaml build
+
+#####
+RUN ON SERVER
+#####
+docker compose -f compose.prod.yaml up -d
+
+#####
+CHECKING DOCKER LOGS
+#####
+docker logs -f {container name}
+
+#####
+CONTAINER NAMES
+#####
+avnik-postgres-prod       
+avnik-redis-prod      
+avnik-mysql-prod
+avnik-admin-backend-prod
+avnik-phpmyadmin-prod
+avnik-laravel-backend-prod
+avnik-meet-backend-prod
+avnik-meet-mediaserver-prod
+avnik-admin-frontend-prod
+avnik-meet-frontend-prod
+avnik-proxy-prod
+avnik-meet-recorder-prod
+
+#####
+ENTER INSIDE CONTAINER SHELL
+#####
+docker exec -it {container name} -bash
+or
+docker exec -it {container name} -sh
+
+
+######
+FOR GIVING PREVILATE TO MYSQL USER TO A DB
+######
+docker exec -it avnik-mysql-prod mysql -uroot -p -e "
+ALTER USER 'avnik_user'@'%' IDENTIFIED BY 'avnik_password';
+GRANT ALL PRIVILEGES ON avnikdb.* TO 'avnik_user'@'%';
+FLUSH PRIVILEGES;"

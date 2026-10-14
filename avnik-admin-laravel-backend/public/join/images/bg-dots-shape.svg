@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="83" viewBox="0 0 128 83">
+  <g id="bg-dots-shape" transform="translate(-170 -217)">
+    <circle id="Ellipse_4" data-name="Ellipse 4" cx="3" cy="3" r="3" transform="translate(170 294)" fill="#e1e1e1"/>
+    <circle id="Ellipse_4-2" data-name="Ellipse 4" cx="3" cy="3" r="3" transform="translate(170 217)" fill="#e1e1e1"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="3" cy="3" r="3" transform="translate(234 217)" fill="#e1e1e1"/>
+    <circle id="Ellipse_3-2" data-name="Ellipse 3" cx="3" cy="3" r="3" transform="translate(234 294)" fill="#e1e1e1"/>
+    <g id="Group_6321" data-name="Group 6321" transform="translate(292 217)">
+      <circle id="Ellipse_293" data-name="Ellipse 293" cx="3" cy="3" r="3" fill="#fff"/>
+      <circle id="Ellipse_294" data-name="Ellipse 294" cx="3" cy="3" r="3" transform="translate(0 77)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,179 @@
+
+@font-face {
+    font-family: 'NunitoSans-Black';
+    src: url('../fonts/NunitoSans-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/NunitoSans-Black.woff') format('woff'), url('../fonts/NunitoSans-Black.ttf') format('truetype'), url('../fonts/NunitoSans-Black.svg#NunitoSans-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans-SemiBold';
+    src: url('../fonts/NunitoSans-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/NunitoSans-SemiBold.woff') format('woff'), url('../fonts/NunitoSans-SemiBold.ttf') format('truetype'), url('../fonts/NunitoSans-SemiBold.svg#NunitoSans-SemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'NunitoSans-SemiBoldItalic';
+    src: url('../fonts/NunitoSans-SemiBoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/NunitoSans-SemiBoldItalic.woff') format('woff'), url('../fonts/NunitoSans-SemiBoldItalic.ttf') format('truetype'), url('../fonts/NunitoSans-SemiBoldItalic.svg#NunitoSans-SemiBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans-Regular';
+    src: url('../fonts/NunitoSans-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/NunitoSans-Regular.woff') format('woff'), url('../fonts/NunitoSans-Regular.ttf') format('truetype'), url('../fonts/NunitoSans-Regular.svg#NunitoSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans-LightItalic';
+    src: url('../fonts/NunitoSans-LightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/NunitoSans-LightItalic.woff') format('woff'), url('../fonts/NunitoSans-LightItalic.ttf') format('truetype'), url('../fonts/NunitoSans-LightItalic.svg#NunitoSans-LightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans-Light';
+    src: url('../fonts/NunitoSans-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/NunitoSans-Light.woff') format('woff'), url('../fonts/NunitoSans-Light.ttf') format('truetype'), url('../fonts/NunitoSans-Light.svg#NunitoSans-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans-Italic';
+    src: url('../fonts/NunitoSans-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/NunitoSans-Italic.woff') format('woff'), url('../fonts/NunitoSans-Italic.ttf') format('truetype'), url('../fonts/NunitoSans-Italic.svg#NunitoSans-Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'NunitoSans-ExtraLightItalic';
+    src: url('../fonts/NunitoSans-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/NunitoSans-ExtraLightItalic.woff') format('woff'), url('../fonts/NunitoSans-ExtraLightItalic.ttf') format('truetype'), url('../fonts/NunitoSans-ExtraLightItalic.svg#NunitoSans-ExtraLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans-ExtraLight';
+    src: url('../fonts/NunitoSans-ExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/NunitoSans-ExtraLight.woff') format('woff'), url('../fonts/NunitoSans-ExtraLight.ttf') format('truetype'), url('../fonts/NunitoSans-ExtraLight.svg#NunitoSans-ExtraLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'NunitoSans-ExtraBoldItalic';
+    src: url('../fonts/NunitoSans-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/NunitoSans-ExtraBoldItalic.woff') format('woff'), url('../fonts/NunitoSans-ExtraBoldItalic.ttf') format('truetype'), url('../fonts/NunitoSans-ExtraBoldItalic.svg#NunitoSans-ExtraBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans-ExtraBold';
+    src: url('../fonts/NunitoSans-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/NunitoSans-ExtraBold.woff') format('woff'), url('../fonts/NunitoSans-ExtraBold.ttf') format('truetype'), url('../fonts/NunitoSans-ExtraBold.svg#NunitoSans-ExtraBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'NunitoSans-BoldItalic';
+    src: url('../fonts/NunitoSans-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/NunitoSans-BoldItalic.woff') format('woff'), url('../fonts/NunitoSans-BoldItalic.ttf') format('truetype'), url('../fonts/NunitoSans-BoldItalic.svg#NunitoSans-BoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans-Bold';
+    src: url('../fonts/NunitoSans-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/NunitoSans-Bold.woff') format('woff'), url('../fonts/NunitoSans-Bold.ttf') format('truetype'), url('../fonts/NunitoSans-Bold.svg#NunitoSans-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans-BlackItalic';
+    src: url('../fonts/NunitoSans-BlackItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/NunitoSans-BlackItalic.woff') format('woff'), url('../fonts/NunitoSans-BlackItalic.ttf') format('truetype'), url('../fonts/NunitoSans-BlackItalic.svg#NunitoSans-BlackItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'barlowbold';
+    src: url('../fonts/barlow-bold-webfont.eot');
+    src: url('../fonts/barlow-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/barlow-bold-webfont.woff2') format('woff2'),
+         url('../fonts/barlow-bold-webfont.woff') format('woff'),
+         url('../fonts/barlow-bold-webfont.ttf') format('truetype'),
+         url('../fonts/barlow-bold-webfont.svg#barlowbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'barlowitalic';
+    src: url('../fonts/barlow-italic-webfont.eot');
+    src: url('../fonts/barlow-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/barlow-italic-webfont.woff2') format('woff2'),
+         url('../fonts/barlow-italic-webfont.woff') format('woff'),
+         url('../fonts/barlow-italic-webfont.ttf') format('truetype'),
+         url('../fonts/barlow-italic-webfont.svg#barlowitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'barlowlight';
+    src: url('../fonts/barlow-light-webfont.eot');
+    src: url('../fonts/barlow-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/barlow-light-webfont.woff2') format('woff2'),
+         url('../fonts/barlow-light-webfont.woff') format('woff'),
+         url('../fonts/barlow-light-webfont.ttf') format('truetype'),
+         url('../fonts/barlow-light-webfont.svg#barlowlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'barlowmedium';
+    src: url('../fonts/barlow-medium-webfont.eot');
+    src: url('../fonts/barlow-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/barlow-medium-webfont.woff2') format('woff2'),
+         url('../fonts/barlow-medium-webfont.woff') format('woff'),
+         url('../fonts/barlow-medium-webfont.ttf') format('truetype'),
+         url('../fonts/barlow-medium-webfont.svg#barlowmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'barlowregular';
+    src: url('../fonts/barlow-regular-webfont.eot');
+    src: url('../fonts/barlow-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/barlow-regular-webfont.woff2') format('woff2'),
+         url('../fonts/barlow-regular-webfont.woff') format('woff'),
+         url('../fonts/barlow-regular-webfont.ttf') format('truetype'),
+         url('../fonts/barlow-regular-webfont.svg#barlowregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'barlowsemibold';
+    src: url('../fonts/barlow-semibold-webfont.eot');
+    src: url('../fonts/barlow-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/barlow-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/barlow-semibold-webfont.woff') format('woff'),
+         url('../fonts/barlow-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/barlow-semibold-webfont.svg#barlowsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,127 @@
+.presentation-layer {
+  position: absolute;
+  top: var(--meeting-topbar-height, 52px);
+  left: 0;
+  right: var(--meeting-sidebar-width, 260px);
+  bottom: var(--meeting-stage-bottom, 87px);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: var(--meeting-stage-inset, 16px) 20px;
+}
+
+/* Match Excalidraw canvas bounds so zoom/pan keep drawings on the document. */
+.whiteboard-module--over-document .presentation-layer {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+}
+
+.presentation-layer--visible {
+  animation: presentation-fade-in 0.4s ease;
+}
+
+.presentation-slide-wrap {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 16px 48px rgba(15, 23, 42, 0.18);
+  border-radius: 4px;
+  background: #ffffff;
+  transition: transform 0.2s ease;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.presentation-slide-wrap--panning {
+  transition: none;
+}
+
+.presentation-slide-wrap img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.presentation-slide-wrap--loading::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: presentation-shimmer 1.2s infinite;
+}
+
+.presentation-close-btn {
+  position: absolute;
+  top: calc(var(--meeting-topbar-height, 52px) + 12px);
+  left: 12px;
+  z-index: 30;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 4px;
+  background: #145388;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(20, 83, 136, 0.35);
+  transition: background-color 0.2s ease;
+}
+
+.video-conference.normal .presentation-close-btn {
+  /* Stay clear of the participant sidebar */
+  right: auto;
+}
+
+.presentation-close-btn:hover {
+  background: #0f71a3;
+}
+
+.presentation-close-btn:focus-visible {
+  outline: 2px solid #426de5;
+  outline-offset: 2px;
+}
+
+@keyframes presentation-fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes presentation-shimmer {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="251.471" height="92.984" viewBox="0 0 251.471 92.984">
+  <g id="please-choose-images-video-icons" transform="translate(0 1.774)">
+    <g id="Group_6" data-name="Group 6" transform="translate(88.164)">
+      <g id="Group_3" data-name="Group 3">
+        <path id="Path_3" data-name="Path 3" d="M11047.924-781.485h-29.761v28.71" transform="translate(-11018.163 781.485)" fill="none" stroke="#145388" stroke-width="3"/>
+        <path id="Path_6" data-name="Path 6" d="M11047.924-752.774h-29.761v-28.71" transform="translate(-11018.163 842.485)" fill="none" stroke="#145388" stroke-width="3"/>
+        <path id="Path_4" data-name="Path 4" d="M11018.162-781.485h29.761v28.71" transform="translate(-10958.162 781.485)" fill="none" stroke="#145388" stroke-width="3"/>
+        <path id="Path_5" data-name="Path 5" d="M11018.162-752.774h29.761v-28.71" transform="translate(-10958.162 842.485)" fill="none" stroke="#145388" stroke-width="3"/>
+      </g>
+    </g>
+    <g id="Group_1105" data-name="Group 1105">
+      <g id="plus" transform="translate(106 19.726)">
+        <g id="Group_2" data-name="Group 2">
+          <path id="Path_2" data-name="Path 2" d="M48.028,23.038H26.943V1.952a1.952,1.952,0,0,0-3.9,0V23.038H1.952a1.952,1.952,0,0,0,0,3.9H23.038V48.028a1.952,1.952,0,1,0,3.9,0V26.943H48.028a1.952,1.952,0,0,0,0-3.9Z" fill="#145388"/>
+        </g>
+      </g>
+      <g id="Group_25" data-name="Group 25" transform="translate(88.163 -0.274)">
+        <path id="Path_3-2" data-name="Path 3" d="M11047.924-781.485h-29.761v28.71" transform="translate(-11018.163 781.485)" fill="none" stroke="#145388" stroke-width="3"/>
+        <path id="Path_6-2" data-name="Path 6" d="M11047.924-752.774h-29.761v-28.71" transform="translate(-11018.163 842.485)" fill="none" stroke="#145388" stroke-width="3"/>
+        <path id="Path_4-2" data-name="Path 4" d="M11018.162-781.485h29.761v28.71" transform="translate(-10958.162 781.485)" fill="none" stroke="#145388" stroke-width="3"/>
+        <path id="Path_5-2" data-name="Path 5" d="M11018.162-752.774h29.761v-28.71" transform="translate(-10958.162 842.485)" fill="none" stroke="#145388" stroke-width="3"/>
+      </g>
+      <g id="Group_5" data-name="Group 5" transform="translate(0 29.726)">
+        <path id="video-camera" d="M46.609,2.647a1,1,0,0,0-.988-.018l-10.806,5.9V4.989A5,5,0,0,0,29.826,0H4.99A5,5,0,0,0,0,4.989v19.7A5,5,0,0,0,4.99,29.677H29.826a5,5,0,0,0,4.989-4.989V21.212l10.807,5.9a1,1,0,0,0,1.476-.876V3.5a1,1,0,0,0-.489-.858ZM32.819,24.689a3,3,0,0,1-2.993,2.993H4.99A3,3,0,0,1,2,24.689V4.989A3,3,0,0,1,4.99,2H29.826A3,3,0,0,1,32.82,4.989ZM45.1,24.555,34.815,18.939V10.8L45.1,5.187Zm0,0" transform="translate(-0.001 0)" fill="#145388"/>
+      </g>
+      <g id="Group_4" data-name="Group 4" transform="translate(214.069 27.726)">
+        <path id="photo" d="M36.778,64H.623A.692.692,0,0,0,0,64.744V96a.692.692,0,0,0,.623.744H36.778A.692.692,0,0,0,37.4,96V64.744A.692.692,0,0,0,36.778,64Zm-.623,1.489V85.425L24.752,71.81a.555.555,0,0,0-.881,0L14.337,83.192,9.168,77.02a.555.555,0,0,0-.881,0l-7.04,8.405V65.489Zm0,29.771H1.247v-7.73L8.727,78.6,13.9,84.77a.555.555,0,0,0,.881,0l9.533-11.382L36.155,87.529Z" transform="translate(0 -64)" fill="#145388"/>
+        <path id="Path_240" data-name="Path 240" d="M66.888,125.775A2.888,2.888,0,1,0,64,122.888,2.891,2.891,0,0,0,66.888,125.775Zm0-4.679a1.791,1.791,0,1,1-1.791,1.791A1.793,1.793,0,0,1,66.888,121.1Z" transform="translate(-56.321 -115.821)" fill="#145388"/>
+      </g>
+    </g>
+  </g>
+</svg>

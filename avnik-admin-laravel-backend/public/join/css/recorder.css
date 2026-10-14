@@ -1,0 +1,64 @@
+.top-left-tools{
+    display: none !important;
+    opacity: 0;
+}
+.btn-chat{
+    display: none !important;
+}
+
+.t-rit-c-btns{
+    display: none !important;
+}
+.power-label{
+    right: 3px;
+    position: fixed;
+    padding: 10px;
+    line-height: 15px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    background: #7a7a7a;
+    /* height: 96px; */
+    bottom: 7px;
+    z-index: 99999;
+    border-radius: 5px;
+}
+.controls-options-new{
+    display: none;
+    opacity: 0;
+}
+.l-meet-logo{
+    z-index: 999 !important;
+    left: 40px !important;
+    top: 10px !important;
+}
+.well-sm{
+    display: none;
+}
+.shw-rside{
+    
+    background: none !important;
+    box-shadow: none !important;
+    
+}
+.middle_block {
+    position: absolute;
+    left: 60px !important;
+    right: 0px !important;
+    top: 10px !important;
+    bottom: 10px !important;
+}
+.mid-parent{
+    left: 0px !important;
+}
+.conf-midparent{
+    width: calc(100% - 188px) !important;
+}
+.mid-parent-conf{
+    left: 0px !important;
+    width: calc(100% - 3px) !important;
+}
+.well-sm{
+    display: none !important;
+    opacity: 0;
+}

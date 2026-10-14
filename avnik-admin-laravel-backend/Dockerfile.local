@@ -1,0 +1,41 @@
+FROM php:8.0-fpm-alpine
+
+WORKDIR /app
+
+RUN apk add --no-cache \
+    curl \
+    libpng \
+    libjpeg-turbo \
+    freetype \
+    libzip \
+    nodejs \
+    npm \
+    && apk add --no-cache --virtual .build-deps \
+    $PHPIZE_DEPS \
+    libpng-dev \
+    libjpeg-turbo-dev \
+    freetype-dev \
+    libzip-dev
+
+RUN docker-php-ext-install \
+    pdo \
+    pdo_mysql \
+    zip \
+    bcmath \
+    && docker-php-ext-configure gd --with-jpeg --with-freetype \
+    && docker-php-ext-install gd
+
+RUN apk del .build-deps
+
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+COPY docker-entrypoint.dev.sh /docker-entrypoint.dev.sh
+COPY docker/setup-public-path.sh /docker/setup-public-path.sh
+COPY docker/setup-storage-link.sh /docker/setup-storage-link.sh
+COPY docker/ensure-frontend-assets.sh /docker/ensure-frontend-assets.sh
+RUN chmod +x /docker-entrypoint.dev.sh /docker/setup-public-path.sh /docker/setup-storage-link.sh /docker/ensure-frontend-assets.sh
+
+EXPOSE 8000
+
+ENTRYPOINT ["/docker-entrypoint.dev.sh"]
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]

@@ -1,0 +1,109 @@
+.wickedpicker {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    background: #ffffff;
+    margin: 0 auto;   
+    font-size: 14px;
+    display: none;
+	margin: 0 auto;
+    border-radius: 5px;
+    width: 115px;
+    height: auto;
+    font-size: 14px;
+	z-index:6;
+	
+}
+.wickedpicker__title {
+    background-image: -webkit-linear-gradient(top, #fff 0, #f2f2f2 100%);
+    position: relative;
+    background: #f2f2f2;
+    margin: 0 auto;
+    border-bottom: 0;
+    padding: 4px 11px 6px 7px;
+    color: #4c4c4c;
+    font-size: 15px;
+    text-align: left !important;
+	    display: none;
+}
+.wickedpicker__close {
+    -webkit-transform: translateY(-25%);
+    -moz-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    -o-transform: translateY(-25%);
+    transform: translateY(-25%);
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    color: #34495e;
+    cursor: pointer;
+	font-size: 28px;
+}
+.wickedpicker__close:before {
+    content: "\00d7";
+}
+.wickedpicker__controls {
+    padding: 10px 0;
+    line-height: normal;
+    margin: 0;
+}
+.wickedpicker__controls__control,
+.wickedpicker__controls__control--separator {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: inherit;
+    margin: 0 auto;
+    width: 35px;
+    letter-spacing: 1.3px;
+}
+.wickedpicker__controls__control-down, .wickedpicker__controls__control-up {
+    color: #34495e;
+    position: relative;
+    display: block;
+    margin: 5px auto;
+    font-size: 10px;
+    cursor: pointer;
+    font-family: 'NunitoSans-Bold';
+}
+.wickedpicker__controls__control-up:before {
+    content: "\e960";
+}
+.wickedpicker__controls__control-down:after {
+    content: "\e960";
+}
+.wickedpicker__controls__control--separator {
+    width: 5px;
+}
+.text-center,
+.wickedpicker__controls,
+.wickedpicker__controls__control,
+.wickedpicker__controls__control--separator,
+.wickedpicker__controls__control-down,
+.wickedpicker__controls__control-up,
+.wickedpicker__title {
+    text-align: center;
+}
+.hover-state {
+    color: #3498db;
+}
+.fontello-after:after,
+.fontello:before,
+.wickedpicker__controls__control-down:after,
+.wickedpicker__controls__control-up:before {
+      font-family: 'avnik';
+    font-style: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: auto;
+    margin-right: 0.2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: 0.2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
